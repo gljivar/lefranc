@@ -1,0 +1,21 @@
+<%= form_for @language do |f| %>
+        <% if @language.errors.any? %>
+                <h2>Errors:</h2>
+                <ul>
+                        <% @language.errors.full_messages.each do |message| %>
+                                <li><%= message %></li>
+                        <% end %>
+                </ul>
+        <% end %>
+        <p>
+                <%= f.label :name %><br/>
+                <%= f.text_field :name %>
+        </p>
+        <p>
+                <%= f.label :english_name %><br/>
+                <%= f.text_field :english_name %>
+        </p>
+        <p>
+                <%= f.submit "Save language" %>
+        </p>
+<% end %>

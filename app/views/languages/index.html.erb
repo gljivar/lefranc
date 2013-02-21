@@ -1,0 +1,15 @@
+<h1>Languages</h1>
+
+<% @languages.each do | language | %>
+
+	<h2><%= link_to language.name, language %></h2> 
+	<p><%= language.english_name %></p>
+	<p>
+		<%= link_to "Edit", edit_language_path(language) %>
+		<%= link_to "Delete", language, :confirm => "Are you sure?", :method => :delete %>	
+	</p>	
+	</hr>
+
+<% end %>
+
+<p><%= link_to "Add new language", new_language_path %></p>
