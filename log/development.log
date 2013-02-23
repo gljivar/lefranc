@@ -5834,3 +5834,85 @@ Served asset /sessions.css - 304 Not Modified (4ms)
 
 Started GET "/assets/jquery_ujs.js?body=1" for 89.164.230.114 at 2013-02-23 14:11:42 +0100
 Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/rails.png" for 89.164.230.114 at 2013-02-23 15:53:41 +0100
+Served asset /rails.png - 200 OK (4ms)
+
+
+Started GET "/languages" for 89.164.230.114 at 2013-02-23 15:53:50 +0100
+Processing by LanguagesController#index as HTML
+  [1m[35mLanguage Load (3.8ms)[0m  SELECT "languages".* FROM "languages" 
+  Rendered languages/index.html.erb within layouts/application (144.9ms)
+Completed 200 OK in 463ms (Views: 272.7ms | ActiveRecord: 14.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 89.164.230.114 at 2013-02-23 15:53:51 +0100
+Served asset /application.css - 200 OK (14ms)
+
+
+Started GET "/assets/languages.css?body=1" for 89.164.230.114 at 2013-02-23 15:53:51 +0100
+Served asset /languages.css - 200 OK (31ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 89.164.230.114 at 2013-02-23 15:53:51 +0100
+Served asset /jquery.js - 200 OK (37ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 89.164.230.114 at 2013-02-23 15:53:51 +0100
+Served asset /jquery_ujs.js - 200 OK (6ms)
+
+
+Started GET "/assets/languages.js?body=1" for 89.164.230.114 at 2013-02-23 15:53:51 +0100
+Served asset /languages.js - 200 OK (6ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 89.164.230.114 at 2013-02-23 15:53:51 +0100
+Served asset /sessions.js - 200 OK (32ms)
+
+
+Started GET "/assets/application.js?body=1" for 89.164.230.114 at 2013-02-23 15:53:51 +0100
+Served asset /application.js - 200 OK (29ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 89.164.230.114 at 2013-02-23 15:53:55 +0100
+Served asset /sessions.css - 200 OK (3ms)
+
+
+Started GET "/languages" for 89.164.160.78 at 2013-02-23 15:55:53 +0100
+Processing by LanguagesController#index as HTML
+  [1m[36mLanguage Load (4.1ms)[0m  [1mSELECT "languages".* FROM "languages" [0m
+  Rendered languages/index.html.erb within layouts/application (130.9ms)
+Completed 200 OK in 265ms (Views: 242.0ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 89.164.160.78 at 2013-02-23 15:55:54 +0100
+Served asset /application.css - 200 OK (21ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 89.164.160.78 at 2013-02-23 15:55:54 +0100
+Served asset /sessions.css - 200 OK (31ms)
+
+
+Started GET "/assets/languages.css?body=1" for 89.164.160.78 at 2013-02-23 15:55:54 +0100
+Served asset /languages.css - 200 OK (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 89.164.160.78 at 2013-02-23 15:55:54 +0100
+Served asset /jquery_ujs.js - 200 OK (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 89.164.160.78 at 2013-02-23 15:55:59 +0100
+Served asset /jquery.js - 200 OK (333ms)
+
+
+Started GET "/assets/languages.js?body=1" for 89.164.160.78 at 2013-02-23 15:55:59 +0100
+Served asset /languages.js - 200 OK (28ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 89.164.160.78 at 2013-02-23 15:55:59 +0100
+Served asset /sessions.js - 200 OK (5ms)
+
+
+Started GET "/assets/application.js?body=1" for 89.164.160.78 at 2013-02-23 15:55:59 +0100
+Served asset /application.js - 200 OK (27ms)
