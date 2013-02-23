@@ -6,7 +6,6 @@ class LanguagesController < ApplicationController
 	end
 
 	def show
-		@language = Language.find(params[:id])
 	end
 
 	def new
@@ -24,12 +23,9 @@ class LanguagesController < ApplicationController
 	end
 
 	def edit
-		@language = Language.find(params[:id])	
 	end
 
 	def update
-		@language = Language.find(params[:id])
-
 		if @language.update_attributes(params[:language])	
 			redirect_to languages_path, :notice => "Language has been updated"
 		else
@@ -38,7 +34,6 @@ class LanguagesController < ApplicationController
 	end
 
 	def destroy
-		@language = Language.find(params[:id])
 		@language.destroy
 		redirect_to languages_path, :notice => "Language has been deleted"	
 	end
