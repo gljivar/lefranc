@@ -1,3 +1,5 @@
 <h1><%= @language.name %></h1>
 <p><%= @language.english_name %></p>
 <small>Created: <%= @language.created_at %></small>
+
+<p><%= link_to "Word genders", language_word_genders_path(@language) %></p>

@@ -37,6 +37,9 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'debugger'
 
+# rb readline
+gem 'rb-readline'
+
 # To use OmniAuth
 gem 'omniauth'
 gem 'omniauth-twitter'

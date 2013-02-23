@@ -1,0 +1,10 @@
+<h1>Word genders of language</h1>
+<p><%= @language.name %></p>
+
+<% if @word_genders.present? %>
+	<ul>
+	<% @word_genders.each do |word_gender| %>
+		<li><%= word_gender.name %></li>
+	<% end %>
+	</ul>
+<% end %>

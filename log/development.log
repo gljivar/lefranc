@@ -5972,3 +5972,706 @@ OAuth::Unauthorized (401 Unauthorized):
   Rendered /home/pi/.rvm/gems/ruby-1.9.3-p385@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (26.1ms)
   Rendered /home/pi/.rvm/gems/ruby-1.9.3-p385@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (20.8ms)
   Rendered /home/pi/.rvm/gems/ruby-1.9.3-p385@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (125.5ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-02-23 17:59:06 +0100
+Connecting to database specified by database.yml
+Served asset /rails.png - 200 OK (4ms)
+
+
+Started GET "/languages" for 127.0.0.1 at 2013-02-23 17:59:09 +0100
+Processing by LanguagesController#index as HTML
+  [1m[36mLanguage Load (0.3ms)[0m  [1mSELECT "languages".* FROM "languages" [0m
+  Rendered languages/index.html.erb within layouts/application (15.8ms)
+Compiled jquery.js  (2ms)  (pid 7929)
+Compiled jquery_ujs.js  (0ms)  (pid 7929)
+Compiled application.js  (74ms)  (pid 7929)
+Completed 200 OK in 333ms (Views: 169.8ms | ActiveRecord: 58.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-23 17:59:10 +0100
+Served asset /application.css - 200 OK (47ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-02-23 17:59:10 +0100
+Served asset /sessions.css - 200 OK (12ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-02-23 17:59:10 +0100
+Served asset /languages.css - 200 OK (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-23 17:59:10 +0100
+Served asset /jquery.js - 200 OK (10ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-02-23 17:59:10 +0100
+Served asset /languages.js - 200 OK (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-23 17:59:10 +0100
+Served asset /jquery_ujs.js - 200 OK (8ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-02-23 17:59:10 +0100
+Served asset /sessions.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-23 17:59:10 +0100
+Served asset /application.js - 200 OK (16ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2013-02-23 17:59:30 +0100
+
+
+Started GET "/languages/1" for 127.0.0.1 at 2013-02-23 18:01:13 +0100
+Processing by LanguagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLanguage Load (0.5ms)[0m  SELECT "languages".* FROM "languages" WHERE "languages"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered languages/show.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 23ms (Views: 18.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-23 18:01:14 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-23 18:01:14 +0100
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-02-23 18:01:14 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-02-23 18:01:14 +0100
+Served asset /languages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-23 18:01:14 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-02-23 18:01:14 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-02-23 18:01:14 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-23 18:01:14 +0100
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/languages/new" for 127.0.0.1 at 2013-02-23 18:06:08 +0100
+Processing by LanguagesController#new as HTML
+  Rendered languages/_form.html.erb (12.9ms)
+  Rendered languages/new.html.erb within layouts/application (23.9ms)
+Completed 200 OK in 35ms (Views: 34.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-23 18:06:08 +0100
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-02-23 18:06:08 +0100
+Served asset /languages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-23 18:06:08 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-02-23 18:06:08 +0100
+Served asset /languages.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-02-23 18:06:08 +0100
+Served asset /sessions.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-23 18:06:08 +0100
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-02-23 18:06:08 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-23 18:06:08 +0100
+Served asset /application.js - 304 Not Modified (4ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (2.7ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateLanguages (20130218232836)
+Migrating to CreateUsers (20130223003912)
+Migrating to CreateWordGenders (20130223202347)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "word_genders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "short_name" varchar(255), "language_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130223202347')[0m
+  [1m[35m (89.0ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (2.7ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateLanguages (20130218232836)
+Migrating to CreateUsers (20130223003912)
+Migrating to CreateWordGenders (20130223202347)
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+
+
+Started GET "/languages" for 127.0.0.1 at 2013-02-23 23:18:40 +0100
+Processing by LanguagesController#index as HTML
+  [1m[36mLanguage Load (0.2ms)[0m  [1mSELECT "languages".* FROM "languages" [0m
+  Rendered languages/index.html.erb within layouts/application (9.7ms)
+Compiled word_gender.css  (18ms)  (pid 7929)
+Compiled application.css  (30ms)  (pid 7929)
+Compiled word_gender.js  (492ms)  (pid 7929)
+Compiled application.js  (513ms)  (pid 7929)
+Completed 200 OK in 645ms (Views: 629.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-23 23:18:40 +0100
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-02-23 23:18:41 +0100
+Served asset /sessions.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-23 23:18:41 +0100
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-02-23 23:18:41 +0100
+Served asset /languages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-02-23 23:18:41 +0100
+Served asset /word_gender.css - 200 OK (3ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-02-23 23:18:41 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-23 23:18:41 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-02-23 23:18:41 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-23 23:18:41 +0100
+Served asset /application.js - 304 Not Modified (17ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-02-23 23:18:41 +0100
+Served asset /word_gender.js - 200 OK (2ms)
+
+
+Started GET "/languages/1" for 127.0.0.1 at 2013-02-23 23:18:44 +0100
+Processing by LanguagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLanguage Load (0.6ms)[0m  SELECT "languages".* FROM "languages" WHERE "languages"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered languages/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 20ms (Views: 15.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-02-23 23:18:44 +0100
+Served asset /languages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-23 23:18:44 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-02-23 23:18:44 +0100
+Served asset /word_gender.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-02-23 23:18:44 +0100
+Served asset /sessions.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-23 23:18:44 +0100
+Served asset /jquery.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-23 23:18:44 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-02-23 23:18:44 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-02-23 23:18:44 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-02-23 23:18:44 +0100
+Served asset /sessions.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-23 23:18:44 +0100
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/languages/1" for 127.0.0.1 at 2013-02-23 23:22:26 +0100
+Processing by LanguagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLanguage Load (0.3ms)[0m  [1mSELECT "languages".* FROM "languages" WHERE "languages"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered languages/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 37ms (Views: 19.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-23 23:22:26 +0100
+Served asset /application.css - 304 Not Modified (55ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-02-23 23:22:26 +0100
+Served asset /languages.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-02-23 23:22:26 +0100
+Served asset /word_gender.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-23 23:22:26 +0100
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-02-23 23:22:26 +0100
+Served asset /sessions.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-02-23 23:22:26 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-02-23 23:22:26 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-23 23:22:26 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-02-23 23:22:26 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-23 23:22:26 +0100
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/languages/1" for 127.0.0.1 at 2013-02-23 23:31:21 +0100
+Processing by LanguagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLanguage Load (0.3ms)[0m  SELECT "languages".* FROM "languages" WHERE "languages"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered languages/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 32ms (Views: 15.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-23 23:31:21 +0100
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-02-23 23:31:21 +0100
+Served asset /word_gender.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-23 23:31:21 +0100
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-02-23 23:31:21 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-02-23 23:31:21 +0100
+Served asset /languages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-23 23:31:21 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-02-23 23:31:21 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-02-23 23:31:21 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-23 23:31:21 +0100
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-02-23 23:31:21 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/languages/1/word_genders" for 127.0.0.1 at 2013-02-23 23:31:25 +0100
+
+ActionController::RoutingError (uninitialized constant WordGendersController):
+  activesupport (3.2.12) lib/active_support/inflector/methods.rb:230:in `block in constantize'
+  activesupport (3.2.12) lib/active_support/inflector/methods.rb:229:in `each'
+  activesupport (3.2.12) lib/active_support/inflector/methods.rb:229:in `constantize'
+  actionpack (3.2.12) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.12) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.12) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.12) lib/action_dispatch/routing/route_set.rb:601:in `call'
+  omniauth (1.1.3) lib/omniauth/strategy.rb:177:in `call!'
+  omniauth (1.1.3) lib/omniauth/strategy.rb:157:in `call'
+  omniauth (1.1.3) lib/omniauth/strategy.rb:177:in `call!'
+  omniauth (1.1.3) lib/omniauth/strategy.rb:157:in `call'
+  omniauth (1.1.3) lib/omniauth/builder.rb:48:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.12) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.12) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:405:in `_run__294145129544400845__call__1087415494096443181__callbacks'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.12) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/miroslav/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/miroslav/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/miroslav/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.9ms)
+
+
+Started GET "/languages/1/word_genders" for 127.0.0.1 at 2013-02-23 23:34:36 +0100
+Processing by WordGendersController#index as HTML
+  Parameters: {"language_id"=>"1"}
+  [1m[36mLanguage Load (0.3ms)[0m  [1mSELECT "languages".* FROM "languages" WHERE "languages"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 500 Internal Server Error in 28ms
+
+NoMethodError (undefined method `by_language' for #<Class:0x00000001322750>):
+  app/controllers/word_genders_controller.rb:4:in `index'
+
+
+  Rendered /home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.6ms)
+
+
+Started GET "/languages/1/word_genders" for 127.0.0.1 at 2013-02-23 23:38:21 +0100
+
+SyntaxError (/home/miroslav/Projects/lefranc/lefranc/app/controllers/word_genders_controller.rb:7: syntax error, unexpected keyword_end, expecting ')'
+/home/miroslav/Projects/lefranc/lefranc/app/controllers/word_genders_controller.rb:12: syntax error, unexpected $end, expecting keyword_end):
+  activesupport (3.2.12) lib/active_support/dependencies.rb:469:in `load'
+  activesupport (3.2.12) lib/active_support/dependencies.rb:469:in `block in load_file'
+  activesupport (3.2.12) lib/active_support/dependencies.rb:639:in `new_constants_in'
+  activesupport (3.2.12) lib/active_support/dependencies.rb:468:in `load_file'
+  activesupport (3.2.12) lib/active_support/dependencies.rb:353:in `require_or_load'
+  activesupport (3.2.12) lib/active_support/dependencies.rb:502:in `load_missing_constant'
+  activesupport (3.2.12) lib/active_support/dependencies.rb:192:in `block in const_missing'
+  activesupport (3.2.12) lib/active_support/dependencies.rb:190:in `each'
+  activesupport (3.2.12) lib/active_support/dependencies.rb:190:in `const_missing'
+  activesupport (3.2.12) lib/active_support/inflector/methods.rb:230:in `block in constantize'
+  activesupport (3.2.12) lib/active_support/inflector/methods.rb:229:in `each'
+  activesupport (3.2.12) lib/active_support/inflector/methods.rb:229:in `constantize'
+  activesupport (3.2.12) lib/active_support/dependencies.rb:554:in `get'
+  actionpack (3.2.12) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.12) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.12) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.12) lib/action_dispatch/routing/route_set.rb:601:in `call'
+  omniauth (1.1.3) lib/omniauth/strategy.rb:177:in `call!'
+  omniauth (1.1.3) lib/omniauth/strategy.rb:157:in `call'
+  omniauth (1.1.3) lib/omniauth/strategy.rb:177:in `call!'
+  omniauth (1.1.3) lib/omniauth/strategy.rb:157:in `call'
+  omniauth (1.1.3) lib/omniauth/builder.rb:48:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.12) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.12) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:405:in `_run__294145129544400845__call__1087415494096443181__callbacks'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.12) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/miroslav/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/miroslav/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/miroslav/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered /home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered /home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.6ms)
+
+
+Started GET "/languages/1/word_genders" for 127.0.0.1 at 2013-02-23 23:38:41 +0100
+Processing by WordGendersController#index as HTML
+  Parameters: {"language_id"=>"1"}
+  [1m[35mLanguage Load (0.3ms)[0m  SELECT "languages".* FROM "languages" WHERE "languages"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mWordGender Load (0.2ms)[0m  [1mSELECT "word_genders".* FROM "word_genders" WHERE "word_genders"."language_id" = 1[0m
+Completed 500 Internal Server Error in 142ms
+
+ActionView::MissingTemplate (Missing template word_genders/index, application/index with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :coffee]}. Searched in:
+  * "/home/miroslav/Projects/lefranc/lefranc/app/views"
+):
+  actionpack (3.2.12) lib/action_view/path_set.rb:58:in `find'
+  actionpack (3.2.12) lib/action_view/lookup_context.rb:109:in `find'
+  actionpack (3.2.12) lib/action_view/renderer/abstract_renderer.rb:3:in `find_template'
+  actionpack (3.2.12) lib/action_view/renderer/template_renderer.rb:34:in `determine_template'
+  actionpack (3.2.12) lib/action_view/renderer/template_renderer.rb:10:in `render'
+  actionpack (3.2.12) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.12) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.12) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.12) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.12) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.12) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.12) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.12) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.12) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.12) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.12) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /home/miroslav/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (3.2.12) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.12) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.12) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.12) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.12) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.12) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.12) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (3.2.12) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.12) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.12) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:414:in `_run__4544580942981003889__process_action__749475566206347203__callbacks'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.12) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.12) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.12) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.12) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.12) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.12) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.12) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.12) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.12) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.12) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.12) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.12) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.12) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.12) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.12) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.12) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.12) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.12) lib/action_dispatch/routing/route_set.rb:601:in `call'
+  omniauth (1.1.3) lib/omniauth/strategy.rb:177:in `call!'
+  omniauth (1.1.3) lib/omniauth/strategy.rb:157:in `call'
+  omniauth (1.1.3) lib/omniauth/strategy.rb:177:in `call!'
+  omniauth (1.1.3) lib/omniauth/strategy.rb:157:in `call'
+  omniauth (1.1.3) lib/omniauth/builder.rb:48:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.12) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.12) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:405:in `_run__294145129544400845__call__1087415494096443181__callbacks'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.12) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/miroslav/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/miroslav/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/miroslav/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.8ms)
+
+
+Started GET "/languages/1/word_genders" for 127.0.0.1 at 2013-02-23 23:40:06 +0100
+Processing by WordGendersController#index as HTML
+  Parameters: {"language_id"=>"1"}
+  [1m[35mLanguage Load (0.2ms)[0m  SELECT "languages".* FROM "languages" WHERE "languages"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mWordGender Load (0.3ms)[0m  [1mSELECT "word_genders".* FROM "word_genders" WHERE "word_genders"."language_id" = 1[0m
+  Rendered word_genders/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 18ms (Views: 14.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-23 23:40:06 +0100
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-02-23 23:40:06 +0100
+Served asset /word_gender.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-02-23 23:40:06 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-02-23 23:40:06 +0100
+Served asset /languages.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-23 23:40:06 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-23 23:40:06 +0100
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-02-23 23:40:06 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-02-23 23:40:06 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-02-23 23:40:06 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-23 23:40:06 +0100
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/languages/1/word_genders" for 127.0.0.1 at 2013-02-23 23:41:32 +0100
+Processing by WordGendersController#index as HTML
+  Parameters: {"language_id"=>"1"}
+  [1m[35mLanguage Load (0.3ms)[0m  SELECT "languages".* FROM "languages" WHERE "languages"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mWordGender Load (0.9ms)[0m  [1mSELECT "word_genders".* FROM "word_genders" WHERE "word_genders"."language_id" = 1[0m
+  Rendered word_genders/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 19ms (Views: 14.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-23 23:41:32 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-02-23 23:41:32 +0100
+Served asset /word_gender.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-02-23 23:41:32 +0100
+Served asset /languages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-02-23 23:41:32 +0100
+Served asset /sessions.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-23 23:41:32 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-23 23:41:32 +0100
+Served asset /jquery.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-02-23 23:41:32 +0100
+Served asset /sessions.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-02-23 23:41:32 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-02-23 23:41:32 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-23 23:41:32 +0100
+Served asset /application.js - 304 Not Modified (4ms)

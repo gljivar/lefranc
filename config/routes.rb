@@ -1,5 +1,9 @@
 Lefranc::Application.routes.draw do
-	resources :languages
+  get "word_gender/index"
+
+	resources :languages do
+		resources :word_genders
+	end
 	
 	#root :to => "languages#index"
 	
