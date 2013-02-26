@@ -4,7 +4,11 @@
 <% if @word_genders.present? %>
 	<ul>
 	<% @word_genders.each do |word_gender| %>
-		<li><%= word_gender.name %></li>
+		<li><%= link_to word_gender.name, edit_language_word_gender_path(@language, word_gender) %> 
+			<%= link_to "Delete",[@language, word_gender] , :confirm => "Are you sure?", :method => :delete %>
+	
+		</li>	
 	<% end %>
 	</ul>
+	<%= link_to "New gender", new_language_word_gender_path(@language) %>
 <% end %>
