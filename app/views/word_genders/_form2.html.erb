@@ -1,4 +1,4 @@
-<%= form_for @word_gender do |f| %>
+<%= form_for [@language, @word_gender] do |f| %>
         <% if @word_gender.errors.any? %>
                 <h2>Errors:</h2>
                 <ul>

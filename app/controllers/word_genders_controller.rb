@@ -9,4 +9,10 @@ class WordGendersController < ApplicationController
   def show
 	
   end
+
+  def new
+	@language = Language.find(params[:language_id])
+	@word_gender = WordGender.new
+	@word_gender.language = @language
+  end  
 end
