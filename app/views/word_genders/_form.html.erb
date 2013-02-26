@@ -1,0 +1,21 @@
+<%= form_for [@language, @word_gender] do |f| %>
+        <% if @word_gender.errors.any? %>
+                <h2>Errors:</h2>
+                <ul>
+                        <% @word_gender.errors.full_messages.each do |message| %>
+                                <li><%= message %></li>
+                        <% end %>
+                </ul>
+        <% end %>
+        <p>
+                <%= f.label :name %><br/>
+                <%= f.text_field :name %>
+        </p>
+        <p>
+                <%= f.label :short_name %><br/>
+                <%= f.text_field :short_name %>
+        </p>
+        <p>
+                <%= f.submit "Save word gender" %>
+        </p>
+<% end %>
