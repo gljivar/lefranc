@@ -7121,3 +7121,1325 @@ Served asset /application.js - 304 Not Modified (28ms)
 
 Started GET "/assets/languages.js?body=1" for 82.193.217.60 at 2013-02-26 09:15:49 +0100
 Served asset /languages.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/rails.png" for 89.164.203.145 at 2013-02-26 22:42:16 +0100
+Served asset /rails.png - 200 OK (3ms)
+
+
+Started GET "/languages" for 89.164.203.145 at 2013-02-26 22:42:20 +0100
+Processing by LanguagesController#index as HTML
+  [1m[35mLanguage Load (3.8ms)[0m  SELECT "languages".* FROM "languages" 
+  Rendered languages/index.html.erb within layouts/application (141.7ms)
+  [1m[36mUser Load (3.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 737ms (Views: 535.1ms | ActiveRecord: 27.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 89.164.203.145 at 2013-02-26 22:42:22 +0100
+Served asset /application.css - 304 Not Modified (65ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 89.164.203.145 at 2013-02-26 22:42:22 +0100
+Served asset /sessions.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/languages.css?body=1" for 89.164.203.145 at 2013-02-26 22:42:22 +0100
+Served asset /languages.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 89.164.203.145 at 2013-02-26 22:42:22 +0100
+Served asset /word_gender.css - 304 Not Modified (39ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 89.164.203.145 at 2013-02-26 22:42:22 +0100
+Served asset /jquery.js - 304 Not Modified (26ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 89.164.203.145 at 2013-02-26 22:42:22 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/languages.js?body=1" for 89.164.203.145 at 2013-02-26 22:42:23 +0100
+Served asset /languages.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 89.164.203.145 at 2013-02-26 22:42:23 +0100
+Served asset /sessions.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 89.164.203.145 at 2013-02-26 22:42:23 +0100
+Served asset /word_gender.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/application.js?body=1" for 89.164.203.145 at 2013-02-26 22:42:23 +0100
+Served asset /application.js - 304 Not Modified (31ms)
+
+
+Started GET "/languages/1" for 89.164.203.145 at 2013-02-26 22:42:25 +0100
+Processing by LanguagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLanguage Load (3.4ms)[0m  SELECT "languages".* FROM "languages" WHERE "languages"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered languages/show.html.erb within layouts/application (12.0ms)
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 212ms (Views: 184.5ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/assets/languages.css?body=1" for 89.164.203.145 at 2013-02-26 22:42:25 +0100
+Served asset /languages.css - 304 Not Modified (292ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 89.164.203.145 at 2013-02-26 22:42:26 +0100
+Served asset /word_gender.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/application.css?body=1" for 89.164.203.145 at 2013-02-26 22:42:26 +0100
+Served asset /application.css - 304 Not Modified (18ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 89.164.203.145 at 2013-02-26 22:42:26 +0100
+Served asset /jquery.js - 304 Not Modified (21ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 89.164.203.145 at 2013-02-26 22:42:26 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (39ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 89.164.203.145 at 2013-02-26 22:42:26 +0100
+Served asset /sessions.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/languages.js?body=1" for 89.164.203.145 at 2013-02-26 22:42:26 +0100
+Served asset /languages.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 89.164.203.145 at 2013-02-26 22:42:26 +0100
+Served asset /sessions.js - 304 Not Modified (34ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 89.164.203.145 at 2013-02-26 22:42:26 +0100
+Served asset /word_gender.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 89.164.203.145 at 2013-02-26 22:42:26 +0100
+Served asset /application.js - 304 Not Modified (32ms)
+
+
+Started GET "/languages/1/word_genders" for 89.164.203.145 at 2013-02-26 22:42:27 +0100
+Processing by WordGendersController#index as HTML
+  Parameters: {"language_id"=>"1"}
+  [1m[35mLanguage Load (1.5ms)[0m  SELECT "languages".* FROM "languages" WHERE "languages"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mWordGender Load (3.1ms)[0m  [1mSELECT "word_genders".* FROM "word_genders" WHERE "word_genders"."language_id" = 1[0m
+  Rendered word_genders/index.html.erb within layouts/application (53.1ms)
+  [1m[35mUser Load (1.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 453ms (Views: 224.5ms | ActiveRecord: 15.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 89.164.203.145 at 2013-02-26 22:42:28 +0100
+Served asset /application.css - 304 Not Modified (150ms)
+
+
+Started GET "/assets/languages.css?body=1" for 89.164.203.145 at 2013-02-26 22:42:28 +0100
+Served asset /languages.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 89.164.203.145 at 2013-02-26 22:42:28 +0100
+Served asset /jquery.js - 304 Not Modified (19ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 89.164.203.145 at 2013-02-26 22:42:29 +0100
+Served asset /sessions.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 89.164.203.145 at 2013-02-26 22:42:29 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (40ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 89.164.203.145 at 2013-02-26 22:42:29 +0100
+Served asset /word_gender.css - 304 Not Modified (61ms)
+
+
+Started GET "/assets/languages.js?body=1" for 89.164.203.145 at 2013-02-26 22:42:29 +0100
+Served asset /languages.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 89.164.203.145 at 2013-02-26 22:42:29 +0100
+Served asset /sessions.js - 304 Not Modified (34ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 89.164.203.145 at 2013-02-26 22:42:29 +0100
+Served asset /word_gender.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/application.js?body=1" for 89.164.203.145 at 2013-02-26 22:42:29 +0100
+Served asset /application.js - 304 Not Modified (32ms)
+
+
+Started GET "/languages/1/word_genders/new" for 89.164.203.145 at 2013-02-26 22:42:31 +0100
+Processing by WordGendersController#new as HTML
+  Parameters: {"language_id"=>"1"}
+  [1m[36mLanguage Load (1.4ms)[0m  [1mSELECT "languages".* FROM "languages" WHERE "languages"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered word_genders/_form.html.erb (53.7ms)
+  Rendered word_genders/new.html.erb within layouts/application (69.2ms)
+  [1m[35mUser Load (1.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 273ms (Views: 244.5ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 89.164.203.145 at 2013-02-26 22:42:32 +0100
+Served asset /application.css - 304 Not Modified (101ms)
+
+
+Started GET "/assets/languages.css?body=1" for 89.164.203.145 at 2013-02-26 22:42:32 +0100
+Served asset /languages.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 89.164.203.145 at 2013-02-26 22:42:32 +0100
+Served asset /sessions.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 89.164.203.145 at 2013-02-26 22:42:32 +0100
+Served asset /jquery.js - 304 Not Modified (49ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 89.164.203.145 at 2013-02-26 22:42:32 +0100
+Served asset /word_gender.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 89.164.203.145 at 2013-02-26 22:42:32 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (35ms)
+
+
+Started GET "/assets/languages.js?body=1" for 89.164.203.145 at 2013-02-26 22:42:32 +0100
+Served asset /languages.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 89.164.203.145 at 2013-02-26 22:42:32 +0100
+Served asset /sessions.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 89.164.203.145 at 2013-02-26 22:42:32 +0100
+Served asset /word_gender.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/application.js?body=1" for 89.164.203.145 at 2013-02-26 22:42:37 +0100
+Served asset /application.js - 304 Not Modified (26ms)
+
+
+Started POST "/languages/1/word_genders" for 89.164.203.145 at 2013-02-26 22:42:43 +0100
+Processing by WordGendersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yJA9RuadNU7SBS8xxsTWEqCwnoA6crXWa/8CbOJsFB4=", "word_gender"=>{"name"=>"Test", "short_name"=>"test"}, "commit"=>"Save word gender", "language_id"=>"1"}
+  [1m[36mLanguage Load (1.4ms)[0m  [1mSELECT "languages".* FROM "languages" WHERE "languages"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (1.8ms)[0m  begin transaction
+  [1m[36mSQL (34.8ms)[0m  [1mINSERT INTO "word_genders" ("created_at", "language_id", "name", "short_name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Tue, 26 Feb 2013 21:42:43 UTC +00:00], ["language_id", 1], ["name", "Test"], ["short_name", "test"], ["updated_at", Tue, 26 Feb 2013 21:42:43 UTC +00:00]]
+  [1m[35m (29.3ms)[0m  commit transaction
+Redirected to http://rpim.no-ip.org:3000/languages/1/word_genders
+Completed 302 Found in 166ms (ActiveRecord: 67.3ms)
+
+
+Started GET "/languages/1/word_genders" for 89.164.203.145 at 2013-02-26 22:42:43 +0100
+Processing by WordGendersController#index as HTML
+  Parameters: {"language_id"=>"1"}
+  [1m[36mLanguage Load (1.9ms)[0m  [1mSELECT "languages".* FROM "languages" WHERE "languages"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mWordGender Load (3.6ms)[0m  SELECT "word_genders".* FROM "word_genders" WHERE "word_genders"."language_id" = 1
+  Rendered word_genders/index.html.erb within layouts/application (61.4ms)
+  [1m[36mUser Load (1.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 279ms (Views: 231.9ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 89.164.203.145 at 2013-02-26 22:42:44 +0100
+Served asset /application.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/languages.css?body=1" for 89.164.203.145 at 2013-02-26 22:42:44 +0100
+Served asset /languages.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 89.164.203.145 at 2013-02-26 22:42:44 +0100
+Served asset /sessions.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 89.164.203.145 at 2013-02-26 22:42:44 +0100
+Served asset /word_gender.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 89.164.203.145 at 2013-02-26 22:42:44 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (32ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 89.164.203.145 at 2013-02-26 22:42:44 +0100
+Served asset /jquery.js - 304 Not Modified (22ms)
+
+
+Started GET "/assets/languages.js?body=1" for 89.164.203.145 at 2013-02-26 22:42:44 +0100
+Served asset /languages.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 89.164.203.145 at 2013-02-26 22:42:44 +0100
+Served asset /sessions.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 89.164.203.145 at 2013-02-26 22:42:44 +0100
+Served asset /word_gender.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/application.js?body=1" for 89.164.203.145 at 2013-02-26 22:42:45 +0100
+Served asset /application.js - 304 Not Modified (31ms)
+
+
+Started DELETE "/languages/1/word_genders/11" for 89.164.203.145 at 2013-02-26 22:42:48 +0100
+Processing by WordGendersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"yJA9RuadNU7SBS8xxsTWEqCwnoA6crXWa/8CbOJsFB4=", "language_id"=>"1", "id"=>"11"}
+  [1m[35mLanguage Load (1.4ms)[0m  SELECT "languages".* FROM "languages" WHERE "languages"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mWordGender Load (3.3ms)[0m  [1mSELECT "word_genders".* FROM "word_genders" WHERE "word_genders"."id" = ? LIMIT 1[0m  [["id", "11"]]
+  [1m[35m (1.6ms)[0m  begin transaction
+  [1m[36mSQL (3.4ms)[0m  [1mDELETE FROM "word_genders" WHERE "word_genders"."id" = ?[0m  [["id", 11]]
+  [1m[35m (30.6ms)[0m  commit transaction
+Redirected to http://rpim.no-ip.org:3000/languages/1/word_genders
+Completed 302 Found in 113ms (ActiveRecord: 40.3ms)
+
+
+Started GET "/languages/1/word_genders" for 89.164.203.145 at 2013-02-26 22:42:48 +0100
+Processing by WordGendersController#index as HTML
+  Parameters: {"language_id"=>"1"}
+  [1m[36mLanguage Load (1.2ms)[0m  [1mSELECT "languages".* FROM "languages" WHERE "languages"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mWordGender Load (3.2ms)[0m  SELECT "word_genders".* FROM "word_genders" WHERE "word_genders"."language_id" = 1
+  Rendered word_genders/index.html.erb within layouts/application (38.7ms)
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 265ms (Views: 225.1ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 89.164.203.145 at 2013-02-26 22:42:49 +0100
+Served asset /application.css - 304 Not Modified (46ms)
+
+
+Started GET "/assets/languages.css?body=1" for 89.164.203.145 at 2013-02-26 22:42:49 +0100
+Served asset /languages.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 89.164.203.145 at 2013-02-26 22:42:49 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 89.164.203.145 at 2013-02-26 22:42:49 +0100
+Served asset /jquery.js - 304 Not Modified (51ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 89.164.203.145 at 2013-02-26 22:42:49 +0100
+Served asset /sessions.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 89.164.203.145 at 2013-02-26 22:42:49 +0100
+Served asset /word_gender.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/languages.js?body=1" for 89.164.203.145 at 2013-02-26 22:42:49 +0100
+Served asset /languages.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 89.164.203.145 at 2013-02-26 22:42:49 +0100
+Served asset /sessions.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 89.164.203.145 at 2013-02-26 22:42:49 +0100
+Served asset /word_gender.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 89.164.203.145 at 2013-02-26 22:42:49 +0100
+Served asset /application.js - 304 Not Modified (31ms)
+
+
+Started GET "/assets/rails.png" for 82.193.217.60 at 2013-02-27 14:01:14 +0100
+Connecting to database specified by database.yml
+Served asset /rails.png - 304 Not Modified (43ms)
+
+
+Started GET "/languages/1" for 82.193.217.60 at 2013-02-27 15:57:50 +0100
+Processing by LanguagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLanguage Load (3.8ms)[0m  [1mSELECT "languages".* FROM "languages" WHERE "languages"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered languages/show.html.erb within layouts/application (92.3ms)
+Completed 200 OK in 2304ms (Views: 1127.7ms | ActiveRecord: 52.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 82.193.217.60 at 2013-02-27 15:57:53 +0100
+Served asset /application.css - 304 Not Modified (206ms)
+
+
+Started GET "/assets/languages.css?body=1" for 82.193.217.60 at 2013-02-27 15:57:54 +0100
+Served asset /languages.css - 304 Not Modified (41ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 82.193.217.60 at 2013-02-27 15:57:54 +0100
+Served asset /word_gender.css - 304 Not Modified (38ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 82.193.217.60 at 2013-02-27 15:57:54 +0100
+Served asset /jquery.js - 304 Not Modified (289ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 82.193.217.60 at 2013-02-27 15:57:54 +0100
+Served asset /sessions.css - 304 Not Modified (91ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 82.193.217.60 at 2013-02-27 15:57:54 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (72ms)
+
+
+Started GET "/assets/languages.js?body=1" for 82.193.217.60 at 2013-02-27 15:57:54 +0100
+Served asset /languages.js - 304 Not Modified (31ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 82.193.217.60 at 2013-02-27 15:57:54 +0100
+Served asset /sessions.js - 304 Not Modified (31ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 82.193.217.60 at 2013-02-27 15:57:55 +0100
+Served asset /word_gender.js - 304 Not Modified (31ms)
+
+
+Started GET "/assets/application.js?body=1" for 82.193.217.60 at 2013-02-27 15:57:55 +0100
+Served asset /application.js - 304 Not Modified (137ms)
+
+
+Started GET "/languages/1/word_genders" for 82.193.217.60 at 2013-02-27 15:57:57 +0100
+Processing by WordGendersController#index as HTML
+  Parameters: {"language_id"=>"1"}
+  [1m[35mLanguage Load (1.4ms)[0m  SELECT "languages".* FROM "languages" WHERE "languages"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mWordGender Load (13.3ms)[0m  [1mSELECT "word_genders".* FROM "word_genders" WHERE "word_genders"."language_id" = 1[0m
+  Rendered word_genders/index.html.erb within layouts/application (121.9ms)
+Completed 200 OK in 1458ms (Views: 298.5ms | ActiveRecord: 53.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 82.193.217.60 at 2013-02-27 15:57:59 +0100
+Served asset /application.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/languages.css?body=1" for 82.193.217.60 at 2013-02-27 15:57:59 +0100
+Served asset /languages.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 82.193.217.60 at 2013-02-27 15:57:59 +0100
+Served asset /jquery.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 82.193.217.60 at 2013-02-27 15:57:59 +0100
+Served asset /word_gender.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 82.193.217.60 at 2013-02-27 15:57:59 +0100
+Served asset /sessions.css - 304 Not Modified (40ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 82.193.217.60 at 2013-02-27 15:57:59 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/languages.js?body=1" for 82.193.217.60 at 2013-02-27 15:57:59 +0100
+Served asset /languages.js - 304 Not Modified (38ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 82.193.217.60 at 2013-02-27 15:57:59 +0100
+Served asset /sessions.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 82.193.217.60 at 2013-02-27 15:57:59 +0100
+Served asset /word_gender.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/application.js?body=1" for 82.193.217.60 at 2013-02-27 15:57:59 +0100
+Served asset /application.js - 304 Not Modified (30ms)
+
+
+Started GET "/languages/1/word_genders" for 212.92.197.70 at 2013-02-27 15:58:40 +0100
+Processing by WordGendersController#index as HTML
+  Parameters: {"language_id"=>"1"}
+  [1m[35mLanguage Load (1.6ms)[0m  SELECT "languages".* FROM "languages" WHERE "languages"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mWordGender Load (3.5ms)[0m  [1mSELECT "word_genders".* FROM "word_genders" WHERE "word_genders"."language_id" = 1[0m
+  Rendered word_genders/index.html.erb within layouts/application (41.2ms)
+Completed 200 OK in 227ms (Views: 189.3ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/languages/1/word_genders" for 212.92.197.70 at 2013-02-27 15:58:40 +0100
+Processing by WordGendersController#index as HTML
+  Parameters: {"language_id"=>"1"}
+  [1m[35mLanguage Load (1.2ms)[0m  SELECT "languages".* FROM "languages" WHERE "languages"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mWordGender Load (3.0ms)[0m  [1mSELECT "word_genders".* FROM "word_genders" WHERE "word_genders"."language_id" = 1[0m
+  Rendered word_genders/index.html.erb within layouts/application (36.6ms)
+Completed 200 OK in 370ms (Views: 334.8ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 212.92.197.70 at 2013-02-27 15:58:40 +0100
+Served asset /application.css - 200 OK (23ms)
+
+
+Started GET "/assets/languages.css?body=1" for 212.92.197.70 at 2013-02-27 15:58:40 +0100
+Served asset /languages.css - 200 OK (5ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 212.92.197.70 at 2013-02-27 15:58:40 +0100
+Served asset /word_gender.css - 200 OK (7ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 212.92.197.70 at 2013-02-27 15:58:41 +0100
+Served asset /sessions.css - 200 OK (8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 212.92.197.70 at 2013-02-27 15:58:41 +0100
+Served asset /jquery.js - 200 OK (60ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 212.92.197.70 at 2013-02-27 15:58:41 +0100
+Served asset /jquery_ujs.js - 200 OK (4ms)
+
+
+Started GET "/assets/languages.js?body=1" for 212.92.197.70 at 2013-02-27 15:58:41 +0100
+Served asset /languages.js - 200 OK (6ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 212.92.197.70 at 2013-02-27 15:58:41 +0100
+Served asset /sessions.js - 200 OK (6ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 212.92.197.70 at 2013-02-27 15:58:41 +0100
+Served asset /word_gender.js - 200 OK (5ms)
+
+
+Started GET "/assets/application.js?body=1" for 212.92.197.70 at 2013-02-27 15:58:41 +0100
+Served asset /application.js - 200 OK (30ms)
+
+
+Started GET "/assets/application.css?body=1" for 212.92.197.70 at 2013-02-27 15:58:42 +0100
+Served asset /application.css - 200 OK (14ms)
+
+
+Started GET "/languages/1/word_genders" for 212.92.197.70 at 2013-02-27 15:58:42 +0100
+Processing by WordGendersController#index as HTML
+  Parameters: {"language_id"=>"1"}
+  [1m[35mLanguage Load (1.5ms)[0m  SELECT "languages".* FROM "languages" WHERE "languages"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mWordGender Load (3.2ms)[0m  [1mSELECT "word_genders".* FROM "word_genders" WHERE "word_genders"."language_id" = 1[0m
+  Rendered word_genders/index.html.erb within layouts/application (36.7ms)
+Completed 200 OK in 527ms (Views: 472.6ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/assets/languages.css?body=1" for 212.92.197.70 at 2013-02-27 15:58:43 +0100
+Served asset /languages.css - 200 OK (5ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 212.92.197.70 at 2013-02-27 15:58:43 +0100
+Served asset /sessions.css - 200 OK (3ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 212.92.197.70 at 2013-02-27 15:58:43 +0100
+Served asset /word_gender.css - 200 OK (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 212.92.197.70 at 2013-02-27 15:58:43 +0100
+Served asset /jquery.js - 200 OK (14ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 212.92.197.70 at 2013-02-27 15:58:43 +0100
+Served asset /jquery_ujs.js - 200 OK (5ms)
+
+
+Started GET "/assets/application.css?body=1" for 212.92.197.70 at 2013-02-27 15:58:43 +0100
+Served asset /application.css - 200 OK (36ms)
+
+
+Started GET "/assets/languages.css?body=1" for 212.92.197.70 at 2013-02-27 15:58:43 +0100
+Served asset /languages.css - 200 OK (7ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 212.92.197.70 at 2013-02-27 15:58:43 +0100
+Served asset /sessions.css - 200 OK (3ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 212.92.197.70 at 2013-02-27 15:58:44 +0100
+Served asset /word_gender.css - 200 OK (28ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 212.92.197.70 at 2013-02-27 15:58:45 +0100
+Served asset /jquery.js - 200 OK (12ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 212.92.197.70 at 2013-02-27 15:58:45 +0100
+Served asset /jquery_ujs.js - 200 OK (7ms)
+
+
+Started GET "/assets/languages.js?body=1" for 212.92.197.70 at 2013-02-27 15:58:45 +0100
+Served asset /languages.js - 200 OK (26ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 212.92.197.70 at 2013-02-27 15:58:45 +0100
+Served asset /sessions.js - 200 OK (5ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 212.92.197.70 at 2013-02-27 15:58:47 +0100
+Served asset /word_gender.js - 200 OK (27ms)
+
+
+Started GET "/assets/application.js?body=1" for 212.92.197.70 at 2013-02-27 15:58:47 +0100
+Served asset /application.js - 200 OK (54ms)
+
+
+Started GET "/assets/languages.js?body=1" for 212.92.197.70 at 2013-02-27 15:58:47 +0100
+Served asset /languages.js - 200 OK (6ms)
+
+
+Started GET "/assets/application.js?body=1" for 212.92.197.70 at 2013-02-27 15:58:49 +0100
+Served asset /application.js - 200 OK (78ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 212.92.197.70 at 2013-02-27 15:58:49 +0100
+Served asset /sessions.js - 200 OK (9ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 212.92.197.70 at 2013-02-27 15:58:49 +0100
+Served asset /word_gender.js - 200 OK (7ms)
+
+
+Started GET "/languages/1/word_genders" for 212.92.197.70 at 2013-02-27 15:58:52 +0100
+Processing by WordGendersController#index as HTML
+  Parameters: {"language_id"=>"1"}
+  [1m[35mLanguage Load (1.3ms)[0m  SELECT "languages".* FROM "languages" WHERE "languages"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mWordGender Load (3.2ms)[0m  [1mSELECT "word_genders".* FROM "word_genders" WHERE "word_genders"."language_id" = 1[0m
+  Rendered word_genders/index.html.erb within layouts/application (38.0ms)
+Completed 200 OK in 234ms (Views: 189.9ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 212.92.197.70 at 2013-02-27 15:58:53 +0100
+Served asset /application.css - 200 OK (58ms)
+
+
+Started GET "/assets/languages.css?body=1" for 212.92.197.70 at 2013-02-27 15:58:53 +0100
+Served asset /languages.css - 200 OK (5ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 212.92.197.70 at 2013-02-27 15:58:53 +0100
+Served asset /word_gender.css - 200 OK (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 212.92.197.70 at 2013-02-27 15:58:53 +0100
+Served asset /jquery.js - 200 OK (38ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 212.92.197.70 at 2013-02-27 15:58:53 +0100
+Served asset /jquery_ujs.js - 200 OK (6ms)
+
+
+Started GET "/assets/languages.js?body=1" for 212.92.197.70 at 2013-02-27 15:58:53 +0100
+Served asset /languages.js - 200 OK (6ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 212.92.197.70 at 2013-02-27 15:58:53 +0100
+Served asset /sessions.js - 200 OK (5ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 212.92.197.70 at 2013-02-27 15:58:54 +0100
+Served asset /word_gender.js - 200 OK (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 212.92.197.70 at 2013-02-27 15:58:54 +0100
+Served asset /application.js - 200 OK (27ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 212.92.197.70 at 2013-02-27 15:58:57 +0100
+Served asset /sessions.css - 200 OK (3ms)
+
+
+Started GET "/languages/1/word_genders/1/edit" for 212.92.197.70 at 2013-02-27 15:59:06 +0100
+Processing by WordGendersController#edit as HTML
+  Parameters: {"language_id"=>"1", "id"=>"1"}
+  [1m[35mLanguage Load (1.4ms)[0m  SELECT "languages".* FROM "languages" WHERE "languages"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mWordGender Load (5.5ms)[0m  [1mSELECT "word_genders".* FROM "word_genders" WHERE "word_genders"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered word_genders/_form.html.erb (484.4ms)
+  Rendered word_genders/edit.html.erb within layouts/application (585.3ms)
+Completed 200 OK in 782ms (Views: 734.5ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 212.92.197.70 at 2013-02-27 15:59:07 +0100
+Served asset /application.css - 200 OK (12ms)
+
+
+Started GET "/assets/languages.css?body=1" for 212.92.197.70 at 2013-02-27 15:59:07 +0100
+Served asset /languages.css - 200 OK (8ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 212.92.197.70 at 2013-02-27 15:59:07 +0100
+Served asset /word_gender.css - 200 OK (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 212.92.197.70 at 2013-02-27 15:59:07 +0100
+Served asset /jquery.js - 200 OK (14ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 212.92.197.70 at 2013-02-27 15:59:07 +0100
+Served asset /jquery_ujs.js - 200 OK (30ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 212.92.197.70 at 2013-02-27 15:59:07 +0100
+Served asset /sessions.css - 200 OK (5ms)
+
+
+Started GET "/assets/languages.js?body=1" for 212.92.197.70 at 2013-02-27 15:59:07 +0100
+Served asset /languages.js - 200 OK (3ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 212.92.197.70 at 2013-02-27 15:59:07 +0100
+Served asset /sessions.js - 200 OK (6ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 212.92.197.70 at 2013-02-27 15:59:08 +0100
+Served asset /word_gender.js - 200 OK (27ms)
+
+
+Started GET "/assets/application.js?body=1" for 212.92.197.70 at 2013-02-27 15:59:08 +0100
+Served asset /application.js - 200 OK (33ms)
+
+
+Started PUT "/languages/1/word_genders/1" for 212.92.197.70 at 2013-02-27 16:00:39 +0100
+Processing by WordGendersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vo3Nk4dKbzsYQ+O35WQWTcoOCuNVP7CZ33DtHHVyE9I=", "word_gender"=>{"name"=>"Male", "short_name"=>"M"}, "commit"=>"Save word gender", "language_id"=>"1", "id"=>"1"}
+  [1m[35mLanguage Load (1.4ms)[0m  SELECT "languages".* FROM "languages" WHERE "languages"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mWordGender Load (1.2ms)[0m  [1mSELECT "word_genders".* FROM "word_genders" WHERE "word_genders"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (1.8ms)[0m  begin transaction
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://rpim.no-ip.org:3000/languages/1/word_genders
+Completed 302 Found in 92ms (ActiveRecord: 6.8ms)
+
+
+Started GET "/languages/1/word_genders" for 212.92.197.70 at 2013-02-27 16:00:40 +0100
+Processing by WordGendersController#index as HTML
+  Parameters: {"language_id"=>"1"}
+  [1m[35mLanguage Load (1.4ms)[0m  SELECT "languages".* FROM "languages" WHERE "languages"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mWordGender Load (3.4ms)[0m  [1mSELECT "word_genders".* FROM "word_genders" WHERE "word_genders"."language_id" = 1[0m
+  Rendered word_genders/index.html.erb within layouts/application (38.9ms)
+Completed 200 OK in 236ms (Views: 198.6ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 212.92.197.70 at 2013-02-27 16:00:40 +0100
+Served asset /application.css - 200 OK (92ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 212.92.197.70 at 2013-02-27 16:00:41 +0100
+Served asset /jquery.js - 200 OK (10ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 212.92.197.70 at 2013-02-27 16:00:41 +0100
+Served asset /sessions.css - 200 OK (4ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 212.92.197.70 at 2013-02-27 16:00:41 +0100
+Served asset /word_gender.css - 200 OK (5ms)
+
+
+Started GET "/assets/languages.css?body=1" for 212.92.197.70 at 2013-02-27 16:00:41 +0100
+Served asset /languages.css - 200 OK (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 212.92.197.70 at 2013-02-27 16:00:41 +0100
+Served asset /jquery_ujs.js - 200 OK (6ms)
+
+
+Started GET "/assets/languages.js?body=1" for 212.92.197.70 at 2013-02-27 16:00:41 +0100
+Served asset /languages.js - 200 OK (3ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 212.92.197.70 at 2013-02-27 16:00:41 +0100
+Served asset /sessions.js - 200 OK (7ms)
+
+
+Started GET "/assets/application.js?body=1" for 212.92.197.70 at 2013-02-27 16:00:42 +0100
+Served asset /application.js - 200 OK (26ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 212.92.197.70 at 2013-02-27 16:00:42 +0100
+Served asset /word_gender.js - 200 OK (5ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 89.164.162.249 at 2013-02-27 19:32:54 +0100
+Served asset /rails.png - 200 OK (4ms)
+
+
+Started GET "/apple-touch-icon-precomposed.png" for 89.164.162.249 at 2013-02-27 19:32:54 +0100
+
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon-precomposed.png"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/pi/.rvm/rubies/ruby-1.9.3-p385/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/pi/.rvm/rubies/ruby-1.9.3-p385/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/pi/.rvm/rubies/ruby-1.9.3-p385/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/pi/.rvm/gems/ruby-1.9.3-p385@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (12.0ms)
+
+
+Started GET "/apple-touch-icon.png" for 89.164.162.249 at 2013-02-27 19:32:54 +0100
+
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon.png"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/pi/.rvm/rubies/ruby-1.9.3-p385/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/pi/.rvm/rubies/ruby-1.9.3-p385/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/pi/.rvm/rubies/ruby-1.9.3-p385/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/pi/.rvm/gems/ruby-1.9.3-p385@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (11.9ms)
+
+
+Started GET "/l" for 89.164.162.249 at 2013-02-27 19:32:55 +0100
+
+ActionController::RoutingError (No route matches [GET] "/l"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/pi/.rvm/rubies/ruby-1.9.3-p385/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/pi/.rvm/rubies/ruby-1.9.3-p385/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/pi/.rvm/rubies/ruby-1.9.3-p385/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/pi/.rvm/gems/ruby-1.9.3-p385@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (11.5ms)
+
+
+Started GET "/lan" for 89.164.162.249 at 2013-02-27 19:32:56 +0100
+
+ActionController::RoutingError (No route matches [GET] "/lan"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/pi/.rvm/rubies/ruby-1.9.3-p385/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/pi/.rvm/rubies/ruby-1.9.3-p385/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/pi/.rvm/rubies/ruby-1.9.3-p385/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/pi/.rvm/gems/ruby-1.9.3-p385@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (11.6ms)
+
+
+Started GET "/langu" for 89.164.162.249 at 2013-02-27 19:32:57 +0100
+
+ActionController::RoutingError (No route matches [GET] "/langu"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/pi/.rvm/rubies/ruby-1.9.3-p385/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/pi/.rvm/rubies/ruby-1.9.3-p385/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/pi/.rvm/rubies/ruby-1.9.3-p385/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/pi/.rvm/gems/ruby-1.9.3-p385@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (11.9ms)
+
+
+Started GET "/langua" for 89.164.162.249 at 2013-02-27 19:32:57 +0100
+
+ActionController::RoutingError (No route matches [GET] "/langua"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/pi/.rvm/rubies/ruby-1.9.3-p385/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/pi/.rvm/rubies/ruby-1.9.3-p385/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/pi/.rvm/rubies/ruby-1.9.3-p385/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/pi/.rvm/gems/ruby-1.9.3-p385@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (11.6ms)
+
+
+Started GET "/languag" for 89.164.162.249 at 2013-02-27 19:32:57 +0100
+
+ActionController::RoutingError (No route matches [GET] "/languag"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/pi/.rvm/rubies/ruby-1.9.3-p385/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/pi/.rvm/rubies/ruby-1.9.3-p385/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/pi/.rvm/rubies/ruby-1.9.3-p385/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/pi/.rvm/gems/ruby-1.9.3-p385@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (11.6ms)
+
+
+Started GET "/language" for 89.164.162.249 at 2013-02-27 19:32:58 +0100
+
+ActionController::RoutingError (No route matches [GET] "/language"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/pi/.rvm/rubies/ruby-1.9.3-p385/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/pi/.rvm/rubies/ruby-1.9.3-p385/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/pi/.rvm/rubies/ruby-1.9.3-p385/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/pi/.rvm/gems/ruby-1.9.3-p385@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (11.7ms)
+
+
+Started GET "/languages" for 89.164.162.249 at 2013-02-27 19:32:58 +0100
+Processing by LanguagesController#index as HTML
+  [1m[35mLanguage Load (3.8ms)[0m  SELECT "languages".* FROM "languages" 
+  Rendered languages/index.html.erb within layouts/application (180.1ms)
+Completed 200 OK in 594ms (Views: 391.9ms | ActiveRecord: 15.5ms)
+
+
+Started GET "/languages" for 89.164.162.249 at 2013-02-27 19:32:59 +0100
+Processing by LanguagesController#index as HTML
+  [1m[36mLanguage Load (4.5ms)[0m  [1mSELECT "languages".* FROM "languages" [0m
+  Rendered languages/index.html.erb within layouts/application (129.5ms)
+Completed 200 OK in 318ms (Views: 285.0ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/assets/languages.css?body=1" for 89.164.162.249 at 2013-02-27 19:33:00 +0100
+Served asset /languages.css - 200 OK (4ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 89.164.162.249 at 2013-02-27 19:33:00 +0100
+Served asset /sessions.css - 200 OK (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 89.164.162.249 at 2013-02-27 19:33:00 +0100
+Served asset /jquery.js - 200 OK (14ms)
+
+
+Started GET "/assets/languages.js?body=1" for 89.164.162.249 at 2013-02-27 19:33:01 +0100
+Served asset /languages.js - 200 OK (3ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 89.164.162.249 at 2013-02-27 19:33:01 +0100
+Served asset /sessions.js - 200 OK (3ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 89.164.162.249 at 2013-02-27 19:33:01 +0100
+Served asset /word_gender.js - 200 OK (3ms)
+
+
+Started GET "/lang" for 89.164.162.249 at 2013-02-27 19:33:02 +0100
+
+ActionController::RoutingError (No route matches [GET] "/lang"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/pi/.rvm/rubies/ruby-1.9.3-p385/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/pi/.rvm/rubies/ruby-1.9.3-p385/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/pi/.rvm/rubies/ruby-1.9.3-p385/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/pi/.rvm/gems/ruby-1.9.3-p385@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (12.8ms)
+
+
+Started GET "/assets/application.js?body=1" for 89.164.162.249 at 2013-02-27 19:33:02 +0100
+Served asset /application.js - 200 OK (28ms)
+
+
+Started GET "/assets/application.css?body=1" for 89.164.162.249 at 2013-02-27 19:33:05 +0100
+Served asset /application.css - 200 OK (13ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 89.164.162.249 at 2013-02-27 19:33:05 +0100
+Served asset /word_gender.css - 200 OK (28ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 89.164.162.249 at 2013-02-27 19:33:05 +0100
+Served asset /jquery_ujs.js - 200 OK (6ms)
+
+
+Started GET "/la" for 89.164.162.249 at 2013-02-27 19:33:06 +0100
+
+ActionController::RoutingError (No route matches [GET] "/la"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/pi/.rvm/rubies/ruby-1.9.3-p385/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/pi/.rvm/rubies/ruby-1.9.3-p385/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/pi/.rvm/rubies/ruby-1.9.3-p385/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/pi/.rvm/gems/ruby-1.9.3-p385@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (12.5ms)
+
+
+Started GET "/apple-touch-icon-precomposed.png" for 89.164.162.249 at 2013-02-27 19:33:06 +0100
+
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon-precomposed.png"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/pi/.rvm/rubies/ruby-1.9.3-p385/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/pi/.rvm/rubies/ruby-1.9.3-p385/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/pi/.rvm/rubies/ruby-1.9.3-p385/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/pi/.rvm/gems/ruby-1.9.3-p385@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (11.9ms)
+
+
+Started GET "/apple-touch-icon.png" for 89.164.162.249 at 2013-02-27 19:33:06 +0100
+
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon.png"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/pi/.rvm/rubies/ruby-1.9.3-p385/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/pi/.rvm/rubies/ruby-1.9.3-p385/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/pi/.rvm/rubies/ruby-1.9.3-p385/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/pi/.rvm/gems/ruby-1.9.3-p385@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (11.9ms)
+
+
+Started GET "/apple-touch-icon-precomposed.png" for 89.164.162.249 at 2013-02-27 19:33:07 +0100
+
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon-precomposed.png"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/pi/.rvm/rubies/ruby-1.9.3-p385/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/pi/.rvm/rubies/ruby-1.9.3-p385/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/pi/.rvm/rubies/ruby-1.9.3-p385/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/pi/.rvm/gems/ruby-1.9.3-p385@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (22.6ms)
+
+
+Started GET "/languages/1" for 89.164.162.249 at 2013-02-27 19:33:14 +0100
+Processing by LanguagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLanguage Load (3.5ms)[0m  SELECT "languages".* FROM "languages" WHERE "languages"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered languages/show.html.erb within layouts/application (19.4ms)
+Completed 200 OK in 457ms (Views: 431.1ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/apple-touch-icon-precomposed.png" for 89.164.162.249 at 2013-02-27 19:33:16 +0100
+
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon-precomposed.png"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/pi/.rvm/rubies/ruby-1.9.3-p385/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/pi/.rvm/rubies/ruby-1.9.3-p385/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/pi/.rvm/rubies/ruby-1.9.3-p385/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/pi/.rvm/gems/ruby-1.9.3-p385@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (12.4ms)
+
+
+Started GET "/apple-touch-icon.png" for 89.164.162.249 at 2013-02-27 19:33:16 +0100
+
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon.png"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/pi/.rvm/rubies/ruby-1.9.3-p385/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/pi/.rvm/rubies/ruby-1.9.3-p385/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/pi/.rvm/rubies/ruby-1.9.3-p385/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/pi/.rvm/gems/ruby-1.9.3-p385@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (12.0ms)
+
+
+Started GET "/languages/1/word_genders" for 89.164.162.249 at 2013-02-27 19:33:18 +0100
+Processing by WordGendersController#index as HTML
+  Parameters: {"language_id"=>"1"}
+  [1m[36mLanguage Load (1.5ms)[0m  [1mSELECT "languages".* FROM "languages" WHERE "languages"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mWordGender Load (3.2ms)[0m  SELECT "word_genders".* FROM "word_genders" WHERE "word_genders"."language_id" = 1
+  Rendered word_genders/index.html.erb within layouts/application (55.5ms)
+Completed 200 OK in 446ms (Views: 217.5ms | ActiveRecord: 13.0ms)
+
+
+Started GET "/apple-touch-icon-precomposed.png" for 89.164.162.249 at 2013-02-27 19:33:20 +0100
+
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon-precomposed.png"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/pi/.rvm/rubies/ruby-1.9.3-p385/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/pi/.rvm/rubies/ruby-1.9.3-p385/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/pi/.rvm/rubies/ruby-1.9.3-p385/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/pi/.rvm/gems/ruby-1.9.3-p385@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (11.8ms)
+
+
+Started GET "/apple-touch-icon.png" for 89.164.162.249 at 2013-02-27 19:33:20 +0100
+
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon.png"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/pi/.rvm/rubies/ruby-1.9.3-p385/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/pi/.rvm/rubies/ruby-1.9.3-p385/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/pi/.rvm/rubies/ruby-1.9.3-p385/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/pi/.rvm/gems/ruby-1.9.3-p385@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (12.1ms)
+
+
+Started GET "/apple-touch-icon-precomposed.png" for 89.164.162.249 at 2013-02-27 19:33:25 +0100
+
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon-precomposed.png"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/pi/.rvm/rubies/ruby-1.9.3-p385/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/pi/.rvm/rubies/ruby-1.9.3-p385/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/pi/.rvm/rubies/ruby-1.9.3-p385/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/pi/.rvm/gems/ruby-1.9.3-p385@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (11.7ms)
+
+
+Started GET "/apple-touch-icon.png" for 89.164.162.249 at 2013-02-27 19:33:25 +0100
+
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon.png"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/pi/.rvm/rubies/ruby-1.9.3-p385/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/pi/.rvm/rubies/ruby-1.9.3-p385/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/pi/.rvm/rubies/ruby-1.9.3-p385/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/pi/.rvm/gems/ruby-1.9.3-p385@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (12.2ms)
+Connecting to database specified by database.yml
