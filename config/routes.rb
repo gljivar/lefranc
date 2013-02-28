@@ -5,7 +5,7 @@ Lefranc::Application.routes.draw do
 		resources :word_genders
 	end
 	
-	#root :to => "languages#index"
+  root :to => "languages#index"
 	
 			
 	match "/auth/:provider/callback" => "sessions#create"
