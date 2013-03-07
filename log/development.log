@@ -8771,3 +8771,51 @@ Migrating to CreatePersonGenders (20130227163427)
   [1m[35m (74.7ms)[0m  commit transaction
   [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
 Connecting to database specified by database.yml
+
+
+Started GET "/" for 82.193.217.60 at 2013-03-07 17:09:23 +0100
+Connecting to database specified by database.yml
+Processing by LanguagesController#index as HTML
+  [1m[36mLanguage Load (4.3ms)[0m  [1mSELECT "languages".* FROM "languages" [0m
+  Rendered languages/index.html.erb within layouts/application (238.2ms)
+Completed 200 OK in 2761ms (Views: 1653.6ms | ActiveRecord: 59.6ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 82.193.217.60 at 2013-03-07 17:09:35 +0100
+Served asset /sessions.css - 304 Not Modified (125ms)
+
+
+Started GET "/assets/languages.css?body=1" for 82.193.217.60 at 2013-03-07 17:09:35 +0100
+Served asset /languages.css - 304 Not Modified (40ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 82.193.217.60 at 2013-03-07 17:09:35 +0100
+Served asset /word_gender.css - 304 Not Modified (40ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 82.193.217.60 at 2013-03-07 17:09:35 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (58ms)
+
+
+Started GET "/assets/application.css?body=1" for 82.193.217.60 at 2013-03-07 17:09:35 +0100
+Served asset /application.css - 304 Not Modified (187ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 82.193.217.60 at 2013-03-07 17:09:35 +0100
+Served asset /jquery.js - 304 Not Modified (62ms)
+
+
+Started GET "/assets/languages.js?body=1" for 82.193.217.60 at 2013-03-07 17:09:35 +0100
+Served asset /languages.js - 304 Not Modified (35ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 82.193.217.60 at 2013-03-07 17:09:36 +0100
+Served asset /sessions.js - 304 Not Modified (36ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 82.193.217.60 at 2013-03-07 17:09:36 +0100
+Served asset /word_gender.js - 304 Not Modified (35ms)
+
+
+Started GET "/assets/application.js?body=1" for 82.193.217.60 at 2013-03-07 17:09:36 +0100
+Served asset /application.js - 304 Not Modified (321ms)
