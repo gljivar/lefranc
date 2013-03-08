@@ -8819,3 +8819,53 @@ Served asset /word_gender.js - 304 Not Modified (35ms)
 
 Started GET "/assets/application.js?body=1" for 82.193.217.60 at 2013-03-07 17:09:36 +0100
 Served asset /application.js - 304 Not Modified (321ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-08 00:31:30 +0100
+Connecting to database specified by database.yml
+Processing by LanguagesController#index as HTML
+  [1m[36mLanguage Load (0.1ms)[0m  [1mSELECT "languages".* FROM "languages" [0m
+  Rendered languages/index.html.erb within layouts/application (30.2ms)
+Compiled application.js  (72ms)  (pid 2215)
+Completed 200 OK in 392ms (Views: 297.0ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-08 00:31:31 +0100
+Served asset /application.css - 200 OK (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-08 00:31:31 +0100
+Served asset /jquery_ujs.js - 200 OK (5ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-08 00:31:31 +0100
+Served asset /languages.css - 200 OK (1ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-08 00:31:31 +0100
+Served asset /languages.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-08 00:31:31 +0100
+Served asset /jquery.js - 200 OK (5ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-08 00:31:31 +0100
+Served asset /sessions.css - 200 OK (1ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-08 00:31:31 +0100
+Served asset /word_gender.css - 200 OK (1ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-08 00:31:31 +0100
+Served asset /word_gender.js - 200 OK (1ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-08 00:31:31 +0100
+Served asset /sessions.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-08 00:31:31 +0100
+Served asset /application.js - 200 OK (15ms)
+Connecting to database specified by database.yml
