@@ -1,9 +1,11 @@
 class LanguageObject < ActiveRecord::Base
+  # Self referential association
+
   belongs_to :language
   belongs_to :user
-  belongs_to :language_object
 
-  has_many :language_object
+  has_many :translations
+  has_many :language_objects, :through => :translations
 
-  attr_accessible :meaning, :text
+  attr_accessible :meaning, :text, :translations
 end
