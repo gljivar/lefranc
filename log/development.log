@@ -9875,3 +9875,57 @@ Served asset /application.js - 304 Not Modified (2ms)
 
 Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-13 01:38:10 +0100
 Served asset /word_gender.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/languages" for 127.0.0.1 at 2013-03-14 00:06:19 +0100
+Processing by LanguagesController#index as HTML
+  [1m[36mLanguage Load (0.2ms)[0m  [1mSELECT "languages".* FROM "languages" [0m
+  Rendered languages/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 130ms (Views: 82.9ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-14 00:06:20 +0100
+Served asset /languages.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-14 00:06:20 +0100
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-14 00:06:20 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-14 00:06:20 +0100
+Served asset /word_gender.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-14 00:06:20 +0100
+Served asset /sessions.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-14 00:06:20 +0100
+Served asset /languages.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-14 00:06:20 +0100
+Served asset /sessions.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-14 00:06:20 +0100
+Served asset /word_gender.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-14 00:06:20 +0100
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-14 00:06:20 +0100
+Served asset /jquery.js - 304 Not Modified (3ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml

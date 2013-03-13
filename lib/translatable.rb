@@ -5,7 +5,7 @@ module Translatable
    base.validate :language_object_properties_must_be_valid
    base.alias_method_chain :language_object, :autobuild
    base.extend ClassMethods
-   base.define_product_properties_accessors
+   base.define_language_object_accessors
   end
 
   def language_object_with_autobuild
@@ -23,7 +23,7 @@ module Translatable
     all_attributes = LanguageObject.content_columns.map(&:name)
     ignored_attributes = ["created_at", "updated_at", "translatable_type"]
     attributes_to_delegate = all_attributes - ignored_attributes
-    attributes_to_delgate.each do |attrib|
+    attributes_to_delegate.each do |attrib|
      class_eval <<-RUBY
       def #{attrib}
        language_object.#{attrib}
