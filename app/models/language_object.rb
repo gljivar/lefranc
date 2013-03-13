@@ -1,6 +1,9 @@
 class LanguageObject < ActiveRecord::Base
   # Self referential association
-
+  # Parent of translatable objects 
+ 
+  belongs_to :translatable, :polymorphic => true, :dependent => :destroy
+ 
   belongs_to :language
   belongs_to :user
 

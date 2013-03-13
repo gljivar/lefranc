@@ -11,15 +11,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130309173011) do
+ActiveRecord::Schema.define(:version => 20130313003043) do
 
   create_table "language_objects", :force => true do |t|
     t.integer  "language_id"
     t.integer  "user_id"
     t.string   "text"
     t.string   "meaning"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.datetime "created_at",        :null => false
+    t.datetime "updated_at",        :null => false
+    t.integer  "translatable_id"
+    t.string   "translatable_type"
   end
 
   add_index "language_objects", ["language_id"], :name => "index_language_objects_on_language_id"
@@ -61,5 +63,13 @@ ActiveRecord::Schema.define(:version => 20130309173011) do
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end
+
+  create_table "words", :force => true do |t|
+    t.integer  "word_gender_id"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+  end
+
+  add_index "words", ["word_gender_id"], :name => "index_words_on_word_gender_id"
 
 end
