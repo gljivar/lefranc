@@ -2,7 +2,7 @@ module Translatable
 
   def self.included(base)
    base.has_one :language_object, :as => :translatable, :autosave => true
-   base.validate :language_object_properties_must_be_valid
+   base.validate :language_object_must_be_valid
    base.alias_method_chain :language_object, :autobuild
    base.extend ClassMethods
    base.define_language_object_accessors
