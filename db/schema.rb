@@ -11,7 +11,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130315002605) do
+ActiveRecord::Schema.define(:version => 20130315201743) do
+
+  create_table "groups", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at",          :null => false
+    t.datetime "updated_at",          :null => false
+    t.integer  "native_language_id"
+    t.integer  "foreign_language_id"
+  end
 
   create_table "language_objects", :force => true do |t|
     t.integer  "language_id"
@@ -40,6 +48,7 @@ ActiveRecord::Schema.define(:version => 20130315002605) do
     t.text     "summary"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.integer  "group_id"
   end
 
   create_table "person_genders", :force => true do |t|

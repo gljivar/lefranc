@@ -3,4 +3,6 @@ class Lesson < ActiveRecord::Base
 
   has_many :language_objects
 
+  belongs_to :group
+
 end
