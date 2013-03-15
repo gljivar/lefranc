@@ -10078,3 +10078,28 @@ Served asset /sessions.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-15 00:52:42 +0100
 Served asset /application.js - 304 Not Modified (2ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (2.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateLanguages (20130218232836)
+Migrating to CreateUsers (20130223003912)
+Migrating to CreateWordGenders (20130223202347)
+Migrating to CreatePersonGenders (20130227163427)
+Migrating to CreateLanguageObjects (20130308000145)
+Migrating to CreateTranslations (20130309173011)
+Migrating to AddTranslatableToLanguageObject (20130313001720)
+Migrating to CreateWords (20130313003043)
+Migrating to CreateLessons (20130315002344)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "lessons" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "summary" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130315002344')[0m
+  [1m[35m (120.3ms)[0m  commit transaction
+Migrating to AddLessonToLanguageObject (20130315002605)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.1ms)[0m  ALTER TABLE "language_objects" ADD "lesson_id" integer
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130315002605')[0m
+  [1m[35m (16.1ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml

@@ -6,6 +6,7 @@ class LanguageObject < ActiveRecord::Base
  
   belongs_to :language
   belongs_to :user
+  belongs_to :lesson
 
   has_many :translations
   has_many :language_objects, :through => :translations

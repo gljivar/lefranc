@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130313003043) do
+ActiveRecord::Schema.define(:version => 20130315002605) do
 
   create_table "language_objects", :force => true do |t|
     t.integer  "language_id"
@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(:version => 20130313003043) do
     t.datetime "updated_at",        :null => false
     t.integer  "translatable_id"
     t.string   "translatable_type"
+    t.integer  "lesson_id"
   end
 
   add_index "language_objects", ["language_id"], :name => "index_language_objects_on_language_id"
@@ -32,6 +33,13 @@ ActiveRecord::Schema.define(:version => 20130313003043) do
     t.string   "english_name"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
+  end
+
+  create_table "lessons", :force => true do |t|
+    t.string   "name"
+    t.text     "summary"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "person_genders", :force => true do |t|
