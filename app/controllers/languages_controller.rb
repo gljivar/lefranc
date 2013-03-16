@@ -2,10 +2,21 @@ class LanguagesController < ApplicationController
 	before_filter :find_language, :only => [:show, :edit, :update, :destroy]	
 
 	def index
-		@languages = Language.all			
+		@languages = Language.all
+
+                respond_to do |format|
+                    format.html
+                    format.json { render :json => @languages}
+                end
 	end
 
 	def show
+            @language = Language.find(params[:id])
+
+            respond_to do |format|
+                format.html
+                format.json { render :json => @language }
+            end
 	end
 
 	def new
@@ -14,11 +25,18 @@ class LanguagesController < ApplicationController
 
 	def create
 		@language = Language.new(params[:language])
-	
-		if @language.save	
-			redirect_to languages_path, :notice => "Your post was saved"	
-		else
-			render "new"	
+
+                respond_to do |format|
+                    if @language.save
+                        format.html { redirect_to(@language,
+                                        :notice => "Language was successfully created.") }
+                        format.json { render :json =>@language,
+                                        :status => :created, :location => @language }
+		    else
+			format.html { render :action => "new" }
+                        format.json { render :json => @language.errors,
+                                        :status => :unprocessable_entity }
+                    end
 		end
 	end
 
@@ -26,16 +44,27 @@ class LanguagesController < ApplicationController
 	end
 
 	def update
-		if @language.update_attributes(params[:language])	
-			redirect_to languages_path, :notice => "Language has been updated"
-		else
-			render "edit"
-		end	
+                respond_to do |format|
+        		if @language.update_attributes(params[:language])
+                            format.html { redirect_to languages_path,
+                                            :notice => "Language has been updated" }
+                            format.json { head :no_content }
+        		else
+                            format.html { render :action => "edit" }
+        			format.json { render :json => @language.errors,
+                                                :status => :unprocessable_entity }
+		        end	
+                end
 	end
 
 	def destroy
 		@language.destroy
-		redirect_to languages_path, :notice => "Language has been deleted"	
+
+                respond_to do |format|
+                    format.html { redirect_to languages_path,
+                                    :notice => "Language has been deleted" }
+                    format.json { head :no_content }
+                end
 	end
 	
 	protected
