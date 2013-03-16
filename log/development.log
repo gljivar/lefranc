@@ -10699,3 +10699,36 @@ Migrating to CreateGroupUsers (20130316125022)
 Connecting to database specified by database.yml
 Connecting to database specified by database.yml
 Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (1.4ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateLanguages (20130218232836)
+Migrating to CreateUsers (20130223003912)
+Migrating to CreateWordGenders (20130223202347)
+Migrating to CreatePersonGenders (20130227163427)
+Migrating to CreateLanguageObjects (20130308000145)
+Migrating to CreateTranslations (20130309173011)
+Migrating to AddTranslatableToLanguageObject (20130313001720)
+Migrating to CreateWords (20130313003043)
+Migrating to CreateLessons (20130315002344)
+Migrating to AddLessonToLanguageObject (20130315002605)
+Migrating to CreateGroups (20130315200137)
+Migrating to AddNativeAndForeignLanguageToGroup (20130315200651)
+Migrating to AddGroupToLesson (20130315201743)
+Migrating to AddUserToGroupLanguageLessonWordGender (20130316115517)
+Migrating to CreateGroupUsers (20130316125022)
+Migrating to AddOAuthColumnsToUser (20130316191103)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  ALTER TABLE "users" ADD "email" varchar(255)
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "users" ADD "nickname" varchar(255)[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" ADD "first_name" varchar(255)
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "users" ADD "last_name" varchar(255)[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" ADD "description" varchar(255)
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "users" ADD "image" varchar(255)[0m
+  [1m[35m (1.0ms)[0m  ALTER TABLE "users" ADD "phone" varchar(255)
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "users" ADD "token" varchar(255)[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" ADD "secret" varchar(255)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130316191103')[0m
+  [1m[35m (76.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
