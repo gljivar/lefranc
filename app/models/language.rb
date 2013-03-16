@@ -3,6 +3,8 @@ class Language < ActiveRecord::Base
   
   has_many :word_genders , :inverse_of => :language
 
+  belongs_to :user
+
   validates :name, :english_name, :presence => true
   validates :name, :length => { :minimum => 2 }
   validates :name, :uniqueness => true

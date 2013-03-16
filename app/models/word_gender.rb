@@ -5,4 +5,6 @@ class WordGender < ActiveRecord::Base
 
   belongs_to :language , :inverse_of => :word_genders
 
+  belongs_to :user
+
 end

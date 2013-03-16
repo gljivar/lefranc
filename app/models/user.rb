@@ -8,4 +8,8 @@ class User < ActiveRecord::Base
 		user.name = auth["info"]["name"]
 	end
   end
+
+  has_many :group_users
+  has_many :groups, :through => :group_users 
+
 end

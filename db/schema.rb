@@ -11,7 +11,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130315201743) do
+ActiveRecord::Schema.define(:version => 20130316125022) do
+
+  create_table "group_users", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "group_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "group_users", ["group_id"], :name => "index_group_users_on_group_id"
+  add_index "group_users", ["user_id"], :name => "index_group_users_on_user_id"
 
   create_table "groups", :force => true do |t|
     t.string   "name"
@@ -19,6 +29,7 @@ ActiveRecord::Schema.define(:version => 20130315201743) do
     t.datetime "updated_at",          :null => false
     t.integer  "native_language_id"
     t.integer  "foreign_language_id"
+    t.integer  "user_id"
   end
 
   create_table "language_objects", :force => true do |t|
@@ -41,6 +52,7 @@ ActiveRecord::Schema.define(:version => 20130315201743) do
     t.string   "english_name"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
+    t.integer  "user_id"
   end
 
   create_table "lessons", :force => true do |t|
@@ -49,6 +61,7 @@ ActiveRecord::Schema.define(:version => 20130315201743) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
     t.integer  "group_id"
+    t.integer  "user_id"
   end
 
   create_table "person_genders", :force => true do |t|
@@ -79,6 +92,7 @@ ActiveRecord::Schema.define(:version => 20130315201743) do
     t.integer  "language_id"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
+    t.integer  "user_id"
   end
 
   create_table "words", :force => true do |t|
