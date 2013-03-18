@@ -1,5 +1,7 @@
 Lefranc::Application.routes.draw do
 
+  resources :groups
+
   resources :users 
   
   get "word_gender/index"

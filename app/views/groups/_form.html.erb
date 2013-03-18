@@ -1,0 +1,35 @@
+<%= form_for(@group) do |f| %>
+  <% if @group.errors.any? %>
+     <h2>Errors:</h2>
+      <ul>
+        <% @group.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+        <% end %>
+      </ul>
+  <% end %>
+
+
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+
+
+  <div class="field">
+    <%= f.label :native_language %><br />
+    <%= collection_select(:group, :native_language_id, Language.all, :id, :name) %>
+  </div>
+
+
+  <div class="field">
+    <%= f.label :foreign_language %><br />
+    <%= collection_select(:group, :foreign_language_id, Language.all, :id, :name) %>
+  </div>
+
+  <br/>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
