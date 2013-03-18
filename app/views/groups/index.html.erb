@@ -8,6 +8,7 @@
     <th></th>
     <th></th>
     <th></th>
+    <th></th>
   </tr>
 
 <% @groups.each do |group| %>
@@ -15,6 +16,7 @@
     <td><%= group.name %></td>
     <td><%= group.native_language.name %></td>
     <td><%= group.foreign_language.name %></td>
+    <td> #TODO: JOIN / GET OUT </td>
     <td><%= link_to 'Show', group %></td>
     <td><%= link_to 'Edit', edit_group_path(group) %></td>
     <td><%= link_to 'Destroy', group, method: :delete, data: { confirm: 'Are you sure?' } %></td>

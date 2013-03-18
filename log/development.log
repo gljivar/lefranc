@@ -19808,3 +19808,136 @@ Served asset /word_gender.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-19 00:23:53 +0100
 Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-19 00:24:43 +0100
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered home/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 11ms (Views: 10.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-03-19 00:24:44 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-19 00:24:44 +0100
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-19 00:24:44 +0100
+Served asset /languages.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-19 00:24:44 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-19 00:24:44 +0100
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-19 00:24:44 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-19 00:24:44 +0100
+Served asset /word_gender.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-03-19 00:24:44 +0100
+Served asset /home.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-19 00:24:44 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-19 00:24:44 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-19 00:24:44 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-19 00:24:44 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-19 00:24:44 +0100
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-19 00:24:44 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/groups" for 127.0.0.1 at 2013-03-19 00:36:15 +0100
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.9ms)[0m  [1mSELECT "groups".* FROM "groups" [0m
+  [1m[35mLanguage Load (0.1ms)[0m  SELECT "languages".* FROM "languages" WHERE "languages"."id" = 1 LIMIT 1
+  [1m[36mLanguage Load (0.1ms)[0m  [1mSELECT "languages".* FROM "languages" WHERE "languages"."id" = 3 LIMIT 1[0m
+  [1m[35mLanguage Load (0.2ms)[0m  SELECT "languages".* FROM "languages" WHERE "languages"."id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "languages".* FROM "languages" WHERE "languages"."id" = 3 LIMIT 1[0m
+  Rendered groups/index.html.erb within layouts/application (25.7ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 103ms (Views: 89.7ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-19 00:36:15 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-03-19 00:36:15 +0100
+Served asset /home.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-19 00:36:15 +0100
+Served asset /word_gender.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-19 00:36:15 +0100
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-19 00:36:15 +0100
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-19 00:36:15 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-19 00:36:15 +0100
+Served asset /languages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-03-19 00:36:15 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-19 00:36:15 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-19 00:36:15 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-19 00:36:15 +0100
+Served asset /sessions.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-19 00:36:15 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-19 00:36:15 +0100
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-19 00:36:15 +0100
+Served asset /user.js - 304 Not Modified (0ms)
