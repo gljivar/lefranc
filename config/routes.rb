@@ -1,17 +1,20 @@
 Lefranc::Application.routes.draw do
+
+  resources :users 
+  
   get "word_gender/index"
 
-	resources :languages do
-		resources :word_genders
-	end
+  resources :languages do
+    resources :word_genders
+  end
 
-	resources :translations
+  resources :translations
 	
   root :to => "languages#index"
 	
 			
-	match "/auth/:provider/callback" => "sessions#create"
-	match "/signout" => "sessions#destroy", :as => :signout
+  match "/auth/:provider/callback" => "sessions#create"
+  match "/signout" => "sessions#destroy", :as => :signout
 	
   # The priority is based upon order of creation:
   # first created -> highest priority.

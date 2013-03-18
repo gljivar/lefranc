@@ -1,0 +1,13 @@
+<h1><%= @user.name %></h1>
+
+<p>
+  Description :
+  </br>
+  <%= @user.description %>
+</p>
+
+<p>
+  Joined : <%= @user.created_at %>
+</p>
+
+<p><%= link_to "Users", users_path %></p>

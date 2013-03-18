@@ -1,0 +1,12 @@
+<h1>Users</h1>
+
+<% @users.each do | user | %>
+
+	<h2><%= link_to user.name, user %></h2> 
+	<p>
+		<%= link_to "Edit", edit_user_path(user) %>
+		<%= link_to "Delete", user, :confirm => "Are you sure?", :method => :delete %>	
+	</p>	
+	</hr>
+
+<% end %>
