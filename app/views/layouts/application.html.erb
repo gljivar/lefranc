@@ -10,13 +10,10 @@
 
 <div id="user_nav">
 	<% if current_user %>
-		Welcome <%=current_user.name %>
+		<%=current_user.name %>
 		<%= link_to "Sign out", signout_path %>
 	<% else %>	
-		<%= link_to "Sign with Facebook", "/auth/facebook" %>
-		<%= link_to "Sign with Twitter", "/auth/twitter" %>	
-		<%= link_to "Sign with Google", "/auth/google_oauth2" %>
-		<%= link_to "Sign with Windows Live ID", "/auth/windowslive" %>
+		<%= link_to "Sign in / Sign up", "/sessions/index" %>	
 	<% end %>
 </div>
 <% flash.each do |key, value| %>

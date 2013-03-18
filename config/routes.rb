@@ -1,5 +1,7 @@
 Lefranc::Application.routes.draw do
 
+  get "home/index"
+
   resources :groups
 
   resources :users 
@@ -12,9 +14,10 @@ Lefranc::Application.routes.draw do
 
   resources :translations
 	
-  root :to => "languages#index"
-	
-			
+  root :to => "home#index"
+
+  # Authentication via providers	
+  get "sessions/index"
   match "/auth/:provider/callback" => "sessions#create"
   match "/signout" => "sessions#destroy", :as => :signout
 	

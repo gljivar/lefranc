@@ -1,0 +1,11 @@
+<% if current_user %>
+   <h1>Welcome <%=current_user.name %></h1>
+   <%= link_to "Sign out", signout_path %>
+<% else %>
+   <h1>Join the service using one of the following providers</h1>
+   <%= link_to "Sign with Facebook", "/auth/facebook" %></br>
+   <%= link_to "Sign with Twitter", "/auth/twitter" %></br>
+   <%= link_to "Sign with Google", "/auth/google_oauth2" %></br>
+   <%= link_to "Sign with Windows Live ID", "/auth/windowslive" %></br>
+<% end %>
+

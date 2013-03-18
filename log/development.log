@@ -17047,3 +17047,2633 @@ Served asset /application.js - 304 Not Modified (2ms)
 
 Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-18 22:30:45 +0100
 Served asset /word_gender.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/home" for 127.0.0.1 at 2013-03-18 23:09:05 +0100
+
+ActionController::RoutingError (No route matches [GET] "/home"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/miroslav/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/miroslav/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/miroslav/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/home" for 127.0.0.1 at 2013-03-18 23:11:16 +0100
+
+ActionController::RoutingError (No route matches [GET] "/home"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/miroslav/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/miroslav/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/miroslav/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-18 23:11:19 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Compiled home_controller.css  (5ms)  (pid 19470)
+Compiled application.css  (12ms)  (pid 19470)
+Compiled home_controller.js  (115ms)  (pid 19470)
+Compiled application.js  (124ms)  (pid 19470)
+Completed 200 OK in 278ms (Views: 277.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-18 23:11:19 +0100
+Served asset /application.css - 304 Not Modified (19ms)
+
+
+Started GET "/assets/home_controller.css?body=1" for 127.0.0.1 at 2013-03-18 23:11:19 +0100
+Served asset /home_controller.css - 200 OK (6ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-18 23:11:19 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-18 23:11:19 +0100
+Served asset /languages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-18 23:11:19 +0100
+Served asset /word_gender.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-18 23:11:19 +0100
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-18 23:11:19 +0100
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-18 23:11:19 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home_controller.js?body=1" for 127.0.0.1 at 2013-03-18 23:11:19 +0100
+Served asset /home_controller.js - 200 OK (1ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-18 23:11:19 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-18 23:11:19 +0100
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-18 23:11:19 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-18 23:11:19 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-18 23:11:19 +0100
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-18 23:20:42 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-18 23:20:42 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home_controller.css?body=1" for 127.0.0.1 at 2013-03-18 23:20:42 +0100
+Served asset /home_controller.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-18 23:20:42 +0100
+Served asset /word_gender.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-18 23:20:42 +0100
+Served asset /user.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-18 23:20:42 +0100
+Served asset /languages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-18 23:20:42 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-18 23:20:42 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-18 23:20:42 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home_controller.js?body=1" for 127.0.0.1 at 2013-03-18 23:20:42 +0100
+Served asset /home_controller.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-18 23:20:42 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-18 23:20:42 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-18 23:20:42 +0100
+Served asset /word_gender.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-18 23:20:42 +0100
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-18 23:20:42 +0100
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/sessions/index" for 127.0.0.1 at 2013-03-18 23:20:48 +0100
+Processing by SessionsController#index as HTML
+  Rendered sessions/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 12ms (Views: 11.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-18 23:20:48 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-18 23:20:48 +0100
+Served asset /languages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-18 23:20:48 +0100
+Served asset /user.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-18 23:20:48 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-18 23:20:48 +0100
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home_controller.css?body=1" for 127.0.0.1 at 2013-03-18 23:20:48 +0100
+Served asset /home_controller.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-18 23:20:48 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-18 23:20:48 +0100
+Served asset /word_gender.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home_controller.js?body=1" for 127.0.0.1 at 2013-03-18 23:20:48 +0100
+Served asset /home_controller.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-18 23:20:48 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-18 23:20:48 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-18 23:20:48 +0100
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-18 23:20:48 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-18 23:20:48 +0100
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/sessions/index" for 127.0.0.1 at 2013-03-18 23:21:38 +0100
+Processing by SessionsController#index as HTML
+  Rendered sessions/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 17ms (Views: 16.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-18 23:21:38 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home_controller.css?body=1" for 127.0.0.1 at 2013-03-18 23:21:38 +0100
+Served asset /home_controller.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-18 23:21:38 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-18 23:21:38 +0100
+Served asset /word_gender.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-18 23:21:38 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-18 23:21:38 +0100
+Served asset /languages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-18 23:21:38 +0100
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home_controller.js?body=1" for 127.0.0.1 at 2013-03-18 23:21:38 +0100
+Served asset /home_controller.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-18 23:21:38 +0100
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-18 23:21:38 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-18 23:21:38 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-18 23:21:38 +0100
+Served asset /user.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-18 23:21:38 +0100
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-18 23:21:38 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2013-03-18 23:23:21 +0100
+
+
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2013-03-18 23:23:30 +0100
+
+
+Started GET "/auth/google_oauth2/callback?state=726ac82db2e238651628395f564e22af93d63f5f9785dc24&code=4/DA2Mcnd7ZWyUOF2p1EzuxZmI-KuZ.0u3HUVqcuY8VOl05ti8ZT3Zf_zb_egI" for 127.0.0.1 at 2013-03-18 23:23:30 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"state"=>"726ac82db2e238651628395f564e22af93d63f5f9785dc24", "code"=>"4/DA2Mcnd7ZWyUOF2p1EzuxZmI-KuZ.0u3HUVqcuY8VOl05ti8ZT3Zf_zb_egI", "provider"=>"google_oauth2"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."provider" = 'google_oauth2' AND "users"."uid" = '100371985937826485566' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 62ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-18 23:23:31 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 14ms (Views: 13.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-18 23:23:31 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-18 23:23:31 +0100
+Served asset /user.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home_controller.css?body=1" for 127.0.0.1 at 2013-03-18 23:23:31 +0100
+Served asset /home_controller.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-18 23:23:31 +0100
+Served asset /word_gender.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-18 23:23:31 +0100
+Served asset /languages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-18 23:23:31 +0100
+Served asset /sessions.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-18 23:23:31 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home_controller.js?body=1" for 127.0.0.1 at 2013-03-18 23:23:31 +0100
+Served asset /home_controller.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-18 23:23:31 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-18 23:23:32 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-18 23:23:32 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-18 23:23:32 +0100
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-18 23:23:32 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-18 23:23:32 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-18 23:23:35 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-18 23:23:35 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-18 23:23:35 +0100
+Served asset /sessions.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-18 23:23:35 +0100
+Served asset /user.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/home_controller.css?body=1" for 127.0.0.1 at 2013-03-18 23:23:35 +0100
+Served asset /home_controller.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-18 23:23:35 +0100
+Served asset /word_gender.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-18 23:23:35 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-18 23:23:35 +0100
+Served asset /languages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-18 23:23:35 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home_controller.js?body=1" for 127.0.0.1 at 2013-03-18 23:23:35 +0100
+Served asset /home_controller.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-18 23:23:35 +0100
+Served asset /languages.js - 304 Not Modified (29ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-18 23:23:35 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-18 23:23:35 +0100
+Served asset /user.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-18 23:23:35 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-18 23:23:35 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-18 23:25:03 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:03 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:03 +0100
+Served asset /languages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:03 +0100
+Served asset /word_gender.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:03 +0100
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:03 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:03 +0100
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/home_controller.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:03 +0100
+Served asset /home_controller.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:03 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home_controller.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:03 +0100
+Served asset /home_controller.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:03 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:03 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:03 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:03 +0100
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:03 +0100
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/signout" for 127.0.0.1 at 2013-03-18 23:25:04 +0100
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-18 23:25:04 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 15ms (Views: 14.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:04 +0100
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home_controller.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:04 +0100
+Served asset /home_controller.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:04 +0100
+Served asset /sessions.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:04 +0100
+Served asset /languages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:04 +0100
+Served asset /user.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:04 +0100
+Served asset /word_gender.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:04 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:04 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home_controller.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:04 +0100
+Served asset /home_controller.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:04 +0100
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:04 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:04 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:04 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:04 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/sessions/index" for 127.0.0.1 at 2013-03-18 23:25:07 +0100
+Processing by SessionsController#index as HTML
+  Rendered sessions/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 41ms (Views: 40.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:07 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home_controller.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:07 +0100
+Served asset /home_controller.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:07 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:07 +0100
+Served asset /user.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:07 +0100
+Served asset /languages.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:07 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:07 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:07 +0100
+Served asset /word_gender.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:07 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home_controller.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:07 +0100
+Served asset /home_controller.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:07 +0100
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:07 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:07 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:07 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/sessions/sessions/index" for 127.0.0.1 at 2013-03-18 23:25:11 +0100
+
+ActionController::RoutingError (No route matches [GET] "/sessions/sessions/index"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/miroslav/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/miroslav/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/miroslav/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/sessions/index" for 127.0.0.1 at 2013-03-18 23:25:24 +0100
+Processing by SessionsController#index as HTML
+  Rendered sessions/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 16ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:24 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:24 +0100
+Served asset /languages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:24 +0100
+Served asset /sessions.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/home_controller.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:24 +0100
+Served asset /home_controller.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:24 +0100
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:24 +0100
+Served asset /word_gender.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:24 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:24 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home_controller.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:24 +0100
+Served asset /home_controller.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:24 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:24 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:24 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:24 +0100
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:24 +0100
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/sessions/index" for 127.0.0.1 at 2013-03-18 23:25:25 +0100
+Processing by SessionsController#index as HTML
+  Rendered sessions/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 12ms (Views: 11.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:25 +0100
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/home_controller.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:25 +0100
+Served asset /home_controller.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:25 +0100
+Served asset /languages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:26 +0100
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:26 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:26 +0100
+Served asset /word_gender.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:26 +0100
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:26 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:26 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home_controller.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:26 +0100
+Served asset /home_controller.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:26 +0100
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:26 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:26 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:26 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/sessions/index" for 127.0.0.1 at 2013-03-18 23:25:26 +0100
+Processing by SessionsController#index as HTML
+  Rendered sessions/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 17ms (Views: 16.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:26 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home_controller.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:26 +0100
+Served asset /home_controller.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:26 +0100
+Served asset /languages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:26 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:26 +0100
+Served asset /word_gender.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:26 +0100
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:26 +0100
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:26 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:26 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:26 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:26 +0100
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:26 +0100
+Served asset /word_gender.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home_controller.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:26 +0100
+Served asset /home_controller.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:26 +0100
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/sessions/index" for 127.0.0.1 at 2013-03-18 23:25:27 +0100
+Processing by SessionsController#index as HTML
+  Rendered sessions/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:27 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home_controller.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:27 +0100
+Served asset /home_controller.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:27 +0100
+Served asset /user.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:27 +0100
+Served asset /languages.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:27 +0100
+Served asset /sessions.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:27 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:27 +0100
+Served asset /word_gender.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:27 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home_controller.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:27 +0100
+Served asset /home_controller.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:27 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:27 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:27 +0100
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:27 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:27 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/sessions/index" for 127.0.0.1 at 2013-03-18 23:25:27 +0100
+Processing by SessionsController#index as HTML
+  Rendered sessions/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:27 +0100
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/home_controller.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:27 +0100
+Served asset /home_controller.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:27 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:27 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:27 +0100
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:27 +0100
+Served asset /languages.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:27 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:27 +0100
+Served asset /word_gender.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home_controller.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:27 +0100
+Served asset /home_controller.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:27 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:27 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:27 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:27 +0100
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:27 +0100
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/sessions/index" for 127.0.0.1 at 2013-03-18 23:25:28 +0100
+Processing by SessionsController#index as HTML
+  Rendered sessions/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:28 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home_controller.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:28 +0100
+Served asset /home_controller.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:28 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:28 +0100
+Served asset /word_gender.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:28 +0100
+Served asset /user.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:28 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:28 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:28 +0100
+Served asset /languages.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/home_controller.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:28 +0100
+Served asset /home_controller.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:28 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:28 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:28 +0100
+Served asset /user.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:28 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:28 +0100
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/sessions/index" for 127.0.0.1 at 2013-03-18 23:25:40 +0100
+Processing by SessionsController#index as HTML
+  Rendered sessions/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 50ms (Views: 49.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:40 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:40 +0100
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home_controller.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:40 +0100
+Served asset /home_controller.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:40 +0100
+Served asset /languages.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:40 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:40 +0100
+Served asset /word_gender.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:40 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home_controller.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:40 +0100
+Served asset /home_controller.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:40 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:40 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:40 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:40 +0100
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:40 +0100
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:40 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/sessions/index" for 127.0.0.1 at 2013-03-18 23:25:44 +0100
+Processing by SessionsController#index as HTML
+  Rendered sessions/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home_controller.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:44 +0100
+Served asset /home_controller.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:44 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:44 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:44 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:44 +0100
+Served asset /languages.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:44 +0100
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:44 +0100
+Served asset /word_gender.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:44 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:44 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:44 +0100
+Served asset /languages.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:44 +0100
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home_controller.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:44 +0100
+Served asset /home_controller.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:44 +0100
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:44 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-18 23:25:50 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:50 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:50 +0100
+Served asset /user.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home_controller.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:50 +0100
+Served asset /home_controller.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:50 +0100
+Served asset /languages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:50 +0100
+Served asset /word_gender.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:50 +0100
+Served asset /sessions.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:50 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home_controller.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:50 +0100
+Served asset /home_controller.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:50 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:50 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:50 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:50 +0100
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:50 +0100
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:50 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/sessions/index" for 127.0.0.1 at 2013-03-18 23:25:55 +0100
+Processing by SessionsController#index as HTML
+  Rendered sessions/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 17ms (Views: 16.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home_controller.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:55 +0100
+Served asset /home_controller.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:55 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:55 +0100
+Served asset /languages.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:55 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:55 +0100
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:55 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:55 +0100
+Served asset /word_gender.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:55 +0100
+Served asset /languages.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:55 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:55 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home_controller.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:55 +0100
+Served asset /home_controller.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:55 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:55 +0100
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:55 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2013-03-18 23:25:57 +0100
+
+
+Started GET "/auth/google_oauth2/callback?state=889faca80fa1bf93fd5172910e3729a9e1d89b97a5bbf381&code=4/kSoFIvUsr8pI52tark43BcNYuUkh.EoE-O0J_wQsQOl05ti8ZT3Yjfjv_egI" for 127.0.0.1 at 2013-03-18 23:25:57 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"state"=>"889faca80fa1bf93fd5172910e3729a9e1d89b97a5bbf381", "code"=>"4/kSoFIvUsr8pI52tark43BcNYuUkh.EoE-O0J_wQsQOl05ti8ZT3Yjfjv_egI", "provider"=>"google_oauth2"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."provider" = 'google_oauth2' AND "users"."uid" = '100371985937826485566' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-18 23:25:59 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:59 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:59 +0100
+Served asset /sessions.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:59 +0100
+Served asset /languages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:59 +0100
+Served asset /word_gender.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home_controller.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:59 +0100
+Served asset /home_controller.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-18 23:25:59 +0100
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:59 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:59 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home_controller.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:59 +0100
+Served asset /home_controller.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:59 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:59 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:59 +0100
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:59 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-18 23:25:59 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/signout" for 127.0.0.1 at 2013-03-18 23:26:07 +0100
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-18 23:26:07 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 22ms (Views: 21.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-18 23:26:07 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home_controller.css?body=1" for 127.0.0.1 at 2013-03-18 23:26:07 +0100
+Served asset /home_controller.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-18 23:26:07 +0100
+Served asset /languages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-18 23:26:07 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-18 23:26:07 +0100
+Served asset /word_gender.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-18 23:26:07 +0100
+Served asset /user.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home_controller.js?body=1" for 127.0.0.1 at 2013-03-18 23:26:07 +0100
+Served asset /home_controller.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-18 23:26:07 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-18 23:26:07 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-18 23:26:07 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-18 23:26:07 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-18 23:26:07 +0100
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-18 23:26:07 +0100
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-18 23:26:07 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/sessions/index" for 127.0.0.1 at 2013-03-18 23:26:23 +0100
+Processing by SessionsController#index as HTML
+  Rendered sessions/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-18 23:26:23 +0100
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/home_controller.css?body=1" for 127.0.0.1 at 2013-03-18 23:26:23 +0100
+Served asset /home_controller.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-18 23:26:23 +0100
+Served asset /languages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-18 23:26:23 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-18 23:26:23 +0100
+Served asset /word_gender.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-18 23:26:23 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-18 23:26:23 +0100
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-18 23:26:23 +0100
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home_controller.js?body=1" for 127.0.0.1 at 2013-03-18 23:26:23 +0100
+Served asset /home_controller.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-18 23:26:23 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-18 23:26:23 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-18 23:26:23 +0100
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-18 23:26:23 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-18 23:26:23 +0100
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/sessions/index" for 127.0.0.1 at 2013-03-18 23:26:24 +0100
+Processing by SessionsController#index as HTML
+  Rendered sessions/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 41ms (Views: 41.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-18 23:26:24 +0100
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-18 23:26:24 +0100
+Served asset /languages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-18 23:26:24 +0100
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-18 23:26:24 +0100
+Served asset /word_gender.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home_controller.css?body=1" for 127.0.0.1 at 2013-03-18 23:26:24 +0100
+Served asset /home_controller.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-18 23:26:24 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-18 23:26:24 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-18 23:26:24 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home_controller.js?body=1" for 127.0.0.1 at 2013-03-18 23:26:24 +0100
+Served asset /home_controller.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-18 23:26:24 +0100
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-18 23:26:24 +0100
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-18 23:26:24 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-18 23:26:24 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-18 23:26:24 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2013-03-18 23:26:27 +0100
+
+
+Started GET "/auth/google_oauth2/callback?state=85926c74c982612ece6830794cbbc88fce707876ded35285&code=4/R_8hN5VFwzsBxb9TzzUGVqoySajB.YmHevf_JCvUbOl05ti8ZT3aHaDz_egI" for 127.0.0.1 at 2013-03-18 23:26:27 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"state"=>"85926c74c982612ece6830794cbbc88fce707876ded35285", "code"=>"4/R_8hN5VFwzsBxb9TzzUGVqoySajB.YmHevf_JCvUbOl05ti8ZT3aHaDz_egI", "provider"=>"google_oauth2"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."provider" = 'google_oauth2' AND "users"."uid" = '100371985937826485566' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-18 23:26:29 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 21ms (Views: 20.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-18 23:26:29 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home_controller.css?body=1" for 127.0.0.1 at 2013-03-18 23:26:29 +0100
+Served asset /home_controller.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-18 23:26:29 +0100
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-18 23:26:29 +0100
+Served asset /word_gender.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-18 23:26:29 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-18 23:26:29 +0100
+Served asset /languages.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-18 23:26:29 +0100
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-18 23:26:29 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home_controller.js?body=1" for 127.0.0.1 at 2013-03-18 23:26:29 +0100
+Served asset /home_controller.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-18 23:26:29 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-18 23:26:29 +0100
+Served asset /user.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-18 23:26:29 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-18 23:26:29 +0100
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-18 23:26:29 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-18 23:26:32 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 19ms (Views: 18.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-18 23:26:32 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home_controller.css?body=1" for 127.0.0.1 at 2013-03-18 23:26:32 +0100
+Served asset /home_controller.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-18 23:26:32 +0100
+Served asset /languages.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-18 23:26:32 +0100
+Served asset /user.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-18 23:26:32 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-18 23:26:32 +0100
+Served asset /word_gender.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-18 23:26:32 +0100
+Served asset /sessions.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-18 23:26:32 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-18 23:26:32 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-18 23:26:32 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-18 23:26:32 +0100
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/home_controller.js?body=1" for 127.0.0.1 at 2013-03-18 23:26:32 +0100
+Served asset /home_controller.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-18 23:26:32 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-18 23:26:32 +0100
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/signout" for 127.0.0.1 at 2013-03-18 23:26:35 +0100
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-18 23:26:35 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 9ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-18 23:26:35 +0100
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home_controller.css?body=1" for 127.0.0.1 at 2013-03-18 23:26:35 +0100
+Served asset /home_controller.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-18 23:26:35 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-18 23:26:35 +0100
+Served asset /languages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-18 23:26:35 +0100
+Served asset /word_gender.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-18 23:26:35 +0100
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-18 23:26:35 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-18 23:26:35 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home_controller.js?body=1" for 127.0.0.1 at 2013-03-18 23:26:35 +0100
+Served asset /home_controller.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-18 23:26:35 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-18 23:26:35 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-18 23:26:35 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-18 23:26:35 +0100
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-18 23:26:35 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-18 23:26:37 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 18ms (Views: 17.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-18 23:26:38 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-18 23:26:38 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-18 23:26:38 +0100
+Served asset /languages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-18 23:26:38 +0100
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-18 23:26:38 +0100
+Served asset /word_gender.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home_controller.css?body=1" for 127.0.0.1 at 2013-03-18 23:26:38 +0100
+Served asset /home_controller.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-18 23:26:38 +0100
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-18 23:26:38 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-18 23:26:38 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home_controller.js?body=1" for 127.0.0.1 at 2013-03-18 23:26:38 +0100
+Served asset /home_controller.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-18 23:26:38 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-18 23:26:38 +0100
+Served asset /user.js - 304 Not Modified (27ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-18 23:26:38 +0100
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-18 23:26:38 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-18 23:30:38 +0100
+Processing by HomeController#index as HTML
+ERROR: compiling _app_views_home_index_html_erb__151486758787152194_29301640 RAISED /home/miroslav/Projects/lefranc/lefranc/app/views/home/index.html.erb:9: unknown regexp option - p
+unmatched close parenthesis: /p>
+
+<p>
+  Lessons '); #TODO: Link to user's lessons ;@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</
+/home/miroslav/Projects/lefranc/lefranc/app/views/home/index.html.erb:11: syntax error, unexpected '<'
+/home/miroslav/Projects/lefranc/lefranc/app/views/home/index.html.erb:13: unterminated regexp meets end of file
+/home/miroslav/Projects/lefranc/lefranc/app/views/home/index.html.erb:13: syntax error, unexpected $end, expecting keyword_end
+Function body:           def _app_views_home_index_html_erb__151486758787152194_29301640(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "home/index";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_concat('<h1>Learn languages</h1>
+
+<p>
+  Groups '); #TODO: Link to user's groups ;@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</p>
+
+<p>
+  Lessons '); #TODO: Link to user's lessons ;@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</p>
+
+<p>
+  ');@output_buffer.append= ( link_to "Sign in / Signup", "/sessions/index" );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</p>
+');@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/template.rb:297:in `module_eval'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/template.rb:297:in `compile'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/template.rb:244:in `block in compile!'
+<internal:prelude>:10:in `synchronize'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/template.rb:232:in `compile!'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/template.rb:144:in `block in render'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/notifications.rb:125:in `instrument'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/template.rb:143:in `render'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `instrument'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/renderer/renderer.rb:17:in `render'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/abstract_controller/rendering.rb:88:in `render'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/rendering.rb:16:in `render'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/home/miroslav/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activerecord-3.2.12/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/abstract_controller/base.rb:167:in `process_action'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:414:in `_run__4196813091234879860__process_action__2815781664331873748__callbacks'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:405:in `__run_callback'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `instrument'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activerecord-3.2.12/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/abstract_controller/base.rb:121:in `process'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/abstract_controller/rendering.rb:45:in `process'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal.rb:203:in `dispatch'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal.rb:246:in `block in action'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/routing/route_set.rb:601:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/omniauth-1.1.3/lib/omniauth/strategy.rb:177:in `call!'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/omniauth-1.1.3/lib/omniauth/strategy.rb:157:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/omniauth-1.1.3/lib/omniauth/strategy.rb:177:in `call!'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/omniauth-1.1.3/lib/omniauth/strategy.rb:157:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/omniauth-1.1.3/lib/omniauth/strategy.rb:177:in `call!'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/omniauth-1.1.3/lib/omniauth/strategy.rb:157:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/omniauth-1.1.3/lib/omniauth/strategy.rb:177:in `call!'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/omniauth-1.1.3/lib/omniauth/strategy.rb:157:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/omniauth-1.1.3/lib/omniauth/builder.rb:48:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/rack-1.4.5/lib/rack/etag.rb:23:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/rack-1.4.5/lib/rack/conditionalget.rb:25:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/head.rb:14:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:210:in `context'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:205:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/cookies.rb:341:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activerecord-3.2.12/lib/active_record/query_cache.rb:64:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activerecord-3.2.12/lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:405:in `_run__3137492800330137279__call__184189290840867898__callbacks'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:405:in `__run_callback'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/railties-3.2.12/lib/rails/rack/logger.rb:32:in `call_app'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/railties-3.2.12/lib/rails/rack/logger.rb:16:in `block in call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/tagged_logging.rb:22:in `tagged'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/railties-3.2.12/lib/rails/rack/logger.rb:16:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/rack-1.4.5/lib/rack/lock.rb:15:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/static.rb:62:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/railties-3.2.12/lib/rails/engine.rb:479:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/railties-3.2.12/lib/rails/application.rb:223:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/rack-1.4.5/lib/rack/handler/webrick.rb:59:in `service'
+/home/miroslav/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/home/miroslav/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/home/miroslav/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 2ms
+
+ActionView::Template::Error (/home/miroslav/Projects/lefranc/lefranc/app/views/home/index.html.erb:9: unknown regexp option - p
+unmatched close parenthesis: /p>
+
+<p>
+  Lessons '); #TODO: Link to user's lessons ;@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</
+/home/miroslav/Projects/lefranc/lefranc/app/views/home/index.html.erb:11: syntax error, unexpected '<'
+/home/miroslav/Projects/lefranc/lefranc/app/views/home/index.html.erb:13: unterminated regexp meets end of file
+/home/miroslav/Projects/lefranc/lefranc/app/views/home/index.html.erb:13: syntax error, unexpected $end, expecting keyword_end):
+    6: 
+    7: <p>
+    8:   Lessons <% #TODO: Link to user's lessons %>
+    9: </p>
+    10: 
+    11: <p>
+    12:   <%= link_to "Sign in / Signup", "/sessions/index" %>
+  actionpack (3.2.12) lib/action_view/template.rb:297:in `module_eval'
+  actionpack (3.2.12) lib/action_view/template.rb:297:in `compile'
+  actionpack (3.2.12) lib/action_view/template.rb:244:in `block in compile!'
+  <internal:prelude>:10:in `synchronize'
+  actionpack (3.2.12) lib/action_view/template.rb:232:in `compile!'
+  actionpack (3.2.12) lib/action_view/template.rb:144:in `block in render'
+  activesupport (3.2.12) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.12) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.12) lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+  actionpack (3.2.12) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.12) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.12) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.12) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.12) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.12) lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+  actionpack (3.2.12) lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+  actionpack (3.2.12) lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+  actionpack (3.2.12) lib/action_view/renderer/template_renderer.rb:18:in `render'
+  actionpack (3.2.12) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.12) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.12) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.12) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.12) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.12) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.12) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.12) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.12) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.12) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.12) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /home/miroslav/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (3.2.12) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.12) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.12) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.12) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.12) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.12) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.12) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (3.2.12) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.12) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.12) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:414:in `_run__4196813091234879860__process_action__2815781664331873748__callbacks'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.12) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.12) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.12) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.12) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.12) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.12) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.12) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.12) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.12) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.12) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.12) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.12) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.12) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.12) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.12) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.12) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.12) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.12) lib/action_dispatch/routing/route_set.rb:601:in `call'
+  omniauth (1.1.3) lib/omniauth/strategy.rb:177:in `call!'
+  omniauth (1.1.3) lib/omniauth/strategy.rb:157:in `call'
+  omniauth (1.1.3) lib/omniauth/strategy.rb:177:in `call!'
+  omniauth (1.1.3) lib/omniauth/strategy.rb:157:in `call'
+  omniauth (1.1.3) lib/omniauth/strategy.rb:177:in `call!'
+  omniauth (1.1.3) lib/omniauth/strategy.rb:157:in `call'
+  omniauth (1.1.3) lib/omniauth/strategy.rb:177:in `call!'
+  omniauth (1.1.3) lib/omniauth/strategy.rb:157:in `call'
+  omniauth (1.1.3) lib/omniauth/builder.rb:48:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.12) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.12) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:405:in `_run__3137492800330137279__call__184189290840867898__callbacks'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.12) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/miroslav/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/miroslav/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/miroslav/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.6ms)
+  Rendered /home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-18 23:31:43 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 9ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-18 23:31:43 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-18 23:31:43 +0100
+Served asset /word_gender.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-18 23:31:43 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-18 23:31:43 +0100
+Served asset /languages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home_controller.css?body=1" for 127.0.0.1 at 2013-03-18 23:31:43 +0100
+Served asset /home_controller.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-18 23:31:43 +0100
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-18 23:31:43 +0100
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-18 23:31:44 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home_controller.js?body=1" for 127.0.0.1 at 2013-03-18 23:31:44 +0100
+Served asset /home_controller.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-18 23:31:44 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-18 23:31:44 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-18 23:31:44 +0100
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-18 23:31:44 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-18 23:31:44 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/sessions/index" for 127.0.0.1 at 2013-03-18 23:31:48 +0100
+Processing by SessionsController#index as HTML
+  Rendered sessions/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 9ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-18 23:31:48 +0100
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/home_controller.css?body=1" for 127.0.0.1 at 2013-03-18 23:31:48 +0100
+Served asset /home_controller.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-18 23:31:48 +0100
+Served asset /languages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-18 23:31:48 +0100
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-18 23:31:48 +0100
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-18 23:31:48 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-18 23:31:48 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-18 23:31:48 +0100
+Served asset /word_gender.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home_controller.js?body=1" for 127.0.0.1 at 2013-03-18 23:31:48 +0100
+Served asset /home_controller.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-18 23:31:48 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-18 23:31:48 +0100
+Served asset /sessions.js - 304 Not Modified (26ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-18 23:31:48 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-18 23:31:48 +0100
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-18 23:31:48 +0100
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2013-03-18 23:31:49 +0100
+
+
+Started GET "/auth/google_oauth2/callback?state=8cecd0cdf6ed25b5b6abedc3c4318fa9fe6f5c35872370f2&code=4/3AjdEPB8sOM6NJTelTW8OH86Vmy_.QnjJEwy4KbQaOl05ti8ZT3axPUb_egI" for 127.0.0.1 at 2013-03-18 23:31:50 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"state"=>"8cecd0cdf6ed25b5b6abedc3c4318fa9fe6f5c35872370f2", "code"=>"4/3AjdEPB8sOM6NJTelTW8OH86Vmy_.QnjJEwy4KbQaOl05ti8ZT3axPUb_egI", "provider"=>"google_oauth2"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."provider" = 'google_oauth2' AND "users"."uid" = '100371985937826485566' LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-18 23:31:51 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-18 23:31:51 +0100
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home_controller.css?body=1" for 127.0.0.1 at 2013-03-18 23:31:51 +0100
+Served asset /home_controller.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-18 23:31:51 +0100
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-18 23:31:51 +0100
+Served asset /languages.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-18 23:31:51 +0100
+Served asset /word_gender.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-18 23:31:51 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-18 23:31:51 +0100
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-18 23:31:51 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home_controller.js?body=1" for 127.0.0.1 at 2013-03-18 23:31:51 +0100
+Served asset /home_controller.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-18 23:31:51 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-18 23:31:51 +0100
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-18 23:31:51 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-18 23:31:51 +0100
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-18 23:31:51 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/signout" for 127.0.0.1 at 2013-03-18 23:31:58 +0100
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-18 23:31:58 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 12ms (Views: 12.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-18 23:31:58 +0100
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/home_controller.css?body=1" for 127.0.0.1 at 2013-03-18 23:31:58 +0100
+Served asset /home_controller.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-18 23:31:58 +0100
+Served asset /languages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-18 23:31:58 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-18 23:31:58 +0100
+Served asset /word_gender.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-18 23:31:58 +0100
+Served asset /user.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-18 23:31:58 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-18 23:31:58 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-18 23:31:58 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home_controller.js?body=1" for 127.0.0.1 at 2013-03-18 23:31:58 +0100
+Served asset /home_controller.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-18 23:31:58 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-18 23:31:58 +0100
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-18 23:31:58 +0100
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-18 23:31:58 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-18 23:34:33 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 10ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-18 23:34:33 +0100
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-18 23:34:33 +0100
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-18 23:34:33 +0100
+Served asset /languages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-18 23:34:33 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-18 23:34:33 +0100
+Served asset /word_gender.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home_controller.css?body=1" for 127.0.0.1 at 2013-03-18 23:34:33 +0100
+Served asset /home_controller.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/home_controller.js?body=1" for 127.0.0.1 at 2013-03-18 23:34:33 +0100
+Served asset /home_controller.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-18 23:34:33 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-18 23:34:33 +0100
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-18 23:34:33 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-18 23:34:33 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-18 23:34:33 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-18 23:34:33 +0100
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-18 23:34:33 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/sessions/index" for 127.0.0.1 at 2013-03-18 23:34:37 +0100
+Processing by SessionsController#index as HTML
+  Rendered sessions/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 13ms (Views: 12.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-18 23:34:37 +0100
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/home_controller.css?body=1" for 127.0.0.1 at 2013-03-18 23:34:37 +0100
+Served asset /home_controller.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-18 23:34:37 +0100
+Served asset /languages.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-18 23:34:37 +0100
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-18 23:34:37 +0100
+Served asset /sessions.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-18 23:34:37 +0100
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-18 23:34:37 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-18 23:34:37 +0100
+Served asset /word_gender.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home_controller.js?body=1" for 127.0.0.1 at 2013-03-18 23:34:37 +0100
+Served asset /home_controller.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-18 23:34:37 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-18 23:34:37 +0100
+Served asset /sessions.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-18 23:34:37 +0100
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-18 23:34:37 +0100
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-18 23:34:37 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2013-03-18 23:34:38 +0100
+
+
+Started GET "/auth/google_oauth2/callback?state=073b93b43a36040567989d7377565f0600fc0297fa284cf8&code=4/k7XiMymhdxvjviYvfYQ52xGk-2jS.snXD9vMjXn4XOl05ti8ZT3bDZkv_egI" for 127.0.0.1 at 2013-03-18 23:34:39 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"state"=>"073b93b43a36040567989d7377565f0600fc0297fa284cf8", "code"=>"4/k7XiMymhdxvjviYvfYQ52xGk-2jS.snXD9vMjXn4XOl05ti8ZT3bDZkv_egI", "provider"=>"google_oauth2"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."provider" = 'google_oauth2' AND "users"."uid" = '100371985937826485566' LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-18 23:34:40 +0100
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 39ms (Views: 38.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-18 23:34:40 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home_controller.css?body=1" for 127.0.0.1 at 2013-03-18 23:34:40 +0100
+Served asset /home_controller.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-18 23:34:40 +0100
+Served asset /languages.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-18 23:34:40 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-18 23:34:40 +0100
+Served asset /user.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-18 23:34:40 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-18 23:34:40 +0100
+Served asset /word_gender.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home_controller.js?body=1" for 127.0.0.1 at 2013-03-18 23:34:40 +0100
+Served asset /home_controller.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-18 23:34:40 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-18 23:34:40 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-18 23:34:40 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-18 23:34:40 +0100
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-18 23:34:40 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-18 23:34:40 +0100
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-18 23:34:53 +0100
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered home/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-18 23:34:53 +0100
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-18 23:34:53 +0100
+Served asset /languages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-18 23:34:53 +0100
+Served asset /user.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-18 23:34:53 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-18 23:34:53 +0100
+Served asset /word_gender.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home_controller.css?body=1" for 127.0.0.1 at 2013-03-18 23:34:53 +0100
+Served asset /home_controller.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-18 23:34:53 +0100
+Served asset /languages.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-18 23:34:53 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home_controller.js?body=1" for 127.0.0.1 at 2013-03-18 23:34:53 +0100
+Served asset /home_controller.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-18 23:34:53 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-18 23:34:53 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-18 23:34:53 +0100
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-18 23:34:53 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-18 23:34:53 +0100
+Served asset /application.js - 304 Not Modified (3ms)
