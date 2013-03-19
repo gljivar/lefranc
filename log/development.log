@@ -19941,3 +19941,3412 @@ Served asset /application.js - 304 Not Modified (2ms)
 
 Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-19 00:36:15 +0100
 Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-19 22:04:50 +0100
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-19 22:04:50 +0100
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-03-19 22:04:50 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-19 22:04:50 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-19 22:04:50 +0100
+Served asset /languages.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-19 22:04:50 +0100
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-19 22:04:50 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-19 22:04:50 +0100
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-19 22:04:50 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-19 22:04:50 +0100
+Served asset /word_gender.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-03-19 22:04:50 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-19 22:04:50 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-19 22:04:50 +0100
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-19 22:04:50 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-19 22:04:50 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/users/1" for 127.0.0.1 at 2013-03-19 22:39:56 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 404 Not Found in 3ms
+
+ActiveRecord::RecordNotFound (Couldn't find User with id=1):
+  app/controllers/users_controller.rb:47:in `find_user'
+
+
+  Rendered /home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.1ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2013-03-19 22:40:01 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered users/show.html.erb within layouts/application (1.2ms)
+Compiled user_groups.css  (1ms)  (pid 19470)
+Compiled application.css  (9ms)  (pid 19470)
+Compiled user_groups.js  (108ms)  (pid 19470)
+Compiled application.js  (153ms)  (pid 19470)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 256ms (Views: 210.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-19 22:40:01 +0100
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-03-19 22:40:01 +0100
+Served asset /home.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-19 22:40:01 +0100
+Served asset /languages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-19 22:40:01 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-19 22:40:01 +0100
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_groups.css?body=1" for 127.0.0.1 at 2013-03-19 22:40:01 +0100
+Served asset /user_groups.css - 200 OK (1ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-19 22:40:01 +0100
+Served asset /word_gender.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-19 22:40:01 +0100
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-19 22:40:01 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-19 22:40:01 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-03-19 22:40:01 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-19 22:40:01 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-19 22:40:01 +0100
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_groups.js?body=1" for 127.0.0.1 at 2013-03-19 22:40:01 +0100
+Served asset /user_groups.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-19 22:40:01 +0100
+Served asset /application.js - 304 Not Modified (38ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-19 22:40:01 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/2/groups" for 127.0.0.1 at 2013-03-19 22:40:08 +0100
+Processing by UserGroupsController#index as HTML
+  Parameters: {"user_id"=>"2"}
+Completed 404 Not Found in 1ms
+
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  app/controllers/user_groups_controller.rb:17:in `find_user'
+
+
+  Rendered /home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.7ms)
+
+
+Started GET "/users/2/groups" for 127.0.0.1 at 2013-03-19 22:41:22 +0100
+Processing by UserGroupsController#index as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered user_groups/index.html.erb within layouts/application (0.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 82ms (Views: 12.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-19 22:41:22 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-03-19 22:41:22 +0100
+Served asset /home.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-19 22:41:22 +0100
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-19 22:41:22 +0100
+Served asset /languages.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/user_groups.css?body=1" for 127.0.0.1 at 2013-03-19 22:41:22 +0100
+Served asset /user_groups.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-19 22:41:22 +0100
+Served asset /word_gender.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-19 22:41:22 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-19 22:41:22 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-19 22:41:22 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-19 22:41:22 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-03-19 22:41:22 +0100
+Served asset /home.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-19 22:41:22 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-19 22:41:22 +0100
+Served asset /user.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/user_groups.js?body=1" for 127.0.0.1 at 2013-03-19 22:41:22 +0100
+Served asset /user_groups.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-19 22:41:22 +0100
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-19 22:41:22 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/3/groups" for 127.0.0.1 at 2013-03-19 22:41:26 +0100
+Processing by UserGroupsController#index as HTML
+  Parameters: {"user_id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  Rendered user_groups/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 17ms (Views: 14.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-19 22:41:27 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-19 22:41:27 +0100
+Served asset /languages.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-19 22:41:27 +0100
+Served asset /sessions.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-19 22:41:27 +0100
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-03-19 22:41:27 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_groups.css?body=1" for 127.0.0.1 at 2013-03-19 22:41:27 +0100
+Served asset /user_groups.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-19 22:41:27 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-19 22:41:27 +0100
+Served asset /word_gender.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-19 22:41:27 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-03-19 22:41:27 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-19 22:41:27 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-19 22:41:27 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-19 22:41:27 +0100
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_groups.js?body=1" for 127.0.0.1 at 2013-03-19 22:41:27 +0100
+Served asset /user_groups.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-19 22:41:27 +0100
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-19 22:41:27 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/3/groups.json" for 127.0.0.1 at 2013-03-19 22:41:34 +0100
+Processing by UserGroupsController#index as JSON
+  Parameters: {"user_id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  [1m[35mGroup Load (0.6ms)[0m  SELECT "groups".* FROM "groups" INNER JOIN "group_users" ON "groups"."id" = "group_users"."group_id" WHERE "group_users"."user_id" = 3
+Completed 200 OK in 55ms (Views: 50.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/2/groups.json" for 127.0.0.1 at 2013-03-19 22:41:37 +0100
+Processing by UserGroupsController#index as JSON
+  Parameters: {"user_id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mGroup Load (0.3ms)[0m  SELECT "groups".* FROM "groups" INNER JOIN "group_users" ON "groups"."id" = "group_users"."group_id" WHERE "group_users"."user_id" = 2
+Completed 200 OK in 6ms (Views: 2.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/1/groups.json" for 127.0.0.1 at 2013-03-19 22:41:41 +0100
+Processing by UserGroupsController#index as JSON
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find User with id=1):
+  app/controllers/user_groups_controller.rb:17:in `find_user'
+
+
+  Rendered /home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.4ms)
+
+
+Started GET "/users/2/groups.json" for 127.0.0.1 at 2013-03-19 22:41:47 +0100
+Processing by UserGroupsController#index as JSON
+  Parameters: {"user_id"=>"2"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36mGroup Load (0.1ms)[0m  [1mSELECT "groups".* FROM "groups" INNER JOIN "group_users" ON "groups"."id" = "group_users"."group_id" WHERE "group_users"."user_id" = 2[0m
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/2/groups.json" for 127.0.0.1 at 2013-03-19 22:51:57 +0100
+Processing by UserGroupsController#index as JSON
+  Parameters: {"user_id"=>"2"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36mGroup Load (0.3ms)[0m  [1mSELECT "groups".* FROM "groups" INNER JOIN "group_users" ON "groups"."id" = "group_users"."group_id" WHERE "group_users"."user_id" = 2[0m
+Completed 200 OK in 5ms (Views: 2.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/2/groups" for 127.0.0.1 at 2013-03-19 22:52:00 +0100
+Processing by UserGroupsController#index as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "2"]]
+ERROR: compiling _app_views_user_groups_index_html_erb___1478322071151178753_70352270554160 RAISED /home/miroslav/Projects/lefranc/lefranc/app/views/user_groups/index.html.erb:6: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+...to group.name, group_path group) );@output_buffer.safe_conca...
+...                               ^
+Function body:           def _app_views_user_groups_index_html_erb___1478322071151178753_70352270554160(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "user_groups/index";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_concat('<h1>User ');@output_buffer.append= ( @user.name );@output_buffer.safe_concat(' belongs to groups</h1>
+
+'); if @groups.present? 
+@output_buffer.safe_concat('        <ul>
+');         @groups.each do |group| 
+@output_buffer.safe_concat('                <li>');@output_buffer.append= ( link_to group.name, group_path group) );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('                        ');@output_buffer.append= ( link_to "Leave", [@user, group] , :confirm => "Are you sure?", :controller => :user_groups, :method => :delete );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('
+                </li>
+');         end 
+@output_buffer.safe_concat('        </ul>
+        ');@output_buffer.append= ( link_to "New gender", new_language_word_gender_path(@language) );@output_buffer.safe_concat('
+'); end 
+@output_buffer.safe_concat('
+');@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/template.rb:297:in `module_eval'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/template.rb:297:in `compile'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/template.rb:244:in `block in compile!'
+<internal:prelude>:10:in `synchronize'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/template.rb:232:in `compile!'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/template.rb:144:in `block in render'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/notifications.rb:125:in `instrument'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/template.rb:143:in `render'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `instrument'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/renderer/renderer.rb:17:in `render'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/abstract_controller/rendering.rb:88:in `render'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/rendering.rb:16:in `render'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/home/miroslav/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activerecord-3.2.12/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/mime_responds.rb:196:in `respond_to'
+/home/miroslav/Projects/lefranc/lefranc/app/controllers/user_groups_controller.rb:7:in `index'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/abstract_controller/base.rb:167:in `process_action'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:425:in `_run__3696843000758542644__process_action__2815781664331873748__callbacks'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:405:in `__run_callback'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `instrument'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activerecord-3.2.12/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/abstract_controller/base.rb:121:in `process'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/abstract_controller/rendering.rb:45:in `process'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal.rb:203:in `dispatch'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal.rb:246:in `block in action'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/routing/route_set.rb:601:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/omniauth-1.1.3/lib/omniauth/strategy.rb:177:in `call!'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/omniauth-1.1.3/lib/omniauth/strategy.rb:157:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/omniauth-1.1.3/lib/omniauth/strategy.rb:177:in `call!'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/omniauth-1.1.3/lib/omniauth/strategy.rb:157:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/omniauth-1.1.3/lib/omniauth/strategy.rb:177:in `call!'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/omniauth-1.1.3/lib/omniauth/strategy.rb:157:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/omniauth-1.1.3/lib/omniauth/strategy.rb:177:in `call!'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/omniauth-1.1.3/lib/omniauth/strategy.rb:157:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/omniauth-1.1.3/lib/omniauth/builder.rb:48:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/rack-1.4.5/lib/rack/etag.rb:23:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/rack-1.4.5/lib/rack/conditionalget.rb:25:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/head.rb:14:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:210:in `context'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:205:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/cookies.rb:341:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activerecord-3.2.12/lib/active_record/query_cache.rb:64:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activerecord-3.2.12/lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:405:in `_run__3137492800330137279__call__184189290840867898__callbacks'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:405:in `__run_callback'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/railties-3.2.12/lib/rails/rack/logger.rb:32:in `call_app'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/railties-3.2.12/lib/rails/rack/logger.rb:16:in `block in call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/tagged_logging.rb:22:in `tagged'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/railties-3.2.12/lib/rails/rack/logger.rb:16:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/rack-1.4.5/lib/rack/lock.rb:15:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/static.rb:62:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/railties-3.2.12/lib/rails/engine.rb:479:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/railties-3.2.12/lib/rails/application.rb:223:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/rack-1.4.5/lib/rack/handler/webrick.rb:59:in `service'
+/home/miroslav/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/home/miroslav/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/home/miroslav/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+  Rendered user_groups/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (/home/miroslav/Projects/lefranc/lefranc/app/views/user_groups/index.html.erb:6: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+...to group.name, group_path group) );@output_buffer.safe_conca...
+...                               ^):
+    3: <% if @groups.present? %>
+    4:         <ul>
+    5:         <% @groups.each do |group| %>
+    6:                 <li><%= link_to group.name, group_path group) %>
+    7:                         <%= link_to "Leave", [@user, group] , :confirm => "Are you sure?", :controller => :user_groups, :method => :delete %>
+    8: 
+    9:                 </li>
+  app/controllers/user_groups_controller.rb:7:in `index'
+
+
+  Rendered /home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.0ms)
+
+
+Started GET "/users/2/groups" for 127.0.0.1 at 2013-03-19 22:52:21 +0100
+Processing by UserGroupsController#index as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "2"]]
+ERROR: compiling _app_views_user_groups_index_html_erb___1478322071151178753_70352235991800 RAISED /home/miroslav/Projects/lefranc/lefranc/app/views/user_groups/index.html.erb:6: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+...to group.name, group_path group );@output_buffer.safe_concat...
+...                               ^
+Function body:           def _app_views_user_groups_index_html_erb___1478322071151178753_70352235991800(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "user_groups/index";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_concat('<h1>User ');@output_buffer.append= ( @user.name );@output_buffer.safe_concat(' belongs to groups</h1>
+
+'); if @groups.present? 
+@output_buffer.safe_concat('        <ul>
+');         @groups.each do |group| 
+@output_buffer.safe_concat('                <li>');@output_buffer.append= ( link_to group.name, group_path group );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('                        ');@output_buffer.append= ( link_to "Leave", [@user, group] , :confirm => "Are you sure?", :controller => :user_groups, :method => :delete );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('
+                </li>
+');         end 
+@output_buffer.safe_concat('        </ul>
+        ');@output_buffer.append= ( link_to "New gender", new_language_word_gender_path(@language) );@output_buffer.safe_concat('
+'); end 
+@output_buffer.safe_concat('
+');@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/template.rb:297:in `module_eval'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/template.rb:297:in `compile'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/template.rb:244:in `block in compile!'
+<internal:prelude>:10:in `synchronize'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/template.rb:232:in `compile!'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/template.rb:144:in `block in render'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/notifications.rb:125:in `instrument'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/template.rb:143:in `render'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `instrument'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/renderer/renderer.rb:17:in `render'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/abstract_controller/rendering.rb:88:in `render'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/rendering.rb:16:in `render'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/home/miroslav/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activerecord-3.2.12/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/mime_responds.rb:196:in `respond_to'
+/home/miroslav/Projects/lefranc/lefranc/app/controllers/user_groups_controller.rb:7:in `index'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/abstract_controller/base.rb:167:in `process_action'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:425:in `_run__3696843000758542644__process_action__2815781664331873748__callbacks'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:405:in `__run_callback'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `instrument'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activerecord-3.2.12/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/abstract_controller/base.rb:121:in `process'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/abstract_controller/rendering.rb:45:in `process'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal.rb:203:in `dispatch'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal.rb:246:in `block in action'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/routing/route_set.rb:601:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/omniauth-1.1.3/lib/omniauth/strategy.rb:177:in `call!'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/omniauth-1.1.3/lib/omniauth/strategy.rb:157:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/omniauth-1.1.3/lib/omniauth/strategy.rb:177:in `call!'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/omniauth-1.1.3/lib/omniauth/strategy.rb:157:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/omniauth-1.1.3/lib/omniauth/strategy.rb:177:in `call!'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/omniauth-1.1.3/lib/omniauth/strategy.rb:157:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/omniauth-1.1.3/lib/omniauth/strategy.rb:177:in `call!'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/omniauth-1.1.3/lib/omniauth/strategy.rb:157:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/omniauth-1.1.3/lib/omniauth/builder.rb:48:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/rack-1.4.5/lib/rack/etag.rb:23:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/rack-1.4.5/lib/rack/conditionalget.rb:25:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/head.rb:14:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:210:in `context'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:205:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/cookies.rb:341:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activerecord-3.2.12/lib/active_record/query_cache.rb:64:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activerecord-3.2.12/lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:405:in `_run__3137492800330137279__call__184189290840867898__callbacks'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:405:in `__run_callback'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/railties-3.2.12/lib/rails/rack/logger.rb:32:in `call_app'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/railties-3.2.12/lib/rails/rack/logger.rb:16:in `block in call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/tagged_logging.rb:22:in `tagged'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/railties-3.2.12/lib/rails/rack/logger.rb:16:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/rack-1.4.5/lib/rack/lock.rb:15:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/static.rb:62:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/railties-3.2.12/lib/rails/engine.rb:479:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/railties-3.2.12/lib/rails/application.rb:223:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/rack-1.4.5/lib/rack/handler/webrick.rb:59:in `service'
+/home/miroslav/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/home/miroslav/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/home/miroslav/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+  Rendered user_groups/index.html.erb within layouts/application (3.9ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionView::Template::Error (/home/miroslav/Projects/lefranc/lefranc/app/views/user_groups/index.html.erb:6: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+...to group.name, group_path group );@output_buffer.safe_concat...
+...                               ^):
+    3: <% if @groups.present? %>
+    4:         <ul>
+    5:         <% @groups.each do |group| %>
+    6:                 <li><%= link_to group.name, group_path group %>
+    7:                         <%= link_to "Leave", [@user, group] , :confirm => "Are you sure?", :controller => :user_groups, :method => :delete %>
+    8: 
+    9:                 </li>
+  app/controllers/user_groups_controller.rb:7:in `index'
+
+
+  Rendered /home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.2ms)
+
+
+Started GET "/users/2/groups" for 127.0.0.1 at 2013-03-19 22:52:23 +0100
+Processing by UserGroupsController#index as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "2"]]
+ERROR: compiling _app_views_user_groups_index_html_erb___1478322071151178753_70352235991800 RAISED /home/miroslav/Projects/lefranc/lefranc/app/views/user_groups/index.html.erb:6: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+...to group.name, group_path group );@output_buffer.safe_concat...
+...                               ^
+Function body:           def _app_views_user_groups_index_html_erb___1478322071151178753_70352235991800(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "user_groups/index";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_concat('<h1>User ');@output_buffer.append= ( @user.name );@output_buffer.safe_concat(' belongs to groups</h1>
+
+'); if @groups.present? 
+@output_buffer.safe_concat('        <ul>
+');         @groups.each do |group| 
+@output_buffer.safe_concat('                <li>');@output_buffer.append= ( link_to group.name, group_path group );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('                        ');@output_buffer.append= ( link_to "Leave", [@user, group] , :confirm => "Are you sure?", :controller => :user_groups, :method => :delete );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('
+                </li>
+');         end 
+@output_buffer.safe_concat('        </ul>
+        ');@output_buffer.append= ( link_to "New gender", new_language_word_gender_path(@language) );@output_buffer.safe_concat('
+'); end 
+@output_buffer.safe_concat('
+');@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/template.rb:297:in `module_eval'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/template.rb:297:in `compile'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/template.rb:244:in `block in compile!'
+<internal:prelude>:10:in `synchronize'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/template.rb:232:in `compile!'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/template.rb:144:in `block in render'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/notifications.rb:125:in `instrument'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/template.rb:143:in `render'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `instrument'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/renderer/renderer.rb:17:in `render'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/abstract_controller/rendering.rb:88:in `render'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/rendering.rb:16:in `render'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/home/miroslav/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activerecord-3.2.12/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/mime_responds.rb:196:in `respond_to'
+/home/miroslav/Projects/lefranc/lefranc/app/controllers/user_groups_controller.rb:7:in `index'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/abstract_controller/base.rb:167:in `process_action'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:425:in `_run__3696843000758542644__process_action__2815781664331873748__callbacks'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:405:in `__run_callback'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `instrument'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activerecord-3.2.12/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/abstract_controller/base.rb:121:in `process'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/abstract_controller/rendering.rb:45:in `process'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal.rb:203:in `dispatch'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal.rb:246:in `block in action'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/routing/route_set.rb:601:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/omniauth-1.1.3/lib/omniauth/strategy.rb:177:in `call!'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/omniauth-1.1.3/lib/omniauth/strategy.rb:157:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/omniauth-1.1.3/lib/omniauth/strategy.rb:177:in `call!'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/omniauth-1.1.3/lib/omniauth/strategy.rb:157:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/omniauth-1.1.3/lib/omniauth/strategy.rb:177:in `call!'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/omniauth-1.1.3/lib/omniauth/strategy.rb:157:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/omniauth-1.1.3/lib/omniauth/strategy.rb:177:in `call!'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/omniauth-1.1.3/lib/omniauth/strategy.rb:157:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/omniauth-1.1.3/lib/omniauth/builder.rb:48:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/rack-1.4.5/lib/rack/etag.rb:23:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/rack-1.4.5/lib/rack/conditionalget.rb:25:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/head.rb:14:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:210:in `context'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:205:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/cookies.rb:341:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activerecord-3.2.12/lib/active_record/query_cache.rb:64:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activerecord-3.2.12/lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:405:in `_run__3137492800330137279__call__184189290840867898__callbacks'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:405:in `__run_callback'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/railties-3.2.12/lib/rails/rack/logger.rb:32:in `call_app'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/railties-3.2.12/lib/rails/rack/logger.rb:16:in `block in call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/tagged_logging.rb:22:in `tagged'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/railties-3.2.12/lib/rails/rack/logger.rb:16:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/rack-1.4.5/lib/rack/lock.rb:15:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/static.rb:62:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/railties-3.2.12/lib/rails/engine.rb:479:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/railties-3.2.12/lib/rails/application.rb:223:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/rack-1.4.5/lib/rack/handler/webrick.rb:59:in `service'
+/home/miroslav/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/home/miroslav/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/home/miroslav/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+  Rendered user_groups/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (/home/miroslav/Projects/lefranc/lefranc/app/views/user_groups/index.html.erb:6: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+...to group.name, group_path group );@output_buffer.safe_concat...
+...                               ^):
+    3: <% if @groups.present? %>
+    4:         <ul>
+    5:         <% @groups.each do |group| %>
+    6:                 <li><%= link_to group.name, group_path group %>
+    7:                         <%= link_to "Leave", [@user, group] , :confirm => "Are you sure?", :controller => :user_groups, :method => :delete %>
+    8: 
+    9:                 </li>
+  app/controllers/user_groups_controller.rb:7:in `index'
+
+
+  Rendered /home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered /home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.1ms)
+
+
+Started GET "/users/2/groups" for 127.0.0.1 at 2013-03-19 22:52:23 +0100
+Processing by UserGroupsController#index as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "2"]]
+ERROR: compiling _app_views_user_groups_index_html_erb___1478322071151178753_70352235991800 RAISED /home/miroslav/Projects/lefranc/lefranc/app/views/user_groups/index.html.erb:6: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+...to group.name, group_path group );@output_buffer.safe_concat...
+...                               ^
+Function body:           def _app_views_user_groups_index_html_erb___1478322071151178753_70352235991800(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "user_groups/index";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_concat('<h1>User ');@output_buffer.append= ( @user.name );@output_buffer.safe_concat(' belongs to groups</h1>
+
+'); if @groups.present? 
+@output_buffer.safe_concat('        <ul>
+');         @groups.each do |group| 
+@output_buffer.safe_concat('                <li>');@output_buffer.append= ( link_to group.name, group_path group );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('                        ');@output_buffer.append= ( link_to "Leave", [@user, group] , :confirm => "Are you sure?", :controller => :user_groups, :method => :delete );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('
+                </li>
+');         end 
+@output_buffer.safe_concat('        </ul>
+        ');@output_buffer.append= ( link_to "New gender", new_language_word_gender_path(@language) );@output_buffer.safe_concat('
+'); end 
+@output_buffer.safe_concat('
+');@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/template.rb:297:in `module_eval'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/template.rb:297:in `compile'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/template.rb:244:in `block in compile!'
+<internal:prelude>:10:in `synchronize'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/template.rb:232:in `compile!'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/template.rb:144:in `block in render'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/notifications.rb:125:in `instrument'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/template.rb:143:in `render'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `instrument'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_view/renderer/renderer.rb:17:in `render'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/abstract_controller/rendering.rb:88:in `render'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/rendering.rb:16:in `render'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/home/miroslav/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activerecord-3.2.12/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/mime_responds.rb:196:in `respond_to'
+/home/miroslav/Projects/lefranc/lefranc/app/controllers/user_groups_controller.rb:7:in `index'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/abstract_controller/base.rb:167:in `process_action'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:425:in `_run__3696843000758542644__process_action__2815781664331873748__callbacks'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:405:in `__run_callback'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `instrument'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activerecord-3.2.12/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/abstract_controller/base.rb:121:in `process'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/abstract_controller/rendering.rb:45:in `process'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal.rb:203:in `dispatch'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_controller/metal.rb:246:in `block in action'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/routing/route_set.rb:601:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/omniauth-1.1.3/lib/omniauth/strategy.rb:177:in `call!'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/omniauth-1.1.3/lib/omniauth/strategy.rb:157:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/omniauth-1.1.3/lib/omniauth/strategy.rb:177:in `call!'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/omniauth-1.1.3/lib/omniauth/strategy.rb:157:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/omniauth-1.1.3/lib/omniauth/strategy.rb:177:in `call!'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/omniauth-1.1.3/lib/omniauth/strategy.rb:157:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/omniauth-1.1.3/lib/omniauth/strategy.rb:177:in `call!'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/omniauth-1.1.3/lib/omniauth/strategy.rb:157:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/omniauth-1.1.3/lib/omniauth/builder.rb:48:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/rack-1.4.5/lib/rack/etag.rb:23:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/rack-1.4.5/lib/rack/conditionalget.rb:25:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/head.rb:14:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:210:in `context'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:205:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/cookies.rb:341:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activerecord-3.2.12/lib/active_record/query_cache.rb:64:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activerecord-3.2.12/lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:405:in `_run__3137492800330137279__call__184189290840867898__callbacks'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:405:in `__run_callback'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/railties-3.2.12/lib/rails/rack/logger.rb:32:in `call_app'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/railties-3.2.12/lib/rails/rack/logger.rb:16:in `block in call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/tagged_logging.rb:22:in `tagged'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/railties-3.2.12/lib/rails/rack/logger.rb:16:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/activesupport-3.2.12/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/rack-1.4.5/lib/rack/lock.rb:15:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/static.rb:62:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/railties-3.2.12/lib/rails/engine.rb:479:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/railties-3.2.12/lib/rails/application.rb:223:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+/home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/rack-1.4.5/lib/rack/handler/webrick.rb:59:in `service'
+/home/miroslav/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/home/miroslav/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/home/miroslav/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+  Rendered user_groups/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (/home/miroslav/Projects/lefranc/lefranc/app/views/user_groups/index.html.erb:6: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+...to group.name, group_path group );@output_buffer.safe_concat...
+...                               ^):
+    3: <% if @groups.present? %>
+    4:         <ul>
+    5:         <% @groups.each do |group| %>
+    6:                 <li><%= link_to group.name, group_path group %>
+    7:                         <%= link_to "Leave", [@user, group] , :confirm => "Are you sure?", :controller => :user_groups, :method => :delete %>
+    8: 
+    9:                 </li>
+  app/controllers/user_groups_controller.rb:7:in `index'
+
+
+  Rendered /home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.3ms)
+
+
+Started GET "/users/2/groups" for 127.0.0.1 at 2013-03-19 22:53:25 +0100
+Processing by UserGroupsController#index as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36mGroup Load (0.2ms)[0m  [1mSELECT "groups".* FROM "groups" INNER JOIN "group_users" ON "groups"."id" = "group_users"."group_id" WHERE "group_users"."user_id" = 2[0m
+  Rendered user_groups/index.html.erb within layouts/application (5.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 24ms (Views: 19.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-19 22:53:25 +0100
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-19 22:53:25 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-19 22:53:25 +0100
+Served asset /languages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-03-19 22:53:25 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-19 22:53:25 +0100
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_groups.css?body=1" for 127.0.0.1 at 2013-03-19 22:53:25 +0100
+Served asset /user_groups.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-19 22:53:25 +0100
+Served asset /word_gender.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-19 22:53:25 +0100
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-03-19 22:53:25 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-19 22:53:25 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-19 22:53:25 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-19 22:53:25 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-19 22:53:25 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_groups.js?body=1" for 127.0.0.1 at 2013-03-19 22:53:25 +0100
+Served asset /user_groups.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-19 22:53:25 +0100
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-19 22:53:25 +0100
+Served asset /user.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/users/2/groups" for 127.0.0.1 at 2013-03-19 22:54:50 +0100
+Processing by UserGroupsController#index as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mGroup Load (0.4ms)[0m  SELECT "groups".* FROM "groups" INNER JOIN "group_users" ON "groups"."id" = "group_users"."group_id" WHERE "group_users"."user_id" = 2
+  Rendered user_groups/index.html.erb within layouts/application (33.0ms)
+Completed 500 Internal Server Error in 39ms
+
+ActionView::Template::Error (undefined method `user_group_path' for #<#<Class:0x00000003942930>:0x007ff850122348>):
+    4:         <ul>
+    5:         <% @groups.each do |group| %>
+    6:                 <li><%= link_to group.name, group_path(group) %>
+    7:                         <%= link_to "Leave", [@user, group] , :confirm => "Are you sure?", :controller => :user_groups, :method => :delete %>
+    8: 
+    9:                 </li>
+    10:         <% end %>
+  app/views/user_groups/index.html.erb:7:in `block in _app_views_user_groups_index_html_erb___1478322071151178753_70352034969780'
+  app/views/user_groups/index.html.erb:5:in `_app_views_user_groups_index_html_erb___1478322071151178753_70352034969780'
+  app/controllers/user_groups_controller.rb:7:in `index'
+
+
+  Rendered /home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.5ms)
+
+
+Started GET "/users/2/groups" for 127.0.0.1 at 2013-03-19 22:55:43 +0100
+Processing by UserGroupsController#index as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mGroup Load (0.3ms)[0m  SELECT "groups".* FROM "groups" INNER JOIN "group_users" ON "groups"."id" = "group_users"."group_id" WHERE "group_users"."user_id" = 2
+  Rendered user_groups/index.html.erb within layouts/application (5.9ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionController::RoutingError (No route matches {:action=>"new", :controller=>"word_genders", :language_id=>nil}):
+  app/views/user_groups/index.html.erb:10:in `_app_views_user_groups_index_html_erb___1478322071151178753_70352169579100'
+  app/controllers/user_groups_controller.rb:7:in `index'
+
+
+  Rendered /home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/users/2/groups" for 127.0.0.1 at 2013-03-19 22:55:45 +0100
+Processing by UserGroupsController#index as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mGroup Load (0.4ms)[0m  SELECT "groups".* FROM "groups" INNER JOIN "group_users" ON "groups"."id" = "group_users"."group_id" WHERE "group_users"."user_id" = 2
+  Rendered user_groups/index.html.erb within layouts/application (6.9ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionController::RoutingError (No route matches {:action=>"new", :controller=>"word_genders", :language_id=>nil}):
+  app/views/user_groups/index.html.erb:10:in `_app_views_user_groups_index_html_erb___1478322071151178753_70352169579100'
+  app/controllers/user_groups_controller.rb:7:in `index'
+
+
+  Rendered /home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/users/2/groups" for 127.0.0.1 at 2013-03-19 22:56:27 +0100
+Processing by UserGroupsController#index as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mGroup Load (0.3ms)[0m  SELECT "groups".* FROM "groups" INNER JOIN "group_users" ON "groups"."id" = "group_users"."group_id" WHERE "group_users"."user_id" = 2
+  Rendered user_groups/index.html.erb within layouts/application (3.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 54ms (Views: 51.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-19 22:56:28 +0100
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-19 22:56:28 +0100
+Served asset /languages.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-03-19 22:56:28 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-19 22:56:28 +0100
+Served asset /sessions.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/user_groups.css?body=1" for 127.0.0.1 at 2013-03-19 22:56:28 +0100
+Served asset /user_groups.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-19 22:56:28 +0100
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-19 22:56:28 +0100
+Served asset /word_gender.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-19 22:56:28 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-19 22:56:28 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-03-19 22:56:28 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-19 22:56:28 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-19 22:56:28 +0100
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_groups.js?body=1" for 127.0.0.1 at 2013-03-19 22:56:28 +0100
+Served asset /user_groups.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-19 22:56:28 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-19 22:56:28 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-19 22:56:28 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/groups/1" for 127.0.0.1 at 2013-03-19 22:56:31 +0100
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mGroup Load (0.3ms)[0m  SELECT "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mLanguage Load (0.2ms)[0m  [1mSELECT "languages".* FROM "languages" WHERE "languages"."id" = 1 LIMIT 1[0m
+  [1m[35mLanguage Load (0.2ms)[0m  SELECT "languages".* FROM "languages" WHERE "languages"."id" = 3 LIMIT 1
+  Rendered groups/show.html.erb within layouts/application (22.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 37ms (Views: 33.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-19 22:56:31 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-19 22:56:31 +0100
+Served asset /user.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-03-19 22:56:31 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-19 22:56:31 +0100
+Served asset /languages.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-19 22:56:31 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-19 22:56:31 +0100
+Served asset /word_gender.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_groups.css?body=1" for 127.0.0.1 at 2013-03-19 22:56:31 +0100
+Served asset /user_groups.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-19 22:56:31 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-19 22:56:31 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-03-19 22:56:31 +0100
+Served asset /home.js - 304 Not Modified (27ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-19 22:56:31 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-19 22:56:31 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-19 22:56:31 +0100
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-19 22:56:31 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-19 22:56:31 +0100
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/user_groups.js?body=1" for 127.0.0.1 at 2013-03-19 22:56:31 +0100
+Served asset /user_groups.js - 304 Not Modified (0ms)
+
+
+Started GET "/groups" for 127.0.0.1 at 2013-03-19 22:56:33 +0100
+Processing by GroupsController#index as HTML
+  [1m[35mGroup Load (0.2ms)[0m  SELECT "groups".* FROM "groups" 
+  [1m[36mLanguage Load (0.1ms)[0m  [1mSELECT "languages".* FROM "languages" WHERE "languages"."id" = 1 LIMIT 1[0m
+  [1m[35mLanguage Load (0.1ms)[0m  SELECT "languages".* FROM "languages" WHERE "languages"."id" = 3 LIMIT 1
+  [1m[36mLanguage Load (0.1ms)[0m  [1mSELECT "languages".* FROM "languages" WHERE "languages"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "languages".* FROM "languages" WHERE "languages"."id" = 3 LIMIT 1
+  Rendered groups/index.html.erb within layouts/application (6.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 19ms (Views: 16.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-19 22:56:33 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-19 22:56:33 +0100
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-03-19 22:56:33 +0100
+Served asset /home.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-19 22:56:33 +0100
+Served asset /sessions.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/user_groups.css?body=1" for 127.0.0.1 at 2013-03-19 22:56:33 +0100
+Served asset /user_groups.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-19 22:56:33 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-19 22:56:33 +0100
+Served asset /languages.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-19 22:56:33 +0100
+Served asset /word_gender.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-19 22:56:33 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-19 22:56:33 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-03-19 22:56:33 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-19 22:56:33 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_groups.js?body=1" for 127.0.0.1 at 2013-03-19 22:56:33 +0100
+Served asset /user_groups.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-19 22:56:33 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-19 22:56:33 +0100
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-19 22:56:33 +0100
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-19 22:56:48 +0100
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered home/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-19 22:56:48 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-19 22:56:48 +0100
+Served asset /languages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-03-19 22:56:48 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-19 22:56:48 +0100
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_groups.css?body=1" for 127.0.0.1 at 2013-03-19 22:56:48 +0100
+Served asset /user_groups.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-19 22:56:48 +0100
+Served asset /sessions.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-19 22:56:48 +0100
+Served asset /word_gender.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-19 22:56:48 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-19 22:56:48 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-03-19 22:56:48 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-19 22:56:48 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-19 22:56:48 +0100
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-19 22:56:48 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-19 22:56:48 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-19 22:56:48 +0100
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/user_groups.js?body=1" for 127.0.0.1 at 2013-03-19 22:56:48 +0100
+Served asset /user_groups.js - 304 Not Modified (0ms)
+
+
+Started GET "/signout" for 127.0.0.1 at 2013-03-19 22:57:21 +0100
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-19 22:57:21 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-03-19 22:57:21 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-19 22:57:21 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-19 22:57:21 +0100
+Served asset /languages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-19 22:57:21 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_groups.css?body=1" for 127.0.0.1 at 2013-03-19 22:57:21 +0100
+Served asset /user_groups.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-19 22:57:21 +0100
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-19 22:57:21 +0100
+Served asset /word_gender.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-19 22:57:21 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-19 22:57:21 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-19 22:57:21 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-03-19 22:57:21 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-19 22:57:21 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-19 22:57:21 +0100
+Served asset /user.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/user_groups.js?body=1" for 127.0.0.1 at 2013-03-19 22:57:21 +0100
+Served asset /user_groups.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-19 22:57:21 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-19 22:57:21 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/sessions/index" for 127.0.0.1 at 2013-03-19 22:57:40 +0100
+Processing by SessionsController#index as HTML
+  Rendered sessions/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 18ms (Views: 17.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-19 22:57:40 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-03-19 22:57:40 +0100
+Served asset /home.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-19 22:57:40 +0100
+Served asset /languages.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-19 22:57:40 +0100
+Served asset /word_gender.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-19 22:57:40 +0100
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_groups.css?body=1" for 127.0.0.1 at 2013-03-19 22:57:40 +0100
+Served asset /user_groups.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-19 22:57:40 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-19 22:57:40 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-19 22:57:40 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-19 22:57:40 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-03-19 22:57:40 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-19 22:57:40 +0100
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-19 22:57:40 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_groups.js?body=1" for 127.0.0.1 at 2013-03-19 22:57:40 +0100
+Served asset /user_groups.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-19 22:57:40 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-19 22:57:40 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2013-03-19 22:57:42 +0100
+
+
+Started GET "/auth/google_oauth2/callback?state=3b14416edf6f60415fca5b47323dd51e65df5da8afa2a820&code=4/CJ25OrKOfySQ-SVfxnq3d8fY6Nm6.QnqEPB-SSX4YOl05ti8ZT3bHflQJewI" for 127.0.0.1 at 2013-03-19 22:57:43 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"state"=>"3b14416edf6f60415fca5b47323dd51e65df5da8afa2a820", "code"=>"4/CJ25OrKOfySQ-SVfxnq3d8fY6Nm6.QnqEPB-SSX4YOl05ti8ZT3bHflQJewI", "provider"=>"google_oauth2"}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."provider" = 'google_oauth2' AND "users"."uid" = '100371985937826485566' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-19 22:57:44 +0100
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-19 22:57:44 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-19 22:57:44 +0100
+Served asset /languages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-19 22:57:44 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-03-19 22:57:44 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-19 22:57:44 +0100
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-19 22:57:44 +0100
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/user_groups.css?body=1" for 127.0.0.1 at 2013-03-19 22:57:44 +0100
+Served asset /user_groups.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-19 22:57:44 +0100
+Served asset /word_gender.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-19 22:57:44 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-03-19 22:57:44 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-19 22:57:44 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-19 22:57:44 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_groups.js?body=1" for 127.0.0.1 at 2013-03-19 22:57:44 +0100
+Served asset /user_groups.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-19 22:57:44 +0100
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-19 22:57:44 +0100
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-19 22:57:44 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-19 23:00:36 +0100
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered home/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 61ms (Views: 60.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-19 23:00:37 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-19 23:00:37 +0100
+Served asset /sessions.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-19 23:00:37 +0100
+Served asset /word_gender.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-19 23:00:37 +0100
+Served asset /languages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-03-19 23:00:37 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-19 23:00:37 +0100
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_groups.css?body=1" for 127.0.0.1 at 2013-03-19 23:00:37 +0100
+Served asset /user_groups.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-03-19 23:00:37 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-19 23:00:37 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-19 23:00:37 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-19 23:00:37 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-19 23:00:37 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-19 23:00:37 +0100
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_groups.js?body=1" for 127.0.0.1 at 2013-03-19 23:00:37 +0100
+Served asset /user_groups.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-19 23:00:37 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-19 23:00:37 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/users/4/groups" for 127.0.0.1 at 2013-03-19 23:00:46 +0100
+Processing by UserGroupsController#index as HTML
+  Parameters: {"user_id"=>"4"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "4"]]
+  [1m[36mGroup Load (0.3ms)[0m  [1mSELECT "groups".* FROM "groups" INNER JOIN "group_users" ON "groups"."id" = "group_users"."group_id" WHERE "group_users"."user_id" = 4[0m
+  Rendered user_groups/index.html.erb within layouts/application (2.8ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 21ms (Views: 18.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-19 23:00:46 +0100
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-19 23:00:46 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-19 23:00:46 +0100
+Served asset /languages.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/user_groups.css?body=1" for 127.0.0.1 at 2013-03-19 23:00:46 +0100
+Served asset /user_groups.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-19 23:00:46 +0100
+Served asset /user.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-03-19 23:00:46 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-19 23:00:46 +0100
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-19 23:00:46 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-19 23:00:46 +0100
+Served asset /word_gender.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-03-19 23:00:46 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-19 23:00:46 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-19 23:00:46 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_groups.js?body=1" for 127.0.0.1 at 2013-03-19 23:00:46 +0100
+Served asset /user_groups.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-19 23:00:46 +0100
+Served asset /user.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-19 23:00:46 +0100
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-19 23:00:46 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-19 23:04:50 +0100
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered home/index.html.erb within layouts/application (16.5ms)
+Completed 500 Internal Server Error in 21ms
+
+ActionView::Template::Error (undefined method `user_lessons_path' for #<#<Class:0x007ff8483e62f8>:0x007ff8500818d0>):
+    5: </p>
+    6: 
+    7: <p>
+    8:   <%= link_to "Lessons", user_lessons_path(current_user) %>
+    9: </p>
+    10: 
+    11: <p>
+  app/views/home/index.html.erb:8:in `_app_views_home_index_html_erb__151486758787152194_70352235660100'
+
+
+  Rendered /home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (29.7ms)
+  Rendered /home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (38.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-19 23:06:47 +0100
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered home/index.html.erb within layouts/application (25.7ms)
+Completed 200 OK in 37ms (Views: 36.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-19 23:06:47 +0100
+Served asset /application.css - 304 Not Modified (30ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-03-19 23:06:47 +0100
+Served asset /home.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-19 23:06:47 +0100
+Served asset /languages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_groups.css?body=1" for 127.0.0.1 at 2013-03-19 23:06:47 +0100
+Served asset /user_groups.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-19 23:06:47 +0100
+Served asset /user.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-19 23:06:47 +0100
+Served asset /word_gender.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-19 23:06:47 +0100
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-19 23:06:47 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-19 23:06:47 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-19 23:06:47 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-03-19 23:06:47 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-19 23:06:47 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_groups.js?body=1" for 127.0.0.1 at 2013-03-19 23:06:47 +0100
+Served asset /user_groups.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-19 23:06:47 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-19 23:06:47 +0100
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-19 23:06:47 +0100
+Served asset /application.js - 304 Not Modified (2ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-19 23:21:51 +0100
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered home/index.html.erb within layouts/application (61.0ms)
+Compiled user_lessons.css  (1ms)  (pid 19470)
+Compiled application.css  (10ms)  (pid 19470)
+Compiled user_lessons.js  (168ms)  (pid 19470)
+Compiled application.js  (183ms)  (pid 19470)
+Completed 200 OK in 310ms (Views: 308.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-19 23:21:51 +0100
+Served asset /application.css - 304 Not Modified (38ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-19 23:21:51 +0100
+Served asset /languages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-03-19 23:21:51 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-19 23:21:51 +0100
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-19 23:21:51 +0100
+Served asset /sessions.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/user_groups.css?body=1" for 127.0.0.1 at 2013-03-19 23:21:51 +0100
+Served asset /user_groups.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-19 23:21:51 +0100
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-19 23:21:51 +0100
+Served asset /word_gender.css - 304 Not Modified (32ms)
+
+
+Started GET "/assets/user_lessons.css?body=1" for 127.0.0.1 at 2013-03-19 23:21:51 +0100
+Served asset /user_lessons.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-19 23:21:51 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-03-19 23:21:51 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_groups.js?body=1" for 127.0.0.1 at 2013-03-19 23:21:51 +0100
+Served asset /user_groups.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-19 23:21:51 +0100
+Served asset /languages.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-19 23:21:51 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-19 23:21:51 +0100
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-19 23:21:51 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_lessons.js?body=1" for 127.0.0.1 at 2013-03-19 23:21:51 +0100
+Served asset /user_lessons.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-19 23:21:51 +0100
+Served asset /application.js - 304 Not Modified (19ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-03-19 23:21:55 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" 
+  Rendered users/index.html.erb within layouts/application (3.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 22ms (Views: 18.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-19 23:21:56 +0100
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-19 23:21:56 +0100
+Served asset /languages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-19 23:21:56 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-03-19 23:21:56 +0100
+Served asset /home.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/user_groups.css?body=1" for 127.0.0.1 at 2013-03-19 23:21:56 +0100
+Served asset /user_groups.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_lessons.css?body=1" for 127.0.0.1 at 2013-03-19 23:21:56 +0100
+Served asset /user_lessons.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-19 23:21:56 +0100
+Served asset /user.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-03-19 23:21:56 +0100
+Served asset /home.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-19 23:21:56 +0100
+Served asset /word_gender.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-19 23:21:56 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-19 23:21:56 +0100
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-19 23:21:56 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-19 23:21:56 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-19 23:21:56 +0100
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_groups.js?body=1" for 127.0.0.1 at 2013-03-19 23:21:56 +0100
+Served asset /user_groups.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-19 23:21:56 +0100
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-19 23:21:56 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_lessons.js?body=1" for 127.0.0.1 at 2013-03-19 23:21:56 +0100
+Served asset /user_lessons.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2013-03-19 23:21:59 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered users/show.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 18ms (Views: 15.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-19 23:21:59 +0100
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-03-19 23:21:59 +0100
+Served asset /home.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/user_groups.css?body=1" for 127.0.0.1 at 2013-03-19 23:21:59 +0100
+Served asset /user_groups.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-19 23:21:59 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-19 23:21:59 +0100
+Served asset /languages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_lessons.css?body=1" for 127.0.0.1 at 2013-03-19 23:21:59 +0100
+Served asset /user_lessons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-19 23:21:59 +0100
+Served asset /user.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-19 23:21:59 +0100
+Served asset /word_gender.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-19 23:21:59 +0100
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-03-19 23:21:59 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-19 23:21:59 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-19 23:21:59 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-19 23:21:59 +0100
+Served asset /user.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-19 23:21:59 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_groups.js?body=1" for 127.0.0.1 at 2013-03-19 23:21:59 +0100
+Served asset /user_groups.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-19 23:21:59 +0100
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/user_lessons.js?body=1" for 127.0.0.1 at 2013-03-19 23:21:59 +0100
+Served asset /user_lessons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-19 23:21:59 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-19 23:22:01 +0100
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-19 23:22:01 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-03-19 23:22:01 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-19 23:22:01 +0100
+Served asset /languages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-19 23:22:02 +0100
+Served asset /sessions.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/user_groups.css?body=1" for 127.0.0.1 at 2013-03-19 23:22:02 +0100
+Served asset /user_groups.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-19 23:22:02 +0100
+Served asset /word_gender.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-19 23:22:02 +0100
+Served asset /user.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-19 23:22:02 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-19 23:22:02 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-19 23:22:02 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_lessons.css?body=1" for 127.0.0.1 at 2013-03-19 23:22:02 +0100
+Served asset /user_lessons.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-03-19 23:22:02 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-19 23:22:02 +0100
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-19 23:22:02 +0100
+Served asset /sessions.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/user_lessons.js?body=1" for 127.0.0.1 at 2013-03-19 23:22:02 +0100
+Served asset /user_lessons.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/user_groups.js?body=1" for 127.0.0.1 at 2013-03-19 23:22:02 +0100
+Served asset /user_groups.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-19 23:22:02 +0100
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-19 23:22:02 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/4/lessons" for 127.0.0.1 at 2013-03-19 23:22:07 +0100
+Processing by UserLessonsController#index as HTML
+  Parameters: {"user_id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  [1m[35mLesson Load (0.2ms)[0m  SELECT "lessons".* FROM "lessons" INNER JOIN "groups" ON "lessons"."group_id" = "groups"."id" INNER JOIN "group_users" ON "groups"."id" = "group_users"."group_id" WHERE "group_users"."user_id" = 4
+  Rendered user_lessons/index.html.erb within layouts/application (13.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 52ms (Views: 26.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-19 23:22:08 +0100
+Served asset /application.css - 304 Not Modified (22ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-19 23:22:08 +0100
+Served asset /languages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-19 23:22:08 +0100
+Served asset /user.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-03-19 23:22:08 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_groups.css?body=1" for 127.0.0.1 at 2013-03-19 23:22:08 +0100
+Served asset /user_groups.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-19 23:22:08 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-19 23:22:08 +0100
+Served asset /word_gender.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_lessons.css?body=1" for 127.0.0.1 at 2013-03-19 23:22:08 +0100
+Served asset /user_lessons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-19 23:22:08 +0100
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-03-19 23:22:08 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-19 23:22:08 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-19 23:22:08 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-19 23:22:08 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_lessons.js?body=1" for 127.0.0.1 at 2013-03-19 23:22:08 +0100
+Served asset /user_lessons.js - 304 Not Modified (26ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-19 23:22:08 +0100
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_groups.js?body=1" for 127.0.0.1 at 2013-03-19 23:22:08 +0100
+Served asset /user_groups.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-19 23:22:08 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-19 23:22:08 +0100
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/users/4/lessons.json" for 127.0.0.1 at 2013-03-19 23:22:13 +0100
+Processing by UserLessonsController#index as JSON
+  Parameters: {"user_id"=>"4"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "4"]]
+  [1m[36mLesson Load (0.4ms)[0m  [1mSELECT "lessons".* FROM "lessons" INNER JOIN "groups" ON "lessons"."group_id" = "groups"."id" INNER JOIN "group_users" ON "groups"."id" = "group_users"."group_id" WHERE "group_users"."user_id" = 4[0m
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/4/lessons.json" for 127.0.0.1 at 2013-03-19 23:22:29 +0100
+Processing by UserLessonsController#index as JSON
+  Parameters: {"user_id"=>"4"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "4"]]
+  [1m[36mLesson Load (0.6ms)[0m  [1mSELECT "lessons".* FROM "lessons" INNER JOIN "groups" ON "lessons"."group_id" = "groups"."id" INNER JOIN "group_users" ON "groups"."id" = "group_users"."group_id" WHERE "group_users"."user_id" = 4[0m
+Completed 200 OK in 29ms (Views: 25.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/4/lessons.json" for 127.0.0.1 at 2013-03-19 23:22:34 +0100
+Processing by UserLessonsController#index as JSON
+  Parameters: {"user_id"=>"4"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "4"]]
+  [1m[36mLesson Load (0.3ms)[0m  [1mSELECT "lessons".* FROM "lessons" INNER JOIN "groups" ON "lessons"."group_id" = "groups"."id" INNER JOIN "group_users" ON "groups"."id" = "group_users"."group_id" WHERE "group_users"."user_id" = 4[0m
+Completed 200 OK in 6ms (Views: 3.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/4/lessons" for 127.0.0.1 at 2013-03-19 23:22:38 +0100
+Processing by UserLessonsController#index as HTML
+  Parameters: {"user_id"=>"4"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "4"]]
+  [1m[36mLesson Load (0.4ms)[0m  [1mSELECT "lessons".* FROM "lessons" INNER JOIN "groups" ON "lessons"."group_id" = "groups"."id" INNER JOIN "group_users" ON "groups"."id" = "group_users"."group_id" WHERE "group_users"."user_id" = 4[0m
+  Rendered user_lessons/index.html.erb within layouts/application (3.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 18ms (Views: 16.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-19 23:22:38 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-19 23:22:38 +0100
+Served asset /sessions.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-03-19 23:22:38 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-19 23:22:38 +0100
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-19 23:22:38 +0100
+Served asset /languages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_groups.css?body=1" for 127.0.0.1 at 2013-03-19 23:22:38 +0100
+Served asset /user_groups.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_lessons.css?body=1" for 127.0.0.1 at 2013-03-19 23:22:38 +0100
+Served asset /user_lessons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-19 23:22:38 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-19 23:22:38 +0100
+Served asset /word_gender.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-19 23:22:38 +0100
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-03-19 23:22:38 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-19 23:22:38 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-19 23:22:38 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-19 23:22:38 +0100
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_groups.js?body=1" for 127.0.0.1 at 2013-03-19 23:22:38 +0100
+Served asset /user_groups.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_lessons.js?body=1" for 127.0.0.1 at 2013-03-19 23:22:38 +0100
+Served asset /user_lessons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-19 23:22:38 +0100
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-19 23:22:38 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/lessons" for 127.0.0.1 at 2013-03-19 23:22:44 +0100
+
+ActionController::RoutingError (uninitialized constant LessonsController):
+  activesupport (3.2.12) lib/active_support/inflector/methods.rb:230:in `block in constantize'
+  activesupport (3.2.12) lib/active_support/inflector/methods.rb:229:in `each'
+  activesupport (3.2.12) lib/active_support/inflector/methods.rb:229:in `constantize'
+  actionpack (3.2.12) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.12) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.12) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.12) lib/action_dispatch/routing/route_set.rb:601:in `call'
+  omniauth (1.1.3) lib/omniauth/strategy.rb:177:in `call!'
+  omniauth (1.1.3) lib/omniauth/strategy.rb:157:in `call'
+  omniauth (1.1.3) lib/omniauth/strategy.rb:177:in `call!'
+  omniauth (1.1.3) lib/omniauth/strategy.rb:157:in `call'
+  omniauth (1.1.3) lib/omniauth/strategy.rb:177:in `call!'
+  omniauth (1.1.3) lib/omniauth/strategy.rb:157:in `call'
+  omniauth (1.1.3) lib/omniauth/strategy.rb:177:in `call!'
+  omniauth (1.1.3) lib/omniauth/strategy.rb:157:in `call'
+  omniauth (1.1.3) lib/omniauth/builder.rb:48:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.12) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.12) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:405:in `_run__3137492800330137279__call__184189290840867898__callbacks'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.12) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/miroslav/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/miroslav/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/miroslav/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-19 23:22:51 +0100
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 42ms (Views: 41.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-03-19 23:22:51 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-19 23:22:51 +0100
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-19 23:22:51 +0100
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-19 23:22:51 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_groups.css?body=1" for 127.0.0.1 at 2013-03-19 23:22:51 +0100
+Served asset /user_groups.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-19 23:22:51 +0100
+Served asset /languages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_lessons.css?body=1" for 127.0.0.1 at 2013-03-19 23:22:51 +0100
+Served asset /user_lessons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-19 23:22:51 +0100
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-19 23:22:51 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-19 23:22:51 +0100
+Served asset /word_gender.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-03-19 23:22:51 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-19 23:22:51 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-19 23:22:51 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_groups.js?body=1" for 127.0.0.1 at 2013-03-19 23:22:51 +0100
+Served asset /user_groups.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-19 23:22:51 +0100
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-19 23:22:51 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-19 23:22:51 +0100
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/user_lessons.js?body=1" for 127.0.0.1 at 2013-03-19 23:22:51 +0100
+Served asset /user_lessons.js - 304 Not Modified (0ms)
+
+
+Started GET "/signout" for 127.0.0.1 at 2013-03-19 23:23:01 +0100
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-19 23:23:01 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionController::RoutingError (No route matches {:controller=>"user_groups", :user_id=>nil}):
+  app/views/home/index.html.erb:4:in `_app_views_home_index_html_erb__151486758787152194_70352235660100'
+
+
+  Rendered /home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-19 23:23:27 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionController::RoutingError (No route matches {:controller=>"user_groups", :user_id=>nil}):
+  app/views/home/index.html.erb:4:in `_app_views_home_index_html_erb__151486758787152194_70352235660100'
+
+
+  Rendered /home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/sessions/index" for 127.0.0.1 at 2013-03-19 23:23:40 +0100
+Processing by SessionsController#index as HTML
+  Rendered sessions/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 14ms (Views: 13.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-19 23:23:40 +0100
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-19 23:23:40 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-19 23:23:40 +0100
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-19 23:23:40 +0100
+Served asset /languages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-03-19 23:23:40 +0100
+Served asset /home.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/user_groups.css?body=1" for 127.0.0.1 at 2013-03-19 23:23:40 +0100
+Served asset /user_groups.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_lessons.css?body=1" for 127.0.0.1 at 2013-03-19 23:23:40 +0100
+Served asset /user_lessons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-19 23:23:40 +0100
+Served asset /word_gender.css - 304 Not Modified (30ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-19 23:23:40 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-19 23:23:40 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-03-19 23:23:40 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-19 23:23:40 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-19 23:23:40 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-19 23:23:40 +0100
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_groups.js?body=1" for 127.0.0.1 at 2013-03-19 23:23:40 +0100
+Served asset /user_groups.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-19 23:23:40 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_lessons.js?body=1" for 127.0.0.1 at 2013-03-19 23:23:40 +0100
+Served asset /user_lessons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-19 23:23:40 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-19 23:26:21 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-19 23:26:22 +0100
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-19 23:26:22 +0100
+Served asset /languages.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-03-19 23:26:22 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-19 23:26:22 +0100
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_groups.css?body=1" for 127.0.0.1 at 2013-03-19 23:26:22 +0100
+Served asset /user_groups.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-19 23:26:22 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_lessons.css?body=1" for 127.0.0.1 at 2013-03-19 23:26:22 +0100
+Served asset /user_lessons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-19 23:26:22 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-19 23:26:22 +0100
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-19 23:26:22 +0100
+Served asset /word_gender.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-19 23:26:22 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-03-19 23:26:22 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-19 23:26:22 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-19 23:26:22 +0100
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_groups.js?body=1" for 127.0.0.1 at 2013-03-19 23:26:22 +0100
+Served asset /user_groups.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-19 23:26:22 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_lessons.js?body=1" for 127.0.0.1 at 2013-03-19 23:26:22 +0100
+Served asset /user_lessons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-19 23:26:22 +0100
+Served asset /application.js - 304 Not Modified (33ms)
+
+
+Started GET "/sessions/index" for 127.0.0.1 at 2013-03-19 23:26:42 +0100
+Processing by SessionsController#index as HTML
+  Rendered sessions/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 19ms (Views: 18.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-19 23:26:42 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-03-19 23:26:42 +0100
+Served asset /home.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-19 23:26:42 +0100
+Served asset /languages.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-19 23:26:42 +0100
+Served asset /sessions.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/user_groups.css?body=1" for 127.0.0.1 at 2013-03-19 23:26:42 +0100
+Served asset /user_groups.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-19 23:26:42 +0100
+Served asset /user.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/user_lessons.css?body=1" for 127.0.0.1 at 2013-03-19 23:26:42 +0100
+Served asset /user_lessons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-19 23:26:42 +0100
+Served asset /word_gender.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-19 23:26:42 +0100
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-03-19 23:26:42 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-19 23:26:42 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-19 23:26:42 +0100
+Served asset /languages.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-19 23:26:42 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-19 23:26:42 +0100
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_groups.js?body=1" for 127.0.0.1 at 2013-03-19 23:26:42 +0100
+Served asset /user_groups.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_lessons.js?body=1" for 127.0.0.1 at 2013-03-19 23:26:42 +0100
+Served asset /user_lessons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-19 23:26:42 +0100
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-19 23:26:42 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2013-03-19 23:26:44 +0100
+
+
+Started GET "/auth/google_oauth2/callback?state=7ac4cf76ad661fdb90f1d3804efc342e4c2318d48c701233&code=4/TADcXQllnvcYwD_JwTQ68WWZDdMl.gjCXRCHwlmcWOl05ti8ZT3bfqokJewI" for 127.0.0.1 at 2013-03-19 23:26:45 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"state"=>"7ac4cf76ad661fdb90f1d3804efc342e4c2318d48c701233", "code"=>"4/TADcXQllnvcYwD_JwTQ68WWZDdMl.gjCXRCHwlmcWOl05ti8ZT3bfqokJewI", "provider"=>"google_oauth2"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."provider" = 'google_oauth2' AND "users"."uid" = '100371985937826485566' LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 36ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-19 23:26:46 +0100
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered home/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 15ms (Views: 14.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-19 23:26:46 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-19 23:26:46 +0100
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_groups.css?body=1" for 127.0.0.1 at 2013-03-19 23:26:46 +0100
+Served asset /user_groups.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-19 23:26:46 +0100
+Served asset /sessions.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-03-19 23:26:46 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-19 23:26:46 +0100
+Served asset /languages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_lessons.css?body=1" for 127.0.0.1 at 2013-03-19 23:26:46 +0100
+Served asset /user_lessons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-19 23:26:46 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-19 23:26:46 +0100
+Served asset /word_gender.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-19 23:26:46 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-19 23:26:46 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-03-19 23:26:46 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-19 23:26:46 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_groups.js?body=1" for 127.0.0.1 at 2013-03-19 23:26:46 +0100
+Served asset /user_groups.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-19 23:26:46 +0100
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_lessons.js?body=1" for 127.0.0.1 at 2013-03-19 23:26:46 +0100
+Served asset /user_lessons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-19 23:26:46 +0100
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-19 23:26:46 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-19 23:27:21 +0100
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered home/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 32ms (Views: 30.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-19 23:27:21 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-19 23:27:21 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_groups.css?body=1" for 127.0.0.1 at 2013-03-19 23:27:21 +0100
+Served asset /user_groups.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-03-19 23:27:21 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-19 23:27:21 +0100
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-19 23:27:21 +0100
+Served asset /word_gender.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-19 23:27:21 +0100
+Served asset /languages.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/user_lessons.css?body=1" for 127.0.0.1 at 2013-03-19 23:27:21 +0100
+Served asset /user_lessons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-19 23:27:21 +0100
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-19 23:27:21 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-03-19 23:27:21 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-19 23:27:21 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-19 23:27:21 +0100
+Served asset /languages.js - 304 Not Modified (34ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-19 23:27:21 +0100
+Served asset /user.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-19 23:27:21 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-19 23:27:21 +0100
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/user_groups.js?body=1" for 127.0.0.1 at 2013-03-19 23:27:21 +0100
+Served asset /user_groups.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_lessons.js?body=1" for 127.0.0.1 at 2013-03-19 23:27:21 +0100
+Served asset /user_lessons.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-19 23:27:54 +0100
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered home/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 21ms (Views: 20.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-19 23:27:55 +0100
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-03-19 23:27:55 +0100
+Served asset /home.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-19 23:27:55 +0100
+Served asset /languages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_lessons.css?body=1" for 127.0.0.1 at 2013-03-19 23:27:55 +0100
+Served asset /user_lessons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-19 23:27:55 +0100
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_groups.css?body=1" for 127.0.0.1 at 2013-03-19 23:27:55 +0100
+Served asset /user_groups.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-19 23:27:55 +0100
+Served asset /word_gender.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-19 23:27:55 +0100
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-19 23:27:55 +0100
+Served asset /sessions.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-19 23:27:55 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-03-19 23:27:55 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-19 23:27:55 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-19 23:27:55 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-19 23:27:55 +0100
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_groups.js?body=1" for 127.0.0.1 at 2013-03-19 23:27:55 +0100
+Served asset /user_groups.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-19 23:27:55 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_lessons.js?body=1" for 127.0.0.1 at 2013-03-19 23:27:55 +0100
+Served asset /user_lessons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-19 23:27:55 +0100
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/signout" for 127.0.0.1 at 2013-03-19 23:28:00 +0100
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-19 23:28:00 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 10ms (Views: 9.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-19 23:28:00 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-19 23:28:00 +0100
+Served asset /languages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-03-19 23:28:00 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_groups.css?body=1" for 127.0.0.1 at 2013-03-19 23:28:00 +0100
+Served asset /user_groups.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-19 23:28:00 +0100
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-19 23:28:00 +0100
+Served asset /word_gender.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-19 23:28:00 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_lessons.css?body=1" for 127.0.0.1 at 2013-03-19 23:28:00 +0100
+Served asset /user_lessons.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-19 23:28:00 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-03-19 23:28:00 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-19 23:28:00 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-19 23:28:00 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-19 23:28:00 +0100
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-19 23:28:00 +0100
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-19 23:28:00 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_groups.js?body=1" for 127.0.0.1 at 2013-03-19 23:28:00 +0100
+Served asset /user_groups.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_lessons.js?body=1" for 127.0.0.1 at 2013-03-19 23:28:00 +0100
+Served asset /user_lessons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-19 23:28:00 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-19 23:28:03 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 17.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-19 23:28:03 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-03-19 23:28:03 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-19 23:28:03 +0100
+Served asset /languages.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-19 23:28:03 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-19 23:28:03 +0100
+Served asset /user.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/user_lessons.css?body=1" for 127.0.0.1 at 2013-03-19 23:28:03 +0100
+Served asset /user_lessons.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/user_groups.css?body=1" for 127.0.0.1 at 2013-03-19 23:28:03 +0100
+Served asset /user_groups.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-19 23:28:03 +0100
+Served asset /word_gender.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-19 23:28:03 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-19 23:28:03 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-03-19 23:28:03 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-19 23:28:03 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-19 23:28:03 +0100
+Served asset /languages.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/user_groups.js?body=1" for 127.0.0.1 at 2013-03-19 23:28:03 +0100
+Served asset /user_groups.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-19 23:28:03 +0100
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_lessons.js?body=1" for 127.0.0.1 at 2013-03-19 23:28:03 +0100
+Served asset /user_lessons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-19 23:28:03 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-19 23:28:03 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/sessions/index" for 127.0.0.1 at 2013-03-19 23:28:05 +0100
+Processing by SessionsController#index as HTML
+  Rendered sessions/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 42ms (Views: 41.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-03-19 23:28:05 +0100
+Served asset /home.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-19 23:28:05 +0100
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-19 23:28:05 +0100
+Served asset /languages.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-19 23:28:05 +0100
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_groups.css?body=1" for 127.0.0.1 at 2013-03-19 23:28:05 +0100
+Served asset /user_groups.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-19 23:28:05 +0100
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_lessons.css?body=1" for 127.0.0.1 at 2013-03-19 23:28:05 +0100
+Served asset /user_lessons.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-19 23:28:05 +0100
+Served asset /word_gender.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-19 23:28:05 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-19 23:28:05 +0100
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-19 23:28:05 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-19 23:28:05 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-03-19 23:28:05 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-19 23:28:05 +0100
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_groups.js?body=1" for 127.0.0.1 at 2013-03-19 23:28:05 +0100
+Served asset /user_groups.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-19 23:28:05 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-19 23:28:05 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_lessons.js?body=1" for 127.0.0.1 at 2013-03-19 23:28:05 +0100
+Served asset /user_lessons.js - 304 Not Modified (0ms)
+
+
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2013-03-19 23:28:07 +0100
+
+
+Started GET "/auth/google_oauth2/callback?state=31e5b66ab3b0ea8890bce21e5fd094a5a70578ab1d9db154&code=4/rjBDv9prSy1h2f3b9Li_PpDjQ9RT.gk0vWbOLynAXOl05ti8ZT3YXLowJewI" for 127.0.0.1 at 2013-03-19 23:28:07 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"state"=>"31e5b66ab3b0ea8890bce21e5fd094a5a70578ab1d9db154", "code"=>"4/rjBDv9prSy1h2f3b9Li_PpDjQ9RT.gk0vWbOLynAXOl05ti8ZT3YXLowJewI", "provider"=>"google_oauth2"}
+  [1m[35mUser Load (1.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."provider" = 'google_oauth2' AND "users"."uid" = '100371985937826485566' LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-19 23:28:09 +0100
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered home/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 30ms (Views: 29.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-19 23:28:09 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-03-19 23:28:09 +0100
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-19 23:28:09 +0100
+Served asset /sessions.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/user_groups.css?body=1" for 127.0.0.1 at 2013-03-19 23:28:09 +0100
+Served asset /user_groups.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_lessons.css?body=1" for 127.0.0.1 at 2013-03-19 23:28:09 +0100
+Served asset /user_lessons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-03-19 23:28:09 +0100
+Served asset /languages.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-03-19 23:28:09 +0100
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-03-19 23:28:09 +0100
+Served asset /word_gender.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-19 23:28:09 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-19 23:28:09 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-03-19 23:28:09 +0100
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-03-19 23:28:09 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_groups.js?body=1" for 127.0.0.1 at 2013-03-19 23:28:09 +0100
+Served asset /user_groups.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-19 23:28:09 +0100
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-03-19 23:28:09 +0100
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-03-19 23:28:09 +0100
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-19 23:28:09 +0100
+Served asset /application.js - 304 Not Modified (31ms)
+
+
+Started GET "/assets/user_lessons.js?body=1" for 127.0.0.1 at 2013-03-19 23:28:09 +0100
+Served asset /user_lessons.js - 304 Not Modified (0ms)

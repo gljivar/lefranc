@@ -1,16 +1,9 @@
 <h1>Learn languages</h1>
 
 <p>
-  Groups  #TODO: Link to user's groups
-</p>
-
-<p>
-  Lessons  #TODO: Link to user's lessons
-</p>
-
-<p>
   <% if current_user %>
-     <%= link_to "Sign out", signout_path %>
+     <%= link_to "Groups", user_groups_path(current_user) %></br>
+     <%= link_to "Lessons", user_lessons_path(current_user) %></br>
   <% else %>
      <%= link_to "Sign in / Sign up", "/sessions/index" %>
   <% end %>

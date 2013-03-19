@@ -1,11 +1,26 @@
 Lefranc::Application.routes.draw do
-
+ 
+  # Main / global 
+  root :to => "home#index"
+  
+  # Home 
   get "home/index"
 
+  # Users
+  resources :users
+
+  # User groups 
+  match '/users/:user_id/groups(.:format)' => 'user_groups#index', :as => :user_groups, :via => :get
+
+  # User lessons
+  match '/users/:user_id/lessons(.:format)' => 'user_lessons#index', :as => :user_lessons, :via => :get
+
+  # Groups
   resources :groups
 
-  resources :users 
-  
+  # Lessons
+  resources :lessons
+
   get "word_gender/index"
 
   resources :languages do
@@ -14,7 +29,6 @@ Lefranc::Application.routes.draw do
 
   resources :translations
 	
-  root :to => "home#index"
 
   # Authentication via providers	
   get "sessions/index"
