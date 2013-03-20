@@ -18,6 +18,11 @@ Lefranc::Application.routes.draw do
   # Groups
   resources :groups
 
+  # Group users
+  match '/groups/:group_id/users(.:format)' => 'group_users#index', :as => :group_users, :via => :get
+  match '/groups/:group_id/users/:id(.:format)' => 'group_users#create', :as => :create_group_user, :via => :post
+  match '/groups/:group_id/users/:id(.:format)' => 'group_users#destroy', :as => :delete_group_user, :via => :delete
+
   # Lessons
   resources :lessons
 

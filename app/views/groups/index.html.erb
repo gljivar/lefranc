@@ -1,5 +1,7 @@
 <h1>Listing groups</h1>
 
+#TODO: Join / leave interchangeable
+
 <table>
   <tr>
     <th>Name</th>
@@ -16,7 +18,7 @@
     <td><%= group.name %></td>
     <td><%= group.native_language.name %></td>
     <td><%= group.foreign_language.name %></td>
-    <td> #TODO: JOIN / GET OUT </td>
+    <td> <%= link_to "Join", create_group_user_path(group.id,current_user.id), :confirm => "Are you sure?", :method => :post %></td>
     <td><%= link_to 'Show', group %></td>
     <td><%= link_to 'Edit', edit_group_path(group) %></td>
     <td><%= link_to 'Destroy', group, method: :delete, data: { confirm: 'Are you sure?' } %></td>
