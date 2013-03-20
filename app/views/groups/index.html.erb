@@ -18,7 +18,13 @@
     <td><%= group.name %></td>
     <td><%= group.native_language.name %></td>
     <td><%= group.foreign_language.name %></td>
-    <td> <%= link_to "Join", create_group_user_path(group.id,current_user.id), :confirm => "Are you sure?", :method => :post %></td>
+    <td> 
+        <% if group.users.include? current_user  %>
+          <%= link_to "Leave", delete_group_user_path(group, current_user) , :confirm => "Are you sure?", :method => :delete %>
+        <% else %>
+          <%= link_to "Join", create_group_user_path(group, current_user) , :confirm => "Are you sure?", :method => :post %>
+        <% end %>
+    </td> 
     <td><%= link_to 'Show', group %></td>
     <td><%= link_to 'Edit', edit_group_path(group) %></td>
     <td><%= link_to 'Destroy', group, method: :delete, data: { confirm: 'Are you sure?' } %></td>

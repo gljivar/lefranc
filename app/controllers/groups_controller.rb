@@ -1,4 +1,5 @@
 class GroupsController < ApplicationController
+  
   # GET /groups
   # GET /groups.json
   def index
@@ -81,4 +82,8 @@ class GroupsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  private
+
+
 end

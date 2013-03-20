@@ -18,7 +18,7 @@ class GroupUsersController < ApplicationController
     @group_user.group_id = @group.id
 
     respond_to do |format|
-      if @group_user.save
+      if current_user_is_parameter and @group_user.save
         format.html { redirect_to(groups_path,
           :notice => "Group user was successfully created.") }
         format.json { render :json =>@group_user,
@@ -34,7 +34,10 @@ class GroupUsersController < ApplicationController
   end
 
   def destroy
-    @group_user = GroupUser.find_by_user_id_and_group_id(@user.id, @group.id) 
+    @group_user = nil 
+    if current_user_is_parameter 
+      @group_user = GroupUser.find_by_user_id_and_group_id(@user.id, @group.id) 
+    end
 
     @group_user.destroy
 
@@ -55,4 +58,9 @@ class GroupUsersController < ApplicationController
   def find_group
     @group = Group.find(params[:group_id])
   end
+
+  def current_user_is_parameter
+    current_user == @user
+  end
+
 end

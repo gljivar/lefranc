@@ -1,13 +1,19 @@
 <h1>User <%= @user.name %> belongs to groups</h1>
 
 <% if @groups.present? %>
-        <ul>
-        <% @groups.each do |group| %>
-                <li><%= link_to group.name, group_path(group) %>
-               		<%= link_to "Leave", delete_group_user_path(group, @user) , :confirm => "Are you sure?", :method => :delete %>
-		</li>
+  <ul>
+    <% @groups.each do |group| %>
+      <li>
+        <%= link_to group.name, group_path(group) %>
+        <% if current_user_is_parameter %>
+          <%= link_to "Leave", delete_group_user_path(group, current_user) , :confirm => "Are you sure?", :method => :delete %>
+        <% else %>
+          <%= link_to "Join", create_group_user_path(group, current_user) , :confirm => "Are you sure?", :method => :post %>
         <% end %>
-        </ul>
-        <%= link_to "All groups", groups_path %>
+      </li>
+    <% end %>
+  </ul>
 <% end %>
+
+<%= link_to "All groups", groups_path %>
 

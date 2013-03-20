@@ -1,6 +1,8 @@
 class UserGroupsController < ApplicationController
   before_filter :find_user, :only => [:index] 
 
+  helper_method :current_user_is_parameter
+
   def index
     @groups = @user.groups
 
@@ -17,5 +19,7 @@ class UserGroupsController < ApplicationController
     @user = User.find(params[:user_id])
   end
 
-
+  def current_user_is_parameter
+    current_user == @user
+  end
 end
