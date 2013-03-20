@@ -4,7 +4,7 @@ Lefranc::Application.routes.draw do
   root :to => "home#index"
   
   # Home 
-  get "home/index"
+  match '/home/(.:format)' => "home#index", :as => :home, :via => :get
 
   # Users
   resources :users
@@ -36,7 +36,7 @@ Lefranc::Application.routes.draw do
 	
 
   # Authentication via providers	
-  get "sessions/index"
+  get "sessions/index", :as => :signin 
   match "/auth/:provider/callback" => "sessions#create"
   match "/signout" => "sessions#destroy", :as => :signout
 	

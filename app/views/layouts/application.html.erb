@@ -9,12 +9,14 @@
 <body>
 
 <div id="user_nav">
-	<% if current_user %>
-		<%=current_user.name %>
-		<%= link_to "Sign out", signout_path %>
-	<% else %>	
-		<%= link_to "Sign in / Sign up", "/sessions/index" %>	
-	<% end %>
+  <%= link_to "Back", :back %>
+  <%= link_to "Home", :root %>
+  <% if current_user %>
+    <%= link_to current_user.name, edit_user_path(current_user) %>
+    <%= link_to "Sign out", signout_path %>
+  <% else %>	
+    <%= link_to "Sign in / Sign up", signin_path %>	
+  <% end %>
 </div>
 <% flash.each do |key, value| %>
 	<p><%=value %></p>

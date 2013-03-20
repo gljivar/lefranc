@@ -1,11 +1,8 @@
-<h1>Learn languages</h1>
-
 <p>
   <% if current_user %>
-     <%= link_to "Groups", user_groups_path(current_user) %></br>
-     <%= link_to "Lessons", user_lessons_path(current_user) %></br>
+    <%= render "form" %>
   <% else %>
-     <%= link_to "Sign in / Sign up", "/sessions/index" %>
+    <%= render "landing_form" %>
   <% end %>
 
 </p>
