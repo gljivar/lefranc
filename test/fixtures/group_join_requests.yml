@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  group_user: 
+  user: 
+  group: 
+  status: false
+  closed: false
+
+two:
+  group_user: 
+  user: 
+  group: 
+  status: false
+  closed: false

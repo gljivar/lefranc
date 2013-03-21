@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  group_join_request: 
+  user: 
+  response: 1
+
+two:
+  group_join_request: 
+  user: 
+  response: 1

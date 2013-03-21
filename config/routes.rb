@@ -1,5 +1,5 @@
 Lefranc::Application.routes.draw do
- 
+
   # Main / global 
   root :to => "home#index"
   
@@ -22,6 +22,14 @@ Lefranc::Application.routes.draw do
   match '/groups/:group_id/users(.:format)' => 'group_users#index', :as => :group_users, :via => :get
   match '/groups/:group_id/users/:id(.:format)' => 'group_users#create', :as => :create_group_user, :via => :post
   match '/groups/:group_id/users/:id(.:format)' => 'group_users#destroy', :as => :delete_group_user, :via => :delete
+
+  # Group join requests
+  match '/group_join_requests(.:format)' => 'group_join_requests#create', :as => :create_group_join_request, :via => :post 
+  match '/group_join_requests(.:format)' => 'group_join_requests#update', :via => :put
+ 
+  # Group join responses
+  match '/group_join_responses(.:format)' => 'group_join_responses#create', :via => :post                                   
+  match '/group_join_responses(.:format)' => 'group_join_responses#update', :via => :put
 
   # Lessons
   resources :lessons

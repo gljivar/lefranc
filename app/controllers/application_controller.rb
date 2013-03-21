@@ -3,6 +3,7 @@ class ApplicationController < ActionController::Base
   before_filter :require_login
 	
   helper_method :current_user
+  helper_method :is_current_user
 
   private
 
@@ -15,6 +16,10 @@ class ApplicationController < ActionController::Base
         format.json { render :json => {:success => false, :message => 'You must be signed in to access this page.'}, :status => :unauthorized }
       end
     end
+  end
+
+  def is_current_user(user)
+    @current_user == user
   end
 
   def current_user

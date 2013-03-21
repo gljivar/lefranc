@@ -11,7 +11,33 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130316191103) do
+ActiveRecord::Schema.define(:version => 20130321213958) do
+
+  create_table "group_join_requests", :force => true do |t|
+    t.integer  "group_user_id"
+    t.integer  "user_id"
+    t.integer  "group_id"
+    t.integer  "status"
+    t.boolean  "closed"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+  end
+
+  add_index "group_join_requests", ["group_id"], :name => "index_group_join_requests_on_group_id"
+  add_index "group_join_requests", ["group_user_id"], :name => "index_group_join_requests_on_group_user_id"
+  add_index "group_join_requests", ["user_id", "group_id", "closed"], :name => "index_group_join_requests_on_user_id_and_group_id_and_closed", :unique => true
+  add_index "group_join_requests", ["user_id"], :name => "index_group_join_requests_on_user_id"
+
+  create_table "group_join_responses", :force => true do |t|
+    t.integer  "group_join_request_id"
+    t.integer  "user_id"
+    t.integer  "response"
+    t.datetime "created_at",            :null => false
+    t.datetime "updated_at",            :null => false
+  end
+
+  add_index "group_join_responses", ["group_join_request_id"], :name => "index_group_join_responses_on_group_join_request_id"
+  add_index "group_join_responses", ["user_id"], :name => "index_group_join_responses_on_user_id"
 
   create_table "group_users", :force => true do |t|
     t.integer  "user_id"

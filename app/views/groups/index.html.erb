@@ -20,9 +20,9 @@
     <td><%= group.foreign_language.name %></td>
     <td> 
         <% if group.users.include? current_user  %>
-          <%= link_to "Leave", delete_group_user_path(group, current_user) , :confirm => "Are you sure?", :method => :delete %>
+          <%= button_to "Leave", delete_group_user_path(group, current_user) , :confirm => "Are you sure, if you leave group you will later have to be approved again?", :method => :delete %>
         <% else %>
-          <%= link_to "Join", create_group_user_path(group, current_user) , :confirm => "Are you sure?", :method => :post %>
+          <%= button_to "Join", create_group_join_request_path(:group_id => group.id, :user_id => current_user.id) , :confirm => "Are you sure, you will have to be approved to enter the group?", :method => :post %>
         <% end %>
     </td> 
     <td><%= link_to 'Show', group %></td>
