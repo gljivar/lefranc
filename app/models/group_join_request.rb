@@ -8,8 +8,40 @@ class GroupJoinRequest < ActiveRecord::Base
   belongs_to :user
   belongs_to :group
   attr_accessible :open, :status
+  attr_accessible :user_id, :group_id
 
   validates :user_id, :presence => true
   validates :group_id, :presence => true
-  validates_uniqueness_of :user_id, :scope => [:group_id, :open, :status]
+  validate :there_can_be_only_one_open_group_join_request
+
+  after_initialize :init
+  after_create :create_group_join_responses
+
+  def init
+    self.open ||= true
+    self.status ||= GroupJoinRequest::S_REQUESTED
+  end
+  
+  # If there is noone in the group then just join, else create group join responses  
+  def create_group_join_responses 
+   if self.group.users.count <= 0 and self.group.user == nil
+     group_user = GroupUser.new
+     group_user.user = self.user
+     group_user.group = self.group
+     group_user.save  
+   else
+     self.group.users.reject{|user| user == self.user}.each do |user|  
+       gjres = GroupJoinResponse.new 
+       gjres.user = self.user
+       gjres.save
+     end
+   end
+  end
+
+  #validation methods
+  def there_can_be_only_one_open_group_join_request 
+    if GroupJoinRequest.where(:user_id => user_id, :group_id => group_id, :open => true).count > 0
+      errors.add(:user_id, "already requested to join group")
+    end
+  end
 end

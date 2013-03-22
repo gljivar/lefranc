@@ -7,4 +7,10 @@ class GroupJoinResponse < ActiveRecord::Base
   belongs_to :group_join_request
   belongs_to :user
   attr_accessible :response
+
+  after_initialize :init
+
+  def init
+    self.response ||= GroupJoinResponse::R_INITIAL
+  end
 end
