@@ -1,6 +1,7 @@
 class GroupJoinRequestsController < ApplicationController
-  before_filter :find_group 
-  before_filter :find_user
+  before_filter :find_group, :except => [:destroy]
+  before_filter :find_user, :except => [:destroy]
+  before_filter :find_group_join_request, :only => [:destroy, :update]
 
   def create
     @gjr = GroupJoinRequest.new
@@ -37,9 +38,38 @@ class GroupJoinRequestsController < ApplicationController
   end
 
   def update
+    respond_to do |format|
+      #TODO: Differentiate unauthorized
+      if @gjr.user == current_user and @gjr.update_attributes(params[:group_join_request])
+        format.html { redirect_to groups_path, :notice => 'Group join request was successfully updated.' }
+        format.json { head :no_content }
+      else
+        format.html { redirect_to groups_path, :notice => 'Group join request was not successfully updated.' }
+        format.json { render json: @gjr.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+  def destroy
+    if current_user == @gjr.user
+      @gjr.status = GroupJoinRequest::S_CANCELED
+      @gjr.closed = true
+      @gjr.save
+    end
+ 
+    #TODO: Unauthorized also checking and return according to that 
+    respond_to do |format|
+      format.html { redirect_to groups_path,
+        :notice => "Request has been canceled" }
+      format.json { head :no_content }
+    end
   end
 
   protected
+
+  def find_group_join_request
+    @gjr = GroupJoinRequest.find(params[:id])
+  end
 
   def find_group
     @group = Group.find(params[:group_id])

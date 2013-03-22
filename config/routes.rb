@@ -25,6 +25,7 @@ Lefranc::Application.routes.draw do
 
   # Group join requests
   match '/group_join_requests(.:format)' => 'group_join_requests#create', :as => :create_group_join_request, :via => :post 
+  match '/group_join_requests/:id(.:format)' => 'group_join_requests#destroy', :as => :delete_group_join_request, :via => :delete 
   match '/group_join_requests(.:format)' => 'group_join_requests#update', :via => :put
  
   # Group join responses
