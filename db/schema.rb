@@ -11,21 +11,21 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130322191338) do
+ActiveRecord::Schema.define(:version => 20130322211137) do
 
   create_table "group_join_requests", :force => true do |t|
     t.integer  "group_user_id"
     t.integer  "user_id"
     t.integer  "group_id"
     t.integer  "status"
-    t.boolean  "closed"
+    t.boolean  "open"
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
   end
 
   add_index "group_join_requests", ["group_id"], :name => "index_group_join_requests_on_group_id"
   add_index "group_join_requests", ["group_user_id"], :name => "index_group_join_requests_on_group_user_id"
-  add_index "group_join_requests", ["user_id", "group_id", "closed", "status"], :name => "index_group_join_requests_u_g_c_s", :unique => true
+  add_index "group_join_requests", ["user_id", "group_id", "open", "status"], :name => "index_group_join_requests_u_g_c_s", :unique => true
   add_index "group_join_requests", ["user_id"], :name => "index_group_join_requests_on_user_id"
 
   create_table "group_join_responses", :force => true do |t|
