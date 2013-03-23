@@ -7,6 +7,9 @@ class GroupJoinRequest < ActiveRecord::Base
   belongs_to :group_user
   belongs_to :user
   belongs_to :group
+
+  has_many :group_join_responses, :dependent => :nullify
+
   attr_accessible :open, :status
   attr_accessible :user_id, :group_id
 
@@ -17,7 +20,7 @@ class GroupJoinRequest < ActiveRecord::Base
 
   after_initialize :init
   after_create :create_group_join_responses
-
+  
   def init
     self.open ||= true
     self.status ||= GroupJoinRequest::S_REQUESTED

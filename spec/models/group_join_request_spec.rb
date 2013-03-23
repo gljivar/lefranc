@@ -138,6 +138,37 @@ describe GroupJoinRequest do
     GroupJoinResponse.where(:user_id == @user.id).count.should eq(2)
   end
 
+  it "destroys responses when request is destroyed" do
+    @user_in_group = User.new
+    @user_in_group.save
+    @group_user = GroupUser.new
+    @group_user.user_id = @user_in_group.id
+    @group_user.group_id = @group.id
+    @group_user.save
+
+    @user_in_group_2 = User.new
+    @user_in_group_2.save
+    @group_user_2 = GroupUser.new
+    @group_user_2.user_id = @user_in_group_2.id
+    @group_user_2.group_id = @group.id
+    @group_user_2.save
+
+    @gjr.user = @user
+    @gjr.group = @group
+    @gjr.save
+
+    @gjr.id.should_not be_nil
+    GroupJoinResponse.where(:user_id == @user.id).count.should eq(2)
+    @gjr.group_join_responses.all.count.should eq(2)
+    GroupJoinResponse.find(:all, :group_join_request_id == @gjr.id).count.should eq(2)
+    group_id = @gjr.id
+
+    @gjr.destroy
+    GroupJoinRequest.exists?(group_id).should be_false
+    #GroupJoinResponse.destroy_all(:group_join_request_id == group_id)
+    @gjr.group_join_responses.all.count.should eq(0)
+    GroupJoinResponse.find(:all, :group_join_request_id == group_id).count.should eq(0)
+  end
 
 
   after(:each) do
