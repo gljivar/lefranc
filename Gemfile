@@ -53,3 +53,4 @@ gem 'omniauth-windowslive'
 group :development, :test do
   gem 'rspec-rails'
 end
+

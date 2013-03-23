@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130322213940) do
+ActiveRecord::Schema.define(:version => 20130323150521) do
 
   create_table "group_join_requests", :force => true do |t|
     t.integer  "group_user_id"
@@ -45,6 +45,7 @@ ActiveRecord::Schema.define(:version => 20130322213940) do
     t.datetime "updated_at", :null => false
   end
 
+  add_index "group_users", ["group_id", "user_id"], :name => "index_group_users_on_group_id_and_user_id", :unique => true
   add_index "group_users", ["group_id"], :name => "index_group_users_on_group_id"
   add_index "group_users", ["user_id"], :name => "index_group_users_on_user_id"
 

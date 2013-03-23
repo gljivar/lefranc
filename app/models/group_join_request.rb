@@ -13,6 +13,7 @@ class GroupJoinRequest < ActiveRecord::Base
   validates :user_id, :presence => true
   validates :group_id, :presence => true
   validate :there_can_be_only_one_open_group_join_request
+  validate :user_cannot_make_request_if_already_in_group
 
   after_initialize :init
   after_create :create_group_join_responses
@@ -44,4 +45,10 @@ class GroupJoinRequest < ActiveRecord::Base
       errors.add(:user_id, "already requested to join group")
     end
   end
+
+  def user_cannot_make_request_if_already_in_group
+    if GroupUser.where(:user_id => user_id, :group_id => group_id).count > 0
+      errors.add(:user_id, "already member of requested group")
+    end
+  end 
 end
