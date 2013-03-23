@@ -8,7 +8,7 @@ class GroupJoinRequest < ActiveRecord::Base
   belongs_to :user
   belongs_to :group
 
-  has_many :group_join_responses, :dependent => :nullify
+  has_many :group_join_responses, :dependent => :destroy
 
   attr_accessible :open, :status
   attr_accessible :user_id, :group_id
@@ -36,6 +36,7 @@ class GroupJoinRequest < ActiveRecord::Base
    else
      self.group.users.reject{|user| user == self.user}.each do |user|  
        gjres = GroupJoinResponse.new 
+       gjres.group_join_request_id = self.id
        gjres.user = self.user
        gjres.save
      end

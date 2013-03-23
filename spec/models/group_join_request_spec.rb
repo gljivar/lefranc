@@ -165,7 +165,6 @@ describe GroupJoinRequest do
 
     @gjr.destroy
     GroupJoinRequest.exists?(group_id).should be_false
-    #GroupJoinResponse.destroy_all(:group_join_request_id == group_id)
     @gjr.group_join_responses.all.count.should eq(0)
     GroupJoinResponse.find(:all, :group_join_request_id == group_id).count.should eq(0)
   end
