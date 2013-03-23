@@ -48,3 +48,8 @@ gem 'omniauth-linkedin'
 gem 'omniauth-google-oauth2'
 gem 'omniauth-windowslive'
 
+
+# RSpec
+group :development, :test do
+  gem 'rspec-rails'
+end
