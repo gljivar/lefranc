@@ -113,6 +113,7 @@ describe GroupJoinRequest do
 
     @gjr.id.should_not be_nil
     GroupJoinResponse.where(:user_id == @user.id).count.should eq(1)
+    GroupJoinResponse.find(:first, :user_id == @user_id).group_join_request_id.should eq(@gjr.id) 
   end
 
   it "creates request with responses for current users in group" do

@@ -13989,3 +13989,341 @@ Connecting to database specified by database.yml
   [1m[35mSQL (0.1ms)[0m  DELETE FROM "groups" WHERE "groups"."id" = ?  [["id", 1]]
   [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
   [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (6.0ms)[0m  [1mINSERT INTO "users" ("created_at", "description", "email", "first_name", "image", "last_name", "name", "nickname", "phone", "provider", "secret", "token", "uid", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["description", nil], ["email", nil], ["first_name", nil], ["image", nil], ["last_name", nil], ["name", "Test User"], ["nickname", nil], ["phone", nil], ["provider", nil], ["secret", nil], ["token", nil], ["uid", nil], ["updated_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "groups" ("created_at", "foreign_language_id", "name", "native_language_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["foreign_language_id", nil], ["name", "Test Group"], ["native_language_id", nil], ["updated_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["user_id", nil]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "group_join_requests" WHERE "group_join_requests"."user_id" = 1 AND "group_join_requests"."group_id" = 1 AND "group_join_requests"."open" = 't'[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "group_users" WHERE "group_users"."user_id" = 1 AND "group_users"."group_id" = 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "group_join_requests" ("created_at", "group_id", "group_user_id", "open", "status", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["group_id", 1], ["group_user_id", nil], ["open", true], ["status", 100], ["updated_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "group_users" ON "users"."id" = "group_users"."user_id" WHERE "group_users"."group_id" = 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "group_users" ("created_at", "group_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["group_id", 1], ["updated_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "group_join_requests" WHERE "group_join_requests"."user_id" = 1 AND "group_join_requests"."group_id" = 1 AND "group_join_requests"."open" = 't'
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "group_users" WHERE "group_users"."user_id" = 1 AND "group_users"."group_id" = 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mGroupUser Load (0.1ms)[0m  [1mSELECT "group_users".* FROM "group_users" WHERE "group_users"."user_id" = 1 AND "group_users"."group_id" = 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "group_users" WHERE "group_users"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mGroupJoinResponse Load (0.1ms)[0m  SELECT "group_join_responses".* FROM "group_join_responses" WHERE "group_join_responses"."group_join_request_id" = 1
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "group_join_requests" WHERE "group_join_requests"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "groups" WHERE "groups"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "description", "email", "first_name", "image", "last_name", "name", "nickname", "phone", "provider", "secret", "token", "uid", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["description", nil], ["email", nil], ["first_name", nil], ["image", nil], ["last_name", nil], ["name", "Test User"], ["nickname", nil], ["phone", nil], ["provider", nil], ["secret", nil], ["token", nil], ["uid", nil], ["updated_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "groups" ("created_at", "foreign_language_id", "name", "native_language_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["foreign_language_id", nil], ["name", "Test Group"], ["native_language_id", nil], ["updated_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["user_id", nil]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mGroupUser Load (0.2ms)[0m  [1mSELECT "group_users".* FROM "group_users" WHERE "group_users"."user_id" = 1 AND "group_users"."group_id" = 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "groups" WHERE "groups"."id" = ?  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "description", "email", "first_name", "image", "last_name", "name", "nickname", "phone", "provider", "secret", "token", "uid", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["description", nil], ["email", nil], ["first_name", nil], ["image", nil], ["last_name", nil], ["name", "Test User"], ["nickname", nil], ["phone", nil], ["provider", nil], ["secret", nil], ["token", nil], ["uid", nil], ["updated_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "groups" ("created_at", "foreign_language_id", "name", "native_language_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["foreign_language_id", nil], ["name", "Test Group"], ["native_language_id", nil], ["updated_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["user_id", nil]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "group_join_requests" WHERE "group_join_requests"."user_id" = 1 AND "group_join_requests"."group_id" = 1 AND "group_join_requests"."open" = 't'[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "group_users" WHERE "group_users"."user_id" = 1 AND "group_users"."group_id" = 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "group_join_requests" ("created_at", "group_id", "group_user_id", "open", "status", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["group_id", 1], ["group_user_id", nil], ["open", false], ["status", 100], ["updated_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "group_users" ON "users"."id" = "group_users"."user_id" WHERE "group_users"."group_id" = 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "group_users" ("created_at", "group_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["group_id", 1], ["updated_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mGroupUser Load (0.1ms)[0m  [1mSELECT "group_users".* FROM "group_users" WHERE "group_users"."group_id" = 1 AND "group_users"."user_id" = 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "group_users" WHERE "group_users"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "group_users" WHERE "group_users"."group_id" = 1 AND "group_users"."user_id" = 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "group_join_requests" WHERE "group_join_requests"."user_id" = 1 AND "group_join_requests"."group_id" = 1 AND "group_join_requests"."open" = 't'[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "group_users" WHERE "group_users"."user_id" = 1 AND "group_users"."group_id" = 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "group_join_requests" ("created_at", "group_id", "group_user_id", "open", "status", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["group_id", 1], ["group_user_id", nil], ["open", true], ["status", 100], ["updated_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "group_users" ON "users"."id" = "group_users"."user_id" WHERE "group_users"."group_id" = 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "group_users" ("created_at", "group_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["group_id", 1], ["updated_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mGroupUser Load (0.2ms)[0m  [1mSELECT "group_users".* FROM "group_users" WHERE "group_users"."user_id" = 1 AND "group_users"."group_id" = 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "group_users" WHERE "group_users"."id" = ?[0m  [["id", 2]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mGroupJoinResponse Load (0.1ms)[0m  SELECT "group_join_responses".* FROM "group_join_responses" WHERE "group_join_responses"."group_join_request_id" = 2
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "group_join_requests" WHERE "group_join_requests"."id" = ?[0m  [["id", 2]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mGroupJoinResponse Load (0.1ms)[0m  SELECT "group_join_responses".* FROM "group_join_responses" WHERE "group_join_responses"."group_join_request_id" = 1
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "group_join_requests" WHERE "group_join_requests"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "groups" WHERE "groups"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "description", "email", "first_name", "image", "last_name", "name", "nickname", "phone", "provider", "secret", "token", "uid", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["description", nil], ["email", nil], ["first_name", nil], ["image", nil], ["last_name", nil], ["name", "Test User"], ["nickname", nil], ["phone", nil], ["provider", nil], ["secret", nil], ["token", nil], ["uid", nil], ["updated_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "groups" ("created_at", "foreign_language_id", "name", "native_language_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["foreign_language_id", nil], ["name", "Test Group"], ["native_language_id", nil], ["updated_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["user_id", nil]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "description", "email", "first_name", "image", "last_name", "name", "nickname", "phone", "provider", "secret", "token", "uid", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["description", nil], ["email", nil], ["first_name", nil], ["image", nil], ["last_name", nil], ["name", nil], ["nickname", nil], ["phone", nil], ["provider", nil], ["secret", nil], ["token", nil], ["uid", nil], ["updated_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "group_users" ("created_at", "group_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["group_id", 1], ["updated_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["user_id", 2]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "group_join_requests" WHERE "group_join_requests"."user_id" = 1 AND "group_join_requests"."group_id" = 1 AND "group_join_requests"."open" = 't'
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "group_users" WHERE "group_users"."user_id" = 1 AND "group_users"."group_id" = 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "group_join_requests" ("created_at", "group_id", "group_user_id", "open", "status", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["group_id", 1], ["group_user_id", nil], ["open", true], ["status", 100], ["updated_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "group_users" ON "users"."id" = "group_users"."user_id" WHERE "group_users"."group_id" = 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "group_users" ON "users"."id" = "group_users"."user_id" WHERE "group_users"."group_id" = 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "group_join_responses" ("created_at", "group_join_request_id", "response", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["group_join_request_id", 1], ["response", 100], ["updated_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "group_join_responses" [0m
+  [1m[35mGroupJoinResponse Load (0.1ms)[0m  SELECT "group_join_responses".* FROM "group_join_responses" LIMIT 1
+  [1m[36mGroupUser Load (0.1ms)[0m  [1mSELECT "group_users".* FROM "group_users" WHERE "group_users"."user_id" = 1 AND "group_users"."group_id" = 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mGroupJoinResponse Load (0.1ms)[0m  [1mSELECT "group_join_responses".* FROM "group_join_responses" WHERE "group_join_responses"."group_join_request_id" = 1[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "group_join_responses" WHERE "group_join_responses"."id" = ?  [["id", 1]]
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "group_join_requests" WHERE "group_join_requests"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mDELETE FROM "groups" WHERE "groups"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "description", "email", "first_name", "image", "last_name", "name", "nickname", "phone", "provider", "secret", "token", "uid", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["description", nil], ["email", nil], ["first_name", nil], ["image", nil], ["last_name", nil], ["name", "Test User"], ["nickname", nil], ["phone", nil], ["provider", nil], ["secret", nil], ["token", nil], ["uid", nil], ["updated_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "groups" ("created_at", "foreign_language_id", "name", "native_language_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["foreign_language_id", nil], ["name", "Test Group"], ["native_language_id", nil], ["updated_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["user_id", nil]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "group_join_requests" WHERE "group_join_requests"."user_id" = 1 AND "group_join_requests"."group_id" = 1 AND "group_join_requests"."open" = 't'
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "group_users" WHERE "group_users"."user_id" = 1 AND "group_users"."group_id" = 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "group_join_requests" ("created_at", "group_id", "group_user_id", "open", "status", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["group_id", 1], ["group_user_id", nil], ["open", true], ["status", 100], ["updated_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "group_users" ON "users"."id" = "group_users"."user_id" WHERE "group_users"."group_id" = 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "group_users" ("created_at", "group_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["group_id", 1], ["updated_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mGroupUser Load (0.1ms)[0m  SELECT "group_users".* FROM "group_users" WHERE "group_users"."user_id" = 1 AND "group_users"."group_id" = 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "group_users" WHERE "group_users"."id" = ?  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mGroupJoinResponse Load (0.1ms)[0m  [1mSELECT "group_join_responses".* FROM "group_join_responses" WHERE "group_join_responses"."group_join_request_id" = 1[0m
+  [1m[35mSQL (0.0ms)[0m  DELETE FROM "group_join_requests" WHERE "group_join_requests"."id" = ?  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  DELETE FROM "groups" WHERE "groups"."id" = ?  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "users" ("created_at", "description", "email", "first_name", "image", "last_name", "name", "nickname", "phone", "provider", "secret", "token", "uid", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["description", nil], ["email", nil], ["first_name", nil], ["image", nil], ["last_name", nil], ["name", "Test User"], ["nickname", nil], ["phone", nil], ["provider", nil], ["secret", nil], ["token", nil], ["uid", nil], ["updated_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "groups" ("created_at", "foreign_language_id", "name", "native_language_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["foreign_language_id", nil], ["name", "Test Group"], ["native_language_id", nil], ["updated_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["user_id", nil]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "group_users" ("created_at", "group_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["group_id", 1], ["updated_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "group_join_requests" WHERE "group_join_requests"."user_id" = 1 AND "group_join_requests"."group_id" = 1 AND "group_join_requests"."open" = 't'
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "group_users" WHERE "group_users"."user_id" = 1 AND "group_users"."group_id" = 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mGroupUser Load (0.1ms)[0m  [1mSELECT "group_users".* FROM "group_users" WHERE "group_users"."user_id" = 1 AND "group_users"."group_id" = 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "group_users" WHERE "group_users"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "groups" WHERE "groups"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "description", "email", "first_name", "image", "last_name", "name", "nickname", "phone", "provider", "secret", "token", "uid", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["description", nil], ["email", nil], ["first_name", nil], ["image", nil], ["last_name", nil], ["name", "Test User"], ["nickname", nil], ["phone", nil], ["provider", nil], ["secret", nil], ["token", nil], ["uid", nil], ["updated_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "groups" ("created_at", "foreign_language_id", "name", "native_language_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["foreign_language_id", nil], ["name", "Test Group"], ["native_language_id", nil], ["updated_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["user_id", nil]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "group_join_requests" WHERE "group_join_requests"."user_id" IS NULL AND "group_join_requests"."group_id" IS NULL AND "group_join_requests"."open" = 't'
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "group_users" WHERE "group_users"."user_id" IS NULL AND "group_users"."group_id" IS NULL[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "group_join_requests" WHERE "group_join_requests"."user_id" = 1 AND "group_join_requests"."group_id" IS NULL AND "group_join_requests"."open" = 't'
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "group_users" WHERE "group_users"."user_id" = 1 AND "group_users"."group_id" IS NULL[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "group_join_requests" WHERE "group_join_requests"."user_id" IS NULL AND "group_join_requests"."group_id" IS NULL AND "group_join_requests"."open" = 't'
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "group_users" WHERE "group_users"."user_id" IS NULL AND "group_users"."group_id" IS NULL[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "group_join_requests" WHERE "group_join_requests"."user_id" = 1 AND "group_join_requests"."group_id" = 1 AND "group_join_requests"."open" = 't'
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "group_users" WHERE "group_users"."user_id" = 1 AND "group_users"."group_id" = 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "group_join_requests" ("created_at", "group_id", "group_user_id", "open", "status", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["group_id", 1], ["group_user_id", nil], ["open", true], ["status", 100], ["updated_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "group_users" ON "users"."id" = "group_users"."user_id" WHERE "group_users"."group_id" = 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "group_users" ("created_at", "group_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["group_id", 1], ["updated_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mGroupUser Load (0.1ms)[0m  SELECT "group_users".* FROM "group_users" WHERE "group_users"."user_id" = 1 AND "group_users"."group_id" = 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "group_users" WHERE "group_users"."id" = ?  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mGroupJoinResponse Load (0.1ms)[0m  [1mSELECT "group_join_responses".* FROM "group_join_responses" WHERE "group_join_responses"."group_join_request_id" = 1[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "group_join_requests" WHERE "group_join_requests"."id" = ?  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "groups" WHERE "groups"."id" = ?  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "description", "email", "first_name", "image", "last_name", "name", "nickname", "phone", "provider", "secret", "token", "uid", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["description", nil], ["email", nil], ["first_name", nil], ["image", nil], ["last_name", nil], ["name", "Test User"], ["nickname", nil], ["phone", nil], ["provider", nil], ["secret", nil], ["token", nil], ["uid", nil], ["updated_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "groups" ("created_at", "foreign_language_id", "name", "native_language_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["foreign_language_id", nil], ["name", "Test Group"], ["native_language_id", nil], ["updated_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["user_id", nil]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("created_at", "description", "email", "first_name", "image", "last_name", "name", "nickname", "phone", "provider", "secret", "token", "uid", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["description", nil], ["email", nil], ["first_name", nil], ["image", nil], ["last_name", nil], ["name", nil], ["nickname", nil], ["phone", nil], ["provider", nil], ["secret", nil], ["token", nil], ["uid", nil], ["updated_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "group_users" ("created_at", "group_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["group_id", 1], ["updated_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["user_id", 2]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("created_at", "description", "email", "first_name", "image", "last_name", "name", "nickname", "phone", "provider", "secret", "token", "uid", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["description", nil], ["email", nil], ["first_name", nil], ["image", nil], ["last_name", nil], ["name", nil], ["nickname", nil], ["phone", nil], ["provider", nil], ["secret", nil], ["token", nil], ["uid", nil], ["updated_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "group_users" ("created_at", "group_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["group_id", 1], ["updated_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["user_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "group_join_requests" WHERE "group_join_requests"."user_id" = 1 AND "group_join_requests"."group_id" = 1 AND "group_join_requests"."open" = 't'[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "group_users" WHERE "group_users"."user_id" = 1 AND "group_users"."group_id" = 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "group_join_requests" ("created_at", "group_id", "group_user_id", "open", "status", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["group_id", 1], ["group_user_id", nil], ["open", true], ["status", 100], ["updated_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "group_users" ON "users"."id" = "group_users"."user_id" WHERE "group_users"."group_id" = 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "group_users" ON "users"."id" = "group_users"."user_id" WHERE "group_users"."group_id" = 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "group_join_responses" ("created_at", "group_join_request_id", "response", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["group_join_request_id", 1], ["response", 100], ["updated_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["user_id", 1]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "group_join_responses" ("created_at", "group_join_request_id", "response", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["group_join_request_id", 1], ["response", 100], ["updated_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "group_join_responses" [0m
+  [1m[35mGroupJoinResponse Load (0.2ms)[0m  SELECT "group_join_responses".* FROM "group_join_responses" WHERE "group_join_responses"."group_join_request_id" = 1
+  [1m[36mGroupJoinResponse Load (0.1ms)[0m  [1mSELECT "group_join_responses".* FROM "group_join_responses" [0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mGroupJoinResponse Load (0.1ms)[0m  [1mSELECT "group_join_responses".* FROM "group_join_responses" WHERE "group_join_responses"."group_join_request_id" = 1[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "group_join_responses" WHERE "group_join_responses"."id" = ?  [["id", 1]]
+  [1m[36mSQL (0.0ms)[0m  [1mDELETE FROM "group_join_responses" WHERE "group_join_responses"."id" = ?[0m  [["id", 2]]
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "group_join_requests" WHERE "group_join_requests"."id" = ?  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mGroupJoinRequest Exists (0.1ms)[0m  SELECT 1 AS one FROM "group_join_requests" WHERE "group_join_requests"."id" = 1 LIMIT 1
+  [1m[36mGroupJoinResponse Load (0.1ms)[0m  [1mSELECT "group_join_responses".* FROM "group_join_responses" WHERE "group_join_responses"."group_join_request_id" = 1[0m
+  [1m[35mGroupJoinResponse Load (0.1ms)[0m  SELECT "group_join_responses".* FROM "group_join_responses" 
+  [1m[36mGroupUser Load (0.1ms)[0m  [1mSELECT "group_users".* FROM "group_users" WHERE "group_users"."user_id" = 1 AND "group_users"."group_id" = 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "groups" WHERE "groups"."id" = ?  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("created_at", "description", "email", "first_name", "image", "last_name", "name", "nickname", "phone", "provider", "secret", "token", "uid", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["description", nil], ["email", nil], ["first_name", nil], ["image", nil], ["last_name", nil], ["name", "Test User"], ["nickname", nil], ["phone", nil], ["provider", nil], ["secret", nil], ["token", nil], ["uid", nil], ["updated_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "groups" ("created_at", "foreign_language_id", "name", "native_language_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["foreign_language_id", nil], ["name", "Test Group"], ["native_language_id", nil], ["updated_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["user_id", nil]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("created_at", "description", "email", "first_name", "image", "last_name", "name", "nickname", "phone", "provider", "secret", "token", "uid", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["description", nil], ["email", nil], ["first_name", nil], ["image", nil], ["last_name", nil], ["name", nil], ["nickname", nil], ["phone", nil], ["provider", nil], ["secret", nil], ["token", nil], ["uid", nil], ["updated_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "group_users" ("created_at", "group_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["group_id", 1], ["updated_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["user_id", 2]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("created_at", "description", "email", "first_name", "image", "last_name", "name", "nickname", "phone", "provider", "secret", "token", "uid", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["description", nil], ["email", nil], ["first_name", nil], ["image", nil], ["last_name", nil], ["name", nil], ["nickname", nil], ["phone", nil], ["provider", nil], ["secret", nil], ["token", nil], ["uid", nil], ["updated_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "group_users" ("created_at", "group_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["group_id", 1], ["updated_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["user_id", 3]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "group_join_requests" WHERE "group_join_requests"."user_id" = 1 AND "group_join_requests"."group_id" = 1 AND "group_join_requests"."open" = 't'[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "group_users" WHERE "group_users"."user_id" = 1 AND "group_users"."group_id" = 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "group_join_requests" ("created_at", "group_id", "group_user_id", "open", "status", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["group_id", 1], ["group_user_id", nil], ["open", true], ["status", 100], ["updated_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "group_users" ON "users"."id" = "group_users"."user_id" WHERE "group_users"."group_id" = 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "group_users" ON "users"."id" = "group_users"."user_id" WHERE "group_users"."group_id" = 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "group_join_responses" ("created_at", "group_join_request_id", "response", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["group_join_request_id", 1], ["response", 100], ["updated_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["user_id", 1]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "group_join_responses" ("created_at", "group_join_request_id", "response", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["group_join_request_id", 1], ["response", 100], ["updated_at", Sat, 23 Mar 2013 19:46:15 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "group_join_responses" [0m
+  [1m[35mGroupUser Load (0.1ms)[0m  SELECT "group_users".* FROM "group_users" WHERE "group_users"."user_id" = 1 AND "group_users"."group_id" = 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mGroupJoinResponse Load (0.1ms)[0m  SELECT "group_join_responses".* FROM "group_join_responses" WHERE "group_join_responses"."group_join_request_id" = 1
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "group_join_responses" WHERE "group_join_responses"."id" = ?[0m  [["id", 1]]
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "group_join_responses" WHERE "group_join_responses"."id" = ?  [["id", 2]]
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "group_join_requests" WHERE "group_join_requests"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.0ms)[0m  [1mDELETE FROM "groups" WHERE "groups"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
