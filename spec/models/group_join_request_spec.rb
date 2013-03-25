@@ -20,6 +20,17 @@ describe GroupJoinRequest do
     @gjr.should be_an_instance_of(GroupJoinRequest)
     @gjr_open.should be_an_instance_of(GroupJoinRequest)
   end 
+ 
+  it "creates a group user association if there is noone in the group" do
+    @gjr.user = @user
+    @gjr.group = @group
+    @gjr.save
+
+    @gjr.group_user_id.should_not be_nil
+    @gjr.status.should eq(GroupJoinRequest::S_ACCEPTED)
+    @gjr.open.should be_false
+    GroupJoinRequest.find(@gjr.id).open.should be_false
+  end
 
   it "creates a request if there is no open request" do
     @gjr.user = @user    

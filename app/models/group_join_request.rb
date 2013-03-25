@@ -11,12 +11,12 @@ class GroupJoinRequest < ActiveRecord::Base
   has_many :group_join_responses, :dependent => :destroy
 
   attr_accessible :open, :status
-  attr_accessible :user_id, :group_id
+  attr_accessible :user_id, :group_id, :group_user
 
   validates :user_id, :presence => true
   validates :group_id, :presence => true
-  validate :there_can_be_only_one_open_group_join_request
-  validate :user_cannot_make_request_if_already_in_group
+  #validate :there_can_be_only_one_open_group_join_request
+  #validate :user_cannot_make_request_if_already_in_group
 
   after_initialize :init
   after_create :create_group_join_responses
@@ -27,14 +27,14 @@ class GroupJoinRequest < ActiveRecord::Base
   end
 
   def accept
-    self.update_attribute(:open, false)
-    self.update_attribute(:status, GroupJoinRequest::S_ACCEPTED)
+    #self.update_attribute(:open, false)
+    #self.update_attribute(:status, GroupJoinRequest::S_ACCEPTED)
     #self.status = GroupJoinRequest::S_ACCEPTED
     
     #self.update_attributes!(:open => false, :status => GroupJoinRequest::S_ACCEPTED)
-    self.open = false
-    self.status = GroupJoinRequest::S_ACCEPTED
-    self.save! #(false)
+    #self.open = false
+    #3self.status = GroupJoinRequest::S_ACCEPTED
+    #self.save! #(false)
     #self.save
   end
 
@@ -45,7 +45,13 @@ class GroupJoinRequest < ActiveRecord::Base
      group_user = GroupUser.new
      group_user.user = self.user
      group_user.group = self.group
-     group_user.save  
+     group_user.save 
+     #open_will_change! 
+     self.update_attributes(:open => ActiveRecord::ConnectionAdapters::Column.value_to_boolean("false"), :status => GroupJoinRequest::S_ACCEPTED, :group_user => group_user)
+     #self.update_attribute(:status, GroupJoinRequest::S_ACCEPTED)
+     #self.update_attribute(:group_user, group_user)
+     #self.group_user = group_user
+     #self.save
    else
      self.group.users.reject{|user| user == self.user}.each do |user|  
        gjres = GroupJoinResponse.new 
@@ -64,8 +70,8 @@ class GroupJoinRequest < ActiveRecord::Base
   end
 
   def user_cannot_make_request_if_already_in_group
-    if GroupUser.where(:user_id => user_id, :group_id => group_id).count > 0
-      errors.add(:user_id, "already member of requested group")
+    if GroupUser.where(:user_id => user_id, :group_id => group_id).where('id != ?', group_user_id).count > 0
+      errors.add(:user_id, "Already member of requested group")
     end
   end 
 end
