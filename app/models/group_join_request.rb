@@ -32,8 +32,9 @@ class GroupJoinRequest < ActiveRecord::Base
     #self.status = GroupJoinRequest::S_ACCEPTED
     
     #self.update_attributes!(:open => false, :status => GroupJoinRequest::S_ACCEPTED)
-    #self.open = false
-    #self.status = GroupJoinRequest::S_ACCEPTED
+    self.open = false
+    self.status = GroupJoinRequest::S_ACCEPTED
+    self.save! #(false)
     #self.save
   end
 
