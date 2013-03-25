@@ -41,9 +41,9 @@ describe GroupJoinResponse do
     @gjresponse.group_join_request_id.should eq(@gjr.id)
     @gjresponse.group_join_request.open.should be_false
     #@gjresponse.group_join_request.save
-    GroupJoinRequest.find(@gjresponse.group_join_request_id).open.should be_false
     gjr_id = @gjr.id
     @gjr = nil
+    GroupJoinRequest.find(@gjresponse.group_join_request_id).open.should be_false
     @gjr = GroupJoinRequest.find(gjr_id)
     @gjr.open.should be_false
     #GroupJoinRequest.find(@gjresponse.group_join_request_id).open.should be_false
