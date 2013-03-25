@@ -25,6 +25,18 @@ class GroupJoinRequest < ActiveRecord::Base
     self.open ||= true
     self.status ||= GroupJoinRequest::S_REQUESTED
   end
+
+  def accept
+    self.update_attribute(:open, false)
+    self.update_attribute(:status, GroupJoinRequest::S_ACCEPTED)
+    #self.status = GroupJoinRequest::S_ACCEPTED
+    
+    #self.update_attributes!(:open => false, :status => GroupJoinRequest::S_ACCEPTED)
+    #self.open = false
+    #self.status = GroupJoinRequest::S_ACCEPTED
+    #self.save
+  end
+
   
   # If there is noone in the group then just join, else create group join responses  
   def create_group_join_responses 
@@ -45,8 +57,8 @@ class GroupJoinRequest < ActiveRecord::Base
 
   #validation methods
   def there_can_be_only_one_open_group_join_request 
-    if GroupJoinRequest.where(:user_id => user_id, :group_id => group_id, :open => true).count > 0
-      errors.add(:user_id, "already requested to join group")
+    if GroupJoinRequest.where(:user_id => user_id, :group_id => group_id, :open => true).where('id != ?', id).count > 0
+      errors.add(:user_id, "Already requested to join group")
     end
   end
 

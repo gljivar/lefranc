@@ -112,11 +112,12 @@ describe GroupJoinRequest do
     @gjr.save
 
     @gjr.id.should_not be_nil
-    GroupJoinResponse.where(:user_id == @user.id).count.should eq(1)
-    GroupJoinResponse.find(:first, :user_id == @user_id).group_join_request_id.should eq(@gjr.id) 
+    GroupJoinResponse.where(:user_id == @user_in_group.id).count.should eq(1)
+    GroupJoinResponse.find(:first, :user_id == @user_in_group.id).group_join_request_id.should eq(@gjr.id) 
+    GroupJoinResponse.find(:first, :user_id == @user_in_group.id).user_id.should eq(@user.id) 
   end
 
-  it "creates request with responses for current users in group" do
+  it "creates request with responses for current 2 users in group" do
     @user_in_group = User.new
     @user_in_group.save
     @group_user = GroupUser.new
