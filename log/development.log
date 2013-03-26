@@ -7367,3 +7367,103 @@ Connecting to database specified by database.yml
 Connecting to database specified by database.yml
 Connecting to database specified by database.yml
 Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (2.7ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (1.8ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (1.7ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateLanguages (20130218232836)
+Migrating to CreateUsers (20130223003912)
+Migrating to CreateWordGenders (20130223202347)
+Migrating to CreatePersonGenders (20130227163427)
+Migrating to CreateLanguageObjects (20130308000145)
+Migrating to CreateTranslations (20130309173011)
+Migrating to AddTranslatableToLanguageObject (20130313001720)
+Migrating to CreateWords (20130313003043)
+Migrating to CreateLessons (20130315002344)
+Migrating to AddLessonToLanguageObject (20130315002605)
+Migrating to CreateGroups (20130315200137)
+Migrating to AddNativeAndForeignLanguageToGroup (20130315200651)
+Migrating to AddGroupToLesson (20130315201743)
+Migrating to AddUserToGroupLanguageLessonWordGender (20130316115517)
+Migrating to CreateGroupUsers (20130316125022)
+Migrating to AddOAuthColumnsToUser (20130316191103)
+Migrating to CreateGroupJoinRequests (20130321183326)
+Migrating to CreateGroupJoinResponses (20130321183454)
+Migrating to AddUniqueIndexToGroupJoinRequests (20130321213958)
+Migrating to ChangeIndexOnGroupJoinRequests (20130322191338)
+Migrating to ChangeGroupJoinRequest (20130322211137)
+Migrating to RemoveUniqueConstraintOnGroupJoinRequest (20130322213940)
+Migrating to AddIndexToGroupUser (20130323150521)
+Migrating to ChangeColumnOpenInGroupJoinRequest (20130325220458)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (1.6ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateLanguages (20130218232836)
+Migrating to CreateUsers (20130223003912)
+Migrating to CreateWordGenders (20130223202347)
+Migrating to CreatePersonGenders (20130227163427)
+Migrating to CreateLanguageObjects (20130308000145)
+Migrating to CreateTranslations (20130309173011)
+Migrating to AddTranslatableToLanguageObject (20130313001720)
+Migrating to CreateWords (20130313003043)
+Migrating to CreateLessons (20130315002344)
+Migrating to AddLessonToLanguageObject (20130315002605)
+Migrating to CreateGroups (20130315200137)
+Migrating to AddNativeAndForeignLanguageToGroup (20130315200651)
+Migrating to AddGroupToLesson (20130315201743)
+Migrating to AddUserToGroupLanguageLessonWordGender (20130316115517)
+Migrating to CreateGroupUsers (20130316125022)
+Migrating to AddOAuthColumnsToUser (20130316191103)
+Migrating to CreateGroupJoinRequests (20130321183326)
+Migrating to CreateGroupJoinResponses (20130321183454)
+Migrating to AddUniqueIndexToGroupJoinRequests (20130321213958)
+Migrating to ChangeIndexOnGroupJoinRequests (20130322191338)
+Migrating to ChangeGroupJoinRequest (20130322211137)
+Migrating to RemoveUniqueConstraintOnGroupJoinRequest (20130322213940)
+Migrating to AddIndexToGroupUser (20130323150521)
+Migrating to ChangeColumnOpenInGroupJoinRequest (20130325220458)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  CREATE TEMPORARY TABLE "altered_group_join_requests" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "group_user_id" integer, "user_id" integer, "group_id" integer, "status" integer, "open" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE INDEX "temp_index_altered_group_join_requests_on_group_id" ON "altered_group_join_requests" ("group_id")[0m
+  [1m[35m (0.2ms)[0m  CREATE INDEX "temp_index_altered_group_join_requests_on_user_id" ON "altered_group_join_requests" ("user_id")
+  [1m[36m (0.1ms)[0m  [1mCREATE INDEX "temp_index_altered_group_join_requests_on_group_user_id" ON "altered_group_join_requests" ("group_user_id")[0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "group_join_requests"
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "altered_group_join_requests" ("id","group_user_id","user_id","group_id","status","open","created_at","updated_at") VALUES (73, 31, 2, 1, 202, -1, '2013-03-25 21:34:10.151142', '2013-03-25 21:34:10.151142')[0m
+  [1m[35m (0.3ms)[0m  DROP TABLE "group_join_requests"
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "group_join_requests" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "group_user_id" integer, "user_id" integer, "group_id" integer, "status" integer, "open" boolean DEFAULT 'f' NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  CREATE INDEX "index_group_join_requests_on_group_user_id" ON "group_join_requests" ("group_user_id")
+  [1m[36m (0.1ms)[0m  [1mCREATE INDEX "index_group_join_requests_on_user_id" ON "group_join_requests" ("user_id")[0m
+  [1m[35m (0.2ms)[0m  CREATE INDEX "index_group_join_requests_on_group_id" ON "group_join_requests" ("group_id")
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "altered_group_join_requests"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "group_join_requests" ("id","group_user_id","user_id","group_id","status","open","created_at","updated_at") VALUES (73, 31, 2, 1, 202, -1, '2013-03-25 21:34:10.151142', '2013-03-25 21:34:10.151142')
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "altered_group_join_requests"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130325220458')
+  [1m[36m (28.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+SQLite3::ConstraintException: group_join_requests.open may not be NULL: UPDATE "group_join_requests" SET "open" = NULL, "updated_at" = '2013-03-25 22:13:28.243530' WHERE "group_join_requests"."id" = 74
+SQLite3::ConstraintException: PRIMARY KEY must be unique: INSERT INTO "group_join_requests" ("created_at", "group_id", "group_user_id", "id", "open", "status", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+SQLite3::ConstraintException: PRIMARY KEY must be unique: INSERT INTO "group_join_requests" ("created_at", "group_id", "group_user_id", "id", "open", "status", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+SQLite3::SQLException: near "FROM": syntax error: SELECT open = 'f' * FROM group_join_requests
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (1.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+SQLite3::SQLException: near "1": syntax error: SELECT TOP 1 open FROM group_join_requests
+SQLite3::ConstraintException: group_join_requests.open may not be NULL: UPDATE group_join_requests SET open = null
+SQLite3::SQLException: no such column: nil: UPDATE group_join_requests SET open = nil
+SQLite3::ConstraintException: group_join_requests.open may not be NULL: UPDATE group_join_requests SET open = NULL
+SQLite3::SQLException: no such column: NIL: UPDATE group_join_requests SET open = NIL
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+SQLite3::SQLException: no such column: t: UPDATE "group_join_requests" SET "open" = t, "updated_at" = '2013-03-26 21:36:39.054132' WHERE "group_join_requests"."id" = 74
+SQLite3::SQLException: no such column: t: UPDATE "group_join_requests" SET "open" = t, "updated_at" = '2013-03-26 21:36:39.054132' WHERE "group_join_requests"."id" = 74
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
