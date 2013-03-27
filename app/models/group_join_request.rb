@@ -4,6 +4,9 @@ class GroupJoinRequest < ActiveRecord::Base
   S_REJECTED = 403 
   S_CANCELED = 410
 
+  O_TRUE = 1
+  O_FALSE = -1
+
   belongs_to :group_user
   belongs_to :user
   belongs_to :group
@@ -22,12 +25,12 @@ class GroupJoinRequest < ActiveRecord::Base
   after_create :create_group_join_responses
   
   def init
-    self.open ||= true
+    self.open = GroupJoinRequest::O_TRUE
     self.status ||= GroupJoinRequest::S_REQUESTED
   end
 
   def accept
-    #self.update_attribute(:open, false)
+    #self.update_attribute(:open, GroupJoinRequest::O_FALSE)
     #self.update_attribute(:status, GroupJoinRequest::S_ACCEPTED)
     #self.status = GroupJoinRequest::S_ACCEPTED
     
@@ -45,13 +48,12 @@ class GroupJoinRequest < ActiveRecord::Base
      group_user = GroupUser.new
      group_user.user = self.user
      group_user.group = self.group
-     group_user.save 
-     #open_will_change! 
-     self.update_attributes(:open => ActiveRecord::ConnectionAdapters::Column.value_to_boolean("false"), :status => GroupJoinRequest::S_ACCEPTED, :group_user => group_user)
-     #self.update_attribute(:status, GroupJoinRequest::S_ACCEPTED)
-     #self.update_attribute(:group_user, group_user)
-     #self.group_user = group_user
-     #self.save
+     group_user.save
+     self.open = GroupJoinRequest::O_FALSE 
+     
+     self.status = GroupJoinRequest::S_ACCEPTED
+     self.group_user = group_user
+     self.save
    else
      self.group.users.reject{|user| user == self.user}.each do |user|  
        gjres = GroupJoinResponse.new 
@@ -64,7 +66,7 @@ class GroupJoinRequest < ActiveRecord::Base
 
   #validation methods
   def there_can_be_only_one_open_group_join_request 
-    if GroupJoinRequest.where(:user_id => user_id, :group_id => group_id, :open => true).where('id != ?', id).count > 0
+    if GroupJoinRequest.where(:user_id => user_id, :group_id => group_id, :open => GroupJoinRequest::O_TRUE).where('id != ?', id).count > 0
       errors.add(:user_id, "Already requested to join group")
     end
   end
