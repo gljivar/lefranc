@@ -18,8 +18,8 @@ class GroupJoinRequest < ActiveRecord::Base
 
   validates :user_id, :presence => true
   validates :group_id, :presence => true
-  #validate :there_can_be_only_one_open_group_join_request
-  #validate :user_cannot_make_request_if_already_in_group
+  validate :there_can_be_only_one_open_group_join_request
+  validate :user_cannot_make_request_if_already_in_group
 
   after_initialize :init
   after_create :create_group_join_responses
