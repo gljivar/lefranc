@@ -29,6 +29,7 @@ describe GroupJoinRequest do
     @gjr.group_user_id.should_not be_nil
     @gjr.status.should eq(GroupJoinRequest::S_ACCEPTED)
     @gjr.open.should be_false
+    GroupUser.exists?(:user_id => @user.id, :group_id => @group.id).should be_true
     GroupJoinRequest.find(@gjr.id).open.should be_false
   end
 
@@ -80,13 +81,14 @@ describe GroupJoinRequest do
     @gjr_open.group = @group
     @gjr_open.user = @user
     @gjr_open.save
-
+    
     @gjr_open.id.should_not be_nil
 
     @gjr.user = @user    
     @gjr.group = @group
     @gjr.save
 
+    @gjr.errors.count.should be > 0
     @gjr.id.should be_nil
   end
 
@@ -125,7 +127,7 @@ describe GroupJoinRequest do
     @gjr.id.should_not be_nil
     GroupJoinResponse.where(:user_id == @user_in_group.id).count.should eq(1)
     GroupJoinResponse.find(:first, :user_id == @user_in_group.id).group_join_request_id.should eq(@gjr.id) 
-    GroupJoinResponse.find(:first, :user_id == @user_in_group.id).user_id.should eq(@user.id) 
+    GroupJoinResponse.find(:first, :user_id == @user_in_group.id).group_join_request.user_id.should eq(@user.id) 
   end
 
   it "creates request with responses for current 2 users in group" do

@@ -41,7 +41,7 @@ class GroupJoinResponse < ActiveRecord::Base
 
   def add_user_to_group 
     group_user = GroupUser.new
-    group_user.user_id = user.id
+    group_user.user_id = group_join_request.user.id
     group_user.group_id = group_join_request.group_id
     group_user.save 
   end

@@ -31,7 +31,7 @@ describe GroupJoinResponse do
     @gjr.id.should_not be_nil
     GroupJoinResponse.where(:user_id == @user_in_group.id).count.should eq(1)
     GroupJoinResponse.find(:first, :user_id == @user_in_group.id).group_join_request_id.should eq(@gjr.id)
-    GroupJoinResponse.find(:first, :user_id == @user_in_group.id).user_id.should eq(@user.id)
+    GroupJoinResponse.find(:first, :user_id == @user_in_group.id).group_join_request.user_id.should eq(@user.id)
 
     # Accept
     @gjresponse = GroupJoinResponse.find(:first, :user_id == @user_in_group.id)
@@ -55,20 +55,23 @@ describe GroupJoinResponse do
 
 
   it "creates request with responses for current 2 users in group and if 1 votes yes then user is accepted into group" do
-    @user_in_group = User.new
-    @user_in_group.save
-    @group_user = GroupUser.new
-    @group_user.user_id = @user_in_group.id
-    @group_user.group_id = @group.id
-    @group_user.save
+    #create first user
+    @user_in_group_1 = User.new
+    @user_in_group_1.save
+    @group_user_1 = GroupUser.new
+    @group_user_1.user_id = @user_in_group_1.id
+    @group_user_1.group_id = @group.id
+    @group_user_1.save
 
+    #create second user
     @user_in_group_2 = User.new
     @user_in_group_2.save
     @group_user_2 = GroupUser.new
     @group_user_2.user_id = @user_in_group_2.id
     @group_user_2.group_id = @group.id
     @group_user_2.save
-
+    
+    #create group join request with responses for current 2 users
     @gjr.user = @user
     @gjr.group = @group
     @gjr.save
@@ -77,12 +80,13 @@ describe GroupJoinResponse do
     GroupJoinResponse.where(:user_id == @user.id).count.should eq(2)
     GroupJoinRequest.find(@gjr.id).open.should be_true
     # Accept
-    @gjresponse = GroupJoinResponse.find(:first, :user_id == @user_in_group.id)
+    @gjresponse = GroupJoinResponse.find(:first, :user_id == @user_in_group_1.id)
     @gjresponse.accept
     @gjresponse.response.should eq(GroupJoinResponse::R_ACCEPT)
     @gjresponse.group_join_request_id.should eq(@gjr.id)
     # User should be in group now and request closed
     GroupJoinRequest.find(@gjr.id).open.should be_false
+    @gjr = GroupJoinRequest.find(@gjr.id)
     @gjr.status.should eq(GroupJoinRequest::S_ACCEPTED)
     @gjr.open.should be_false
     GroupUser.where(:user_id => @user.id, :group_id => @group.id).count.should eq(1)

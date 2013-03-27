@@ -48,7 +48,7 @@ class GroupJoinRequest < ActiveRecord::Base
      self.group.users.reject{|user| user == self.user}.each do |user|  
        gjres = GroupJoinResponse.new 
        gjres.group_join_request_id = self.id
-       gjres.user = self.user
+       gjres.user = user
        gjres.save
      end
    end
@@ -61,8 +61,9 @@ class GroupJoinRequest < ActiveRecord::Base
     end
   end
 
+  # if user is in group, but we are not talking about this current group join request to user connection
   def user_cannot_make_request_if_already_in_group
-    if GroupUser.where(:user_id => user_id, :group_id => group_id).where('id != ?', group_user_id).count > 0
+    if GroupUser.exists?(:user_id => user_id, :group_id => group_id) and !GroupUser.exists?(:id => group_user_id) 
       errors.add(:user_id, "Already member of requested group")
     end
   end 
