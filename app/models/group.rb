@@ -13,4 +13,5 @@ class Group < ActiveRecord::Base
 
   has_many :group_join_requests
 
+  validates :user, :native_language, :foreign_language, :presence => true, :allow_nil => false, :on => :save
 end

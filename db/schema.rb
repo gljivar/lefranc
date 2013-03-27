@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130327183421) do
+ActiveRecord::Schema.define(:version => 20130327215340) do
 
   create_table "group_join_requests", :force => true do |t|
     t.integer  "group_user_id"
@@ -53,8 +53,8 @@ ActiveRecord::Schema.define(:version => 20130327183421) do
     t.string   "name"
     t.datetime "created_at",          :null => false
     t.datetime "updated_at",          :null => false
-    t.integer  "native_language_id"
-    t.integer  "foreign_language_id"
+    t.integer  "native_language_id",  :null => false
+    t.integer  "foreign_language_id", :null => false
     t.integer  "user_id"
   end
 

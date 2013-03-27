@@ -6,8 +6,22 @@ describe GroupJoinResponse do
     @user.name = "Test User"
     @user.save
 
+    @native_language = Language.new
+    @native_language.user = @user
+    @native_language.name = "Test Language native"
+    @native_language.english_name = "Test Language native"
+    @native_language.save
+
+    @foreign_language = Language.new
+    @foreign_language.user = @user
+    @foreign_language.name = "Test Language foreign"
+    @foreign_language.english_name = "Test Language foreign"
+    @foreign_language.save
+
     @group = Group.new
     @group.name = "Test Group"
+    @group.foreign_language = @foreign_language
+    @group.native_language = @native_language
     @group.save
 
     @gjr = GroupJoinRequest.new
