@@ -28,9 +28,8 @@ describe Group do
   it "can't be saved if user, native and foreign language are not chosen" do
     @group.user = @user
     @group.native_language.should be_nil
-    @group.valid?.should be_false
-    #@group.save!
-    #@group.id.should be_nil
+    @group.save
+    @group.id.should be_nil
 
     @group.native_language = @native_language
     #@group.save

@@ -11,20 +11,24 @@ describe GroupJoinRequest do
     @native_language.name = "Test Language native"
     @native_language.english_name = "Test Language native"
     @native_language.save
-
+    @native_language.id.should_not be_nil 
+    
     @foreign_language = Language.new
     @foreign_language.user = @user
     @foreign_language.name = "Test Language foreign"
     @foreign_language.english_name = "Test Language foreign"
     @foreign_language.save
+    @foreign_language.id.should_not be_nil 
 
     @group = Group.new
+    # @group.user = @user
     @group.name = "Test Group"
     @group.foreign_language = @foreign_language
     @group.native_language = @native_language
     @group.save
 
     @group.should_not be_nil
+    @group.id.should_not be_nil
     @gjr = GroupJoinRequest.new 
 
     @gjr_open = GroupJoinRequest.new
