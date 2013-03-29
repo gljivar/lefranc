@@ -25,7 +25,7 @@ describe Group do
     @group.should be_an_instance_of Group
   end
 
-  it "can't be saved if user, native and foreign language are not chosen" do
+  it "can't be saved if native and foreign language are not chosen" do
     @group.user = @user
     @group.native_language.should be_nil
     @group.save
