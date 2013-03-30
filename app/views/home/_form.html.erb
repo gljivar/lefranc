@@ -1,7 +1,28 @@
-<h1>Learn languages</h1>
+<h1>Dashboard</h1>
 
 <p>
+  <h2>Groups with recent activity</h2>
+  <table>
+  <tr>
+    <th>Name</th>
+    <th>Foreign language</th>
+    <th></th>
+  </tr>
+
+  <% @groups.each do |group| %>
+    <tr>
+      <td><%= group.name %></td>
+      <td><%= group.foreign_language.name %></td>
+      <td><%= link_to 'Show', group %></td>
+    </tr>
+  <% end %>
+  </table>
+
+  <br />
   <%= link_to "Groups", user_groups_path(current_user) %></br></br>
+</p>
+<p>
+  <h2>Lessons with recent activity</h2>
   <%= link_to "Lessons", user_lessons_path(current_user) %></br></br>
 </p>
 
