@@ -11,5 +11,7 @@ class HomeController < ApplicationController
     @group_users.each do |group_user| @groups.push(Group.find(group_user.group_id)) end
     
     #TODO: Take lessons with some recent activity
+    @lessons =[]
+    #@groups.each do |group| @lessons.push(Lesson.where(:group_id => group.id)) end
   end
 end
