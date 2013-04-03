@@ -20139,3 +20139,4 @@ Served asset /application.js - 304 Not Modified (6ms)
 
 Started GET "/assets/user_groups.js?body=1" for 127.0.0.1 at 2013-04-01 23:45:34 +0200
 Served asset /user_groups.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
