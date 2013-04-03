@@ -52,9 +52,16 @@
 
 <div class="container"> 
   <div class="row">
+    <% if current_user %>
     <div class="span9">
       <%= yield %>
     </div>
+    <% else %>
+    <div class="span12">
+      <%= yield %>
+    </div>
+    <% end %>
+
     <% if current_user %>
     <div class="span3">
       <h2>Activity</h2>

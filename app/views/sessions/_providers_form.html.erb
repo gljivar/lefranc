@@ -4,14 +4,16 @@
 
 <p>
 <div class="controls controls-row">
-  <%= link_to "Sign in with Facebook", "/auth/facebook", :class => "btn btn-primary btn-large span3", :placeholder => ".span3" %>
-  <%= link_to "Sign in with Twitter", "/auth/twitter", :class => "btn btn-info btn-large span3", :placeholder => ".span3" %>
+  <%= link_to "Sign in with Facebook", "/auth/facebook", :class => "btn btn-primary btn-large span4", :placeholder => ".span4" %>
+  <div class="span1"></div>
+  <%= link_to "Sign in with Google", "/auth/google_oauth2", :class => "btn btn-success btn-large span4", :placeholder => ".span4" %>
 </div>
 </p>
 <p>
 <div class="controls controls-row">
-  <%= link_to "Sign in with Google", "/auth/google_oauth2", :class => "btn btn-success btn-large span3", :placeholder => ".span3" %>
-  <%= link_to "Sign in with Windows Live ID", "/auth/windowslive", :class => "btn btn-default btn-large span3", :placeholder => ".span3" %>
+  <%= link_to "Sign in with Twitter", "/auth/twitter", :class => "btn btn-info btn-large span4", :placeholder => ".span4" %>
+  <div class="span1"></div>
+  <%= link_to "Sign in with Windows Live ID", "/auth/windowslive", :class => "btn btn-default btn-large span4", :placeholder => ".span4" %>
 </div>
 </p>
 </div>
