@@ -32,9 +32,9 @@ class GroupJoinRequest < ActiveRecord::Base
   end
 
   
-  # If there is noone in the group then just join, else create group join responses  
+  # If there is noone in the group then just join, else create group join responses. Test maybe fails because previous also user_id == nil was checking  
   def create_group_join_responses 
-   if self.group.users.count <= 0 and self.group.user == nil
+   if self.group.users.count <= 0 
      group_user = GroupUser.new
      group_user.user = self.user
      group_user.group = self.group

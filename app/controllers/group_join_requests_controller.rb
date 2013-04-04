@@ -6,26 +6,14 @@ class GroupJoinRequestsController < ApplicationController
   def create
     @gjr = GroupJoinRequest.new
     @gjr.group_id = @group.id
-    @gjr.status = GroupJoinRequest::S_REQUESTED
-    @gjr.closed = false
-    @gjr.user_id = @user.id
+    @gjr.user_id = current_user.id
+    @gjr.save
 
-    @gjresponses = []
-    @group.users.each do |user|
-      @gjresponse = GroupJoinResponse.new
-      @gjresponse.user = user
-      @gjresponses.push @gjresponse
-    end
-
+    #TODO: Chack if there other possibilities
     respond_to do |format|
-      if !is_current_user(@user)
-        format.html { redirect_to(groups_path, 
-          :notice => "You can only join groups by yourself.") }
-        format.json { render :json => [], :status => :unauthorized } 
-      end 
-      if save_all @gjr, @gjresponses
+      if @gjr.id > 0
         format.html { redirect_to(groups_path,
-          :notice => "Your request is made. You have to wait for approval from other group members.") }
+          :notice => "Your request has been made. You have to wait for approval from other group members.") }
         format.json { render :json =>@gjr,
           :status => :created, :location => @gjr }
       else
@@ -52,12 +40,9 @@ class GroupJoinRequestsController < ApplicationController
 
   def destroy
     if current_user == @gjr.user
-      @gjr.status = GroupJoinRequest::S_CANCELED
-      @gjr.closed = true
-      @gjr.save
+      @gjr.destroy
     end
  
-    #TODO: Unauthorized also checking and return according to that 
     respond_to do |format|
       format.html { redirect_to groups_path,
         :notice => "Request has been canceled" }
@@ -79,14 +64,4 @@ class GroupJoinRequestsController < ApplicationController
     @user = User.find(params[:user_id])
   end
 
-  def save_all(gjr, gjresponses)
-    ActiveRecord::Base.transaction do
-      gjr.save
-      gjresponses.each do |gjresponse|
-        gjresponse.group_join_request = gjr 
-        gjresponse.response = GroupJoinResponse::R_INITIAL 
-        gjresponse.save 
-      end
-    end 
-  end
 end

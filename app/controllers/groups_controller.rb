@@ -11,8 +11,6 @@ class GroupsController < ApplicationController
     end
   end
 
-  # GET /groups/1
-  # GET /groups/1.json
   def show
     @group = Group.find(params[:id])
 
@@ -22,8 +20,6 @@ class GroupsController < ApplicationController
     end
   end
 
-  # GET /groups/new
-  # GET /groups/new.json
   def new
     @group = Group.new
 
@@ -33,21 +29,27 @@ class GroupsController < ApplicationController
     end
   end
 
-  # GET /groups/1/edit
   def edit
     @group = Group.find(params[:id])
   end
 
-  # POST /groups
-  # POST /groups.json
   def create
+    #TODO: Perhaps policy that user automatically becomes group's user should perhaps be placed in model
     @group = Group.new(params[:group])
     @group.user = current_user
 
     respond_to do |format|
       if @group.save
-        format.html { redirect_to @group, :notice => 'Group was successfully created.' }
-        format.json { render json: @group, status: :created, location: @group }
+        @group_user = GroupUser.new
+        @group_user.user_id = current_user.id
+        @group_user.group_id = @group.id
+        if @group_user.save
+          format.html { redirect_to @group, :notice => 'Group was successfully created.' }
+          format.json { render json: @group, status: :created, location: @group }
+        else
+          format.html { redirect_to groups_path, :notice => 'Group was successfully created, but joining to the group failed. Please join manually or send us a report about what happened.' }
+          format.json { render json: @group_user.errors, status: :unprocessable_entity }
+        end
       else
         format.html { render action: "new" }
         format.json { render json: @group.errors, status: :unprocessable_entity }
@@ -55,8 +57,6 @@ class GroupsController < ApplicationController
     end
   end
 
-  # PUT /groups/1
-  # PUT /groups/1.json
   def update
     @group = Group.find(params[:id])
 
@@ -71,8 +71,6 @@ class GroupsController < ApplicationController
     end
   end
 
-  # DELETE /groups/1
-  # DELETE /groups/1.json
   def destroy
     @group = Group.find(params[:id])
     @group.destroy

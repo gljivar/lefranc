@@ -12,6 +12,7 @@ class GroupUsersController < ApplicationController
 
   end
 
+  #TODO: Either remove from here, obsolete, or make that only admin can use call this method
   def create
     @group_user = GroupUser.new
     @group_user.user_id = @user.id
@@ -28,8 +29,8 @@ class GroupUsersController < ApplicationController
           :notice => "Group user was not successfully created.") } 
         format.json { render :json => @group_user.errors,
           :status => :unprocessable_entity }
-        end
       end
+    end
  
   end
 
@@ -43,7 +44,7 @@ class GroupUsersController < ApplicationController
 
     respond_to do |format|
       format.html { redirect_to groups_path,
-        :notice => "Group user has been deleted" }
+        :notice => "User has been removed from the group." }
       format.json { head :no_content }
     end
 
