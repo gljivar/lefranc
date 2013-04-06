@@ -28,6 +28,8 @@
             <li><%= link_to "Contact Us" %></li>
             <!-- User based nav -->
             <% if current_user %>
+            <li><%= link_to "Groups", user_groups_path(current_user) %></li>
+            <li><%= link_to "Lessons", user_lessons_path(current_user) %></li>
             <li><%= link_to current_user.name, edit_user_path(current_user) %></li>
             <li><%= link_to "Sign out", signout_path %></li>
             <% else %>

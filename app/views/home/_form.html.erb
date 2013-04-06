@@ -18,9 +18,9 @@
     </tbody>
   </table>
   <br />
-  <%= link_to "Your groups", user_groups_path(current_user) %></br></br>
-  <%= link_to "All groups", groups_path %></br></br>
-
+  <%= link_to "Your groups", user_groups_path(current_user), :class => 'btn btn-primary' %>
+  <%= link_to "Join groups", groups_path, :class => 'btn btn-primary' %>
+  </br></br>
   <% else %>
     <p>You are not a member of any group.
        </br></br>
@@ -49,7 +49,7 @@
   </table>
 
   <br />
-  <%= link_to "Lessons", user_lessons_path(current_user) %></br></br>
+  <%= link_to "Lessons", user_lessons_path(current_user), :class => 'btn btn-primary' %></br></br>
   <% else %>
     <p>You are not following any lessons. Join some group and follow or create lessons!</p>
   <% end %>
