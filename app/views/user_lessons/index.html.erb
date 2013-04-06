@@ -1,12 +1,9 @@
-<h1>User <%= @user.name %> goes to lessons</h1>
+<h1><%= @user.name %> had lessons</h1>
 
-<% if @lessons.present? %>
-        <ul>
-        <% @lessons.each do |lesson| %>
-                <li><%= link_to lesson.name, lesson_path(lesson) %>
-                </li>
-        <% end %>
-        </ul>
-        <%= link_to "All lessons", lessons_path %>
+<%= render "lessons/lessons_table_form" %>
+
+<% if !@lessons.present? %>
+  No lessons were attended. Join the group and attend some lessons!</br></br>
+  <%= link_to "Groups", groups_path, :class => 'btn btn-primary' %>
 <% end %>
 

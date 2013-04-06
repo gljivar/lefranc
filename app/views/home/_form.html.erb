@@ -32,22 +32,10 @@
 
 <h2>Recent lessons</h2>
 <p>
-  <% if @lessons.count > 0 %>
-  <table class="table table-striped">
-    <thead>
-      <tr>
-        <th>Name</th>
-      </tr>
-    </thead>
-    <tbody>
-      <% @lessons.each do |lesson| %>
-      <tr>
-        <td><%= link_to lesson.name, lesson %></td>
-      </tr>
-      <% end %>
-    </tbody>
-  </table>
 
+  <%= render "lessons/lessons_table_form" %>
+  
+  <% if @lessons.count > 0 %>
   <br />
   <%= link_to "Lessons", user_lessons_path(current_user), :class => 'btn btn-primary' %></br></br>
   <% else %>
