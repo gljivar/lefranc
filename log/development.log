@@ -53056,3 +53056,1396 @@ Served asset /img-devices.jpg - 304 Not Modified (0ms)
 
 Started GET "/assets/img-join.png" for 127.0.0.1 at 2013-04-07 21:53:08 +0200
 Served asset /img-join.png - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/competitors" for 127.0.0.1 at 2013-04-09 00:48:27 +0200
+
+ActionController::RoutingError (No route matches [GET] "/competitors"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/miroslav/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/miroslav/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/miroslav/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-09 00:48:30 +0200
+Processing by HomeController#index as HTML
+  Rendered sessions/_providers_form.html.erb (0.7ms)
+  Rendered home/_landing_form.html.erb (1.6ms)
+  Rendered home/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 155ms (Views: 154.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:31 +0200
+Served asset /application.css - 200 OK (17ms)
+
+
+Started GET "/assets/group_join_request.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:31 +0200
+Served asset /group_join_request.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home_controller.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:31 +0200
+Served asset /home_controller.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:31 +0200
+Served asset /home.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/group_users.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:31 +0200
+Served asset /group_users.css - 304 Not Modified (27ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:31 +0200
+Served asset /languages.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:31 +0200
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/group_join_response.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:31 +0200
+Served asset /group_join_response.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:31 +0200
+Served asset /sessions.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:31 +0200
+Served asset /user.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/user_lessons.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:31 +0200
+Served asset /user_lessons.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/user_groups.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:31 +0200
+Served asset /user_groups.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:31 +0200
+Served asset /word_gender.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:31 +0200
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:31 +0200
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:31 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:31 +0200
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:31 +0200
+Served asset /jquery.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:31 +0200
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:31 +0200
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:31 +0200
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:31 +0200
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:31 +0200
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:31 +0200
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:31 +0200
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (35ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:31 +0200
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:31 +0200
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:31 +0200
+Served asset /twitter/bootstrap.js - 304 Not Modified (25ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:31 +0200
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:31 +0200
+Served asset /bootstrap.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/group_users.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:31 +0200
+Served asset /group_users.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/group_join_request.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:31 +0200
+Served asset /group_join_request.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/group_join_response.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:31 +0200
+Served asset /group_join_response.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/home_controller.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:31 +0200
+Served asset /home_controller.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:31 +0200
+Served asset /sessions.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:31 +0200
+Served asset /home.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:31 +0200
+Served asset /languages.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:31 +0200
+Served asset /user.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/user_groups.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:31 +0200
+Served asset /user_groups.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:31 +0200
+Served asset /word_gender.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/user_lessons.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:31 +0200
+Served asset /user_lessons.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:31 +0200
+Served asset /application.js - 200 OK (41ms)
+
+
+Started GET "/assets/img-notebooks.jpg" for 127.0.0.1 at 2013-04-09 00:48:31 +0200
+Served asset /img-notebooks.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/img-classroom.jpg" for 127.0.0.1 at 2013-04-09 00:48:31 +0200
+Served asset /img-classroom.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/img-conference.jpg" for 127.0.0.1 at 2013-04-09 00:48:31 +0200
+Served asset /img-conference.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/img-devices.jpg" for 127.0.0.1 at 2013-04-09 00:48:31 +0200
+Served asset /img-devices.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/img-join.png" for 127.0.0.1 at 2013-04-09 00:48:31 +0200
+Served asset /img-join.png - 304 Not Modified (1ms)
+
+
+Started GET "/sessions/index" for 127.0.0.1 at 2013-04-09 00:48:35 +0200
+Processing by SessionsController#index as HTML
+  Rendered sessions/_providers_form.html.erb (0.2ms)
+  Rendered sessions/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 23ms (Views: 22.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:35 +0200
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/group_users.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:35 +0200
+Served asset /group_users.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/group_join_request.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:35 +0200
+Served asset /group_join_request.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home_controller.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:35 +0200
+Served asset /home_controller.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:35 +0200
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:35 +0200
+Served asset /home.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/group_join_response.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:35 +0200
+Served asset /group_join_response.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:35 +0200
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:35 +0200
+Served asset /languages.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/user_groups.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:35 +0200
+Served asset /user_groups.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:35 +0200
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:35 +0200
+Served asset /user.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:35 +0200
+Served asset /word_gender.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_lessons.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:35 +0200
+Served asset /user_lessons.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:35 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:35 +0200
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:35 +0200
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:35 +0200
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:35 +0200
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:35 +0200
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:35 +0200
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:35 +0200
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:35 +0200
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:35 +0200
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:35 +0200
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:35 +0200
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:35 +0200
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:35 +0200
+Served asset /twitter/bootstrap.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:35 +0200
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:35 +0200
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/group_users.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:35 +0200
+Served asset /group_users.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/group_join_response.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:35 +0200
+Served asset /group_join_response.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/group_join_request.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:35 +0200
+Served asset /group_join_request.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:35 +0200
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home_controller.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:35 +0200
+Served asset /home_controller.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:35 +0200
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:35 +0200
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_lessons.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:35 +0200
+Served asset /user_lessons.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:35 +0200
+Served asset /user.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/user_groups.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:35 +0200
+Served asset /user_groups.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:35 +0200
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:35 +0200
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2013-04-09 00:48:36 +0200
+
+
+Started GET "/auth/google_oauth2/callback?state=26e20a99b1bb7d20a7281e2d1542b8d7ec3d7d473bd19820&code=4/KqQrSpq3TGSIThOhJ29hrRY0qeUq.AqwnoXTE9iUQOl05ti8ZT3ZVG7DXewI" for 127.0.0.1 at 2013-04-09 00:48:37 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"state"=>"26e20a99b1bb7d20a7281e2d1542b8d7ec3d7d473bd19820", "code"=>"4/KqQrSpq3TGSIThOhJ29hrRY0qeUq.AqwnoXTE9iUQOl05ti8ZT3ZVG7DXewI", "provider"=>"google_oauth2"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."provider" = 'google_oauth2' AND "users"."uid" = '113554400452559355187' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 139ms (ActiveRecord: 3.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-09 00:48:38 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (10.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mGroupUser Load (0.2ms)[0m  [1mSELECT "group_users".* FROM "group_users" WHERE "group_users"."user_id" = 4 ORDER BY created_at desc LIMIT 5[0m
+  [1m[35mGroup Load (0.2ms)[0m  SELECT "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mGroup Load (0.1ms)[0m  [1mSELECT "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mLesson Load (0.1ms)[0m  SELECT "lessons".* FROM "lessons" WHERE "lessons"."group_id" = 1
+  [1m[36mLesson Load (0.2ms)[0m  [1mSELECT "lessons".* FROM "lessons" WHERE "lessons"."group_id" = 3[0m
+  [1m[35mLanguage Load (0.2ms)[0m  SELECT "languages".* FROM "languages" WHERE "languages"."id" = 1 LIMIT 1
+  [1m[36mLanguage Load (0.2ms)[0m  [1mSELECT "languages".* FROM "languages" WHERE "languages"."id" = 2 LIMIT 1[0m
+  Rendered lessons/_lessons_table_form.html.erb (1.7ms)
+  Rendered home/_form.html.erb (67.0ms)
+  Rendered home/index.html.erb within layouts/application (67.8ms)
+Completed 200 OK in 230ms (Views: 124.4ms | ActiveRecord: 13.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:38 +0200
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/group_join_request.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:38 +0200
+Served asset /group_join_request.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:38 +0200
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/group_users.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:38 +0200
+Served asset /group_users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/group_join_response.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:38 +0200
+Served asset /group_join_response.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:38 +0200
+Served asset /home.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home_controller.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:38 +0200
+Served asset /home_controller.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:38 +0200
+Served asset /languages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:38 +0200
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:38 +0200
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_groups.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:38 +0200
+Served asset /user_groups.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:38 +0200
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/user_lessons.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:38 +0200
+Served asset /user_lessons.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:38 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:38 +0200
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:38 +0200
+Served asset /word_gender.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:38 +0200
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:38 +0200
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:38 +0200
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:38 +0200
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:38 +0200
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:38 +0200
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:38 +0200
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:38 +0200
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:39 +0200
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:39 +0200
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:39 +0200
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:39 +0200
+Served asset /twitter/bootstrap.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:39 +0200
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:39 +0200
+Served asset /bootstrap.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/group_join_response.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:39 +0200
+Served asset /group_join_response.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/group_join_request.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:39 +0200
+Served asset /group_join_request.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/group_users.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:39 +0200
+Served asset /group_users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:39 +0200
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:39 +0200
+Served asset /home.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:39 +0200
+Served asset /sessions.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/home_controller.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:39 +0200
+Served asset /home_controller.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:39 +0200
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_lessons.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:39 +0200
+Served asset /user_lessons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:39 +0200
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_groups.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:39 +0200
+Served asset /user_groups.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:39 +0200
+Served asset /application.js - 304 Not Modified (35ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-09 00:48:51 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mGroupUser Load (0.2ms)[0m  [1mSELECT "group_users".* FROM "group_users" WHERE "group_users"."user_id" = 4 ORDER BY created_at desc LIMIT 5[0m
+  [1m[35mGroup Load (0.1ms)[0m  SELECT "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mGroup Load (0.1ms)[0m  [1mSELECT "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mLesson Load (0.1ms)[0m  SELECT "lessons".* FROM "lessons" WHERE "lessons"."group_id" = 1
+  [1m[36mLesson Load (0.1ms)[0m  [1mSELECT "lessons".* FROM "lessons" WHERE "lessons"."group_id" = 3[0m
+  [1m[35mLanguage Load (0.1ms)[0m  SELECT "languages".* FROM "languages" WHERE "languages"."id" = 1 LIMIT 1
+  [1m[36mLanguage Load (0.1ms)[0m  [1mSELECT "languages".* FROM "languages" WHERE "languages"."id" = 2 LIMIT 1[0m
+  Rendered lessons/_lessons_table_form.html.erb (0.3ms)
+  Rendered home/_form.html.erb (4.4ms)
+  Rendered home/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 34ms (Views: 28.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:51 +0200
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/group_join_request.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:51 +0200
+Served asset /group_join_request.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:51 +0200
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/group_join_response.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:51 +0200
+Served asset /group_join_response.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/group_users.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:51 +0200
+Served asset /group_users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home_controller.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:51 +0200
+Served asset /home_controller.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:51 +0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:51 +0200
+Served asset /languages.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:51 +0200
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:51 +0200
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_groups.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:51 +0200
+Served asset /user_groups.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:51 +0200
+Served asset /word_gender.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_lessons.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:51 +0200
+Served asset /user_lessons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:51 +0200
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:51 +0200
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:51 +0200
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:51 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:51 +0200
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:51 +0200
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:51 +0200
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:51 +0200
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:51 +0200
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:51 +0200
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:51 +0200
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:51 +0200
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:51 +0200
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:51 +0200
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:51 +0200
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:51 +0200
+Served asset /bootstrap.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/group_join_response.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:51 +0200
+Served asset /group_join_response.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:51 +0200
+Served asset /twitter/bootstrap.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/group_join_request.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:51 +0200
+Served asset /group_join_request.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/group_users.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:51 +0200
+Served asset /group_users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:51 +0200
+Served asset /languages.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:51 +0200
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home_controller.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:51 +0200
+Served asset /home_controller.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:51 +0200
+Served asset /user.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:51 +0200
+Served asset /sessions.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/user_groups.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:51 +0200
+Served asset /user_groups.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_lessons.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:51 +0200
+Served asset /user_lessons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:51 +0200
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:51 +0200
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/users/4/lessons" for 127.0.0.1 at 2013-04-09 00:48:55 +0200
+Processing by UserLessonsController#index as HTML
+  Parameters: {"user_id"=>"4"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  [1m[35mLesson Load (0.4ms)[0m  SELECT "lessons".* FROM "lessons" INNER JOIN "groups" ON "lessons"."group_id" = "groups"."id" INNER JOIN "group_users" ON "groups"."id" = "group_users"."group_id" WHERE "group_users"."user_id" = 4
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "lessons" INNER JOIN "groups" ON "lessons"."group_id" = "groups"."id" INNER JOIN "group_users" ON "groups"."id" = "group_users"."group_id" WHERE "group_users"."user_id" = 4[0m
+  Rendered lessons/_lessons_table_form.html.erb (44.2ms)
+  Rendered user_lessons/index.html.erb within layouts/application (45.4ms)
+Completed 200 OK in 113ms (Views: 68.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:55 +0200
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:55 +0200
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/home_controller.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:55 +0200
+Served asset /home_controller.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/group_join_request.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:55 +0200
+Served asset /group_join_request.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:55 +0200
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/group_users.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:55 +0200
+Served asset /group_users.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/group_join_response.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:55 +0200
+Served asset /group_join_response.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:55 +0200
+Served asset /languages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:55 +0200
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:55 +0200
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_groups.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:55 +0200
+Served asset /user_groups.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:55 +0200
+Served asset /word_gender.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_lessons.css?body=1" for 127.0.0.1 at 2013-04-09 00:48:55 +0200
+Served asset /user_lessons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:55 +0200
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:55 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:55 +0200
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:55 +0200
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:55 +0200
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:55 +0200
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:55 +0200
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:55 +0200
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:55 +0200
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:55 +0200
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:55 +0200
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:55 +0200
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:55 +0200
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:55 +0200
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:55 +0200
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:55 +0200
+Served asset /twitter/bootstrap.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:55 +0200
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/group_join_request.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:55 +0200
+Served asset /group_join_request.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/group_users.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:55 +0200
+Served asset /group_users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/group_join_response.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:55 +0200
+Served asset /group_join_response.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:55 +0200
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home_controller.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:55 +0200
+Served asset /home_controller.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:55 +0200
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:55 +0200
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:55 +0200
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_lessons.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:55 +0200
+Served asset /user_lessons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:55 +0200
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:55 +0200
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_groups.js?body=1" for 127.0.0.1 at 2013-04-09 00:48:55 +0200
+Served asset /user_groups.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/4/groups" for 127.0.0.1 at 2013-04-09 00:49:01 +0200
+Processing by UserGroupsController#index as HTML
+  Parameters: {"user_id"=>"4"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  [1m[35mGroup Load (0.4ms)[0m  SELECT "groups".* FROM "groups" INNER JOIN "group_users" ON "groups"."id" = "group_users"."group_id" WHERE "group_users"."user_id" = 4
+  [1m[36mLanguage Load (0.1ms)[0m  [1mSELECT "languages".* FROM "languages" WHERE "languages"."id" = 1 LIMIT 1[0m
+  [1m[35mLanguage Load (0.1ms)[0m  SELECT "languages".* FROM "languages" WHERE "languages"."id" = 2 LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" INNER JOIN "group_users" ON "users"."id" = "group_users"."user_id" WHERE "group_users"."group_id" = 3 AND "users"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "languages".* FROM "languages" WHERE "languages"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "languages".* FROM "languages" WHERE "languages"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" INNER JOIN "group_users" ON "users"."id" = "group_users"."user_id" WHERE "group_users"."group_id" = 1 AND "users"."id" = 4 LIMIT 1
+  Rendered groups/_groups_table_form.html.erb (43.2ms)
+  Rendered user_groups/index.html.erb within layouts/application (44.4ms)
+Completed 200 OK in 70ms (Views: 67.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-09 00:49:01 +0200
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/group_join_request.css?body=1" for 127.0.0.1 at 2013-04-09 00:49:01 +0200
+Served asset /group_join_request.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/group_users.css?body=1" for 127.0.0.1 at 2013-04-09 00:49:01 +0200
+Served asset /group_users.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-04-09 00:49:01 +0200
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home_controller.css?body=1" for 127.0.0.1 at 2013-04-09 00:49:01 +0200
+Served asset /home_controller.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/group_join_response.css?body=1" for 127.0.0.1 at 2013-04-09 00:49:01 +0200
+Served asset /group_join_response.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-04-09 00:49:01 +0200
+Served asset /home.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-09 00:49:01 +0200
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-04-09 00:49:01 +0200
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-04-09 00:49:01 +0200
+Served asset /languages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_groups.css?body=1" for 127.0.0.1 at 2013-04-09 00:49:01 +0200
+Served asset /user_groups.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/user_lessons.css?body=1" for 127.0.0.1 at 2013-04-09 00:49:01 +0200
+Served asset /user_lessons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-04-09 00:49:01 +0200
+Served asset /word_gender.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-09 00:49:01 +0200
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-09 00:49:01 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-04-09 00:49:01 +0200
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-04-09 00:49:01 +0200
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-04-09 00:49:01 +0200
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-04-09 00:49:01 +0200
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-04-09 00:49:01 +0200
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-04-09 00:49:01 +0200
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-04-09 00:49:01 +0200
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-04-09 00:49:01 +0200
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-04-09 00:49:01 +0200
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-04-09 00:49:01 +0200
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-04-09 00:49:01 +0200
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-04-09 00:49:02 +0200
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-04-09 00:49:02 +0200
+Served asset /twitter/bootstrap.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-04-09 00:49:02 +0200
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-04-09 00:49:02 +0200
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/group_join_request.js?body=1" for 127.0.0.1 at 2013-04-09 00:49:02 +0200
+Served asset /group_join_request.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/group_join_response.js?body=1" for 127.0.0.1 at 2013-04-09 00:49:02 +0200
+Served asset /group_join_response.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/group_users.js?body=1" for 127.0.0.1 at 2013-04-09 00:49:02 +0200
+Served asset /group_users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home_controller.js?body=1" for 127.0.0.1 at 2013-04-09 00:49:02 +0200
+Served asset /home_controller.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-04-09 00:49:02 +0200
+Served asset /languages.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-04-09 00:49:02 +0200
+Served asset /home.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-09 00:49:02 +0200
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-04-09 00:49:02 +0200
+Served asset /user.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-09 00:49:02 +0200
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/user_lessons.js?body=1" for 127.0.0.1 at 2013-04-09 00:49:02 +0200
+Served asset /user_lessons.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-04-09 00:49:02 +0200
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_groups.js?body=1" for 127.0.0.1 at 2013-04-09 00:49:02 +0200
+Served asset /user_groups.js - 304 Not Modified (0ms)
+
+
+Started GET "/groups/3" for 127.0.0.1 at 2013-04-09 00:49:06 +0200
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mGroup Load (0.1ms)[0m  SELECT "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", "3"]]
+  [1m[36mLanguage Load (0.2ms)[0m  [1mSELECT "languages".* FROM "languages" WHERE "languages"."id" = 1 LIMIT 1[0m
+  [1m[35mLanguage Load (0.1ms)[0m  SELECT "languages".* FROM "languages" WHERE "languages"."id" = 2 LIMIT 1
+  [1m[36mLesson Load (0.2ms)[0m  [1mSELECT "lessons".* FROM "lessons" WHERE "lessons"."group_id" = 3[0m
+  Rendered lessons/_lessons_table_form.html.erb (1.5ms)
+  Rendered groups/show.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 62ms (Views: 59.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-04-09 00:49:06 +0200
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-09 00:49:06 +0200
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/group_join_request.css?body=1" for 127.0.0.1 at 2013-04-09 00:49:06 +0200
+Served asset /group_join_request.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/group_users.css?body=1" for 127.0.0.1 at 2013-04-09 00:49:06 +0200
+Served asset /group_users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/group_join_response.css?body=1" for 127.0.0.1 at 2013-04-09 00:49:06 +0200
+Served asset /group_join_response.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/home_controller.css?body=1" for 127.0.0.1 at 2013-04-09 00:49:06 +0200
+Served asset /home_controller.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-04-09 00:49:06 +0200
+Served asset /home.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/languages.css?body=1" for 127.0.0.1 at 2013-04-09 00:49:06 +0200
+Served asset /languages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-04-09 00:49:06 +0200
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-09 00:49:06 +0200
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_groups.css?body=1" for 127.0.0.1 at 2013-04-09 00:49:06 +0200
+Served asset /user_groups.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/word_gender.css?body=1" for 127.0.0.1 at 2013-04-09 00:49:06 +0200
+Served asset /word_gender.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_lessons.css?body=1" for 127.0.0.1 at 2013-04-09 00:49:06 +0200
+Served asset /user_lessons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-04-09 00:49:06 +0200
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-09 00:49:06 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-04-09 00:49:06 +0200
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-09 00:49:06 +0200
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-04-09 00:49:06 +0200
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-04-09 00:49:06 +0200
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-04-09 00:49:06 +0200
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-04-09 00:49:06 +0200
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-04-09 00:49:06 +0200
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-04-09 00:49:06 +0200
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-04-09 00:49:06 +0200
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-04-09 00:49:06 +0200
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-04-09 00:49:06 +0200
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-04-09 00:49:06 +0200
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-04-09 00:49:06 +0200
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-04-09 00:49:06 +0200
+Served asset /twitter/bootstrap.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-04-09 00:49:06 +0200
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/group_join_request.js?body=1" for 127.0.0.1 at 2013-04-09 00:49:06 +0200
+Served asset /group_join_request.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/group_join_response.js?body=1" for 127.0.0.1 at 2013-04-09 00:49:06 +0200
+Served asset /group_join_response.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-04-09 00:49:06 +0200
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/group_users.js?body=1" for 127.0.0.1 at 2013-04-09 00:49:06 +0200
+Served asset /group_users.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home_controller.js?body=1" for 127.0.0.1 at 2013-04-09 00:49:06 +0200
+Served asset /home_controller.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/languages.js?body=1" for 127.0.0.1 at 2013-04-09 00:49:06 +0200
+Served asset /languages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-09 00:49:06 +0200
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2013-04-09 00:49:06 +0200
+Served asset /user.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_groups.js?body=1" for 127.0.0.1 at 2013-04-09 00:49:06 +0200
+Served asset /user_groups.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-09 00:49:06 +0200
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/word_gender.js?body=1" for 127.0.0.1 at 2013-04-09 00:49:06 +0200
+Served asset /word_gender.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_lessons.js?body=1" for 127.0.0.1 at 2013-04-09 00:49:06 +0200
+Served asset /user_lessons.js - 304 Not Modified (0ms)
+
+
+Started GET "/lessons/new" for 127.0.0.1 at 2013-04-09 00:49:09 +0200
+
+ActionController::RoutingError (uninitialized constant LessonsController):
+  activesupport (3.2.12) lib/active_support/inflector/methods.rb:230:in `block in constantize'
+  activesupport (3.2.12) lib/active_support/inflector/methods.rb:229:in `each'
+  activesupport (3.2.12) lib/active_support/inflector/methods.rb:229:in `constantize'
+  actionpack (3.2.12) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.12) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.12) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.12) lib/action_dispatch/routing/route_set.rb:601:in `call'
+  omniauth (1.1.3) lib/omniauth/strategy.rb:177:in `call!'
+  omniauth (1.1.3) lib/omniauth/strategy.rb:157:in `call'
+  omniauth (1.1.3) lib/omniauth/strategy.rb:177:in `call!'
+  omniauth (1.1.3) lib/omniauth/strategy.rb:157:in `call'
+  omniauth (1.1.3) lib/omniauth/strategy.rb:177:in `call!'
+  omniauth (1.1.3) lib/omniauth/strategy.rb:157:in `call'
+  omniauth (1.1.3) lib/omniauth/strategy.rb:177:in `call!'
+  omniauth (1.1.3) lib/omniauth/strategy.rb:157:in `call'
+  omniauth (1.1.3) lib/omniauth/builder.rb:48:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.12) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.12) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:405:in `_run__3609151657302473814__call__3399186452322062958__callbacks'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.12) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/miroslav/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/miroslav/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/miroslav/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/miroslav/.rvm/gems/ruby-1.9.3-p392@firstgemset/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
